@@ -108,7 +108,7 @@ studied theoretically, but supported practically in organizations.
 a use of AIaaS that complies with data protection and employee interests. It examines in
 particular the Digital Services Act and its interplay with labor law, and places it in the
 context of other relevant legal frameworks. More on the page
-[Legal Framework](recht.md).
+[Legal Framework](legal-framework.md).
 
 ## Prior work: a joint field study
 

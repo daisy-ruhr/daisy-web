@@ -15,8 +15,8 @@ erprobt im Unternehmensalltag.
 
 <div class="daisy-hero-actions" markdown="1">
 
-[Zum Projekt](projekt.md){ .md-button .md-button--primary }
-[Kontakt](kontakt.md){ .md-button }
+[Zum Projekt](project.md){ .md-button .md-button--primary }
+[Kontakt](contact.md){ .md-button }
 
 </div>
 

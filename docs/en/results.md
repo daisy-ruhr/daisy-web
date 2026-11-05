@@ -168,4 +168,4 @@ organizations in Germany to use AIaaS in a data-protection-compliant and employe
 way. This transfer is carried by BoWE as application partner and multiplier as well as by
 the associated partners – IG Metall into employee representation, HUMAINE Network e.V.
 into industry, Edgeless Systems into product development. Details on the page
-[Consortium & Network](netzwerk.md).
+[Consortium & Network](network.md).

@@ -110,14 +110,14 @@ extra:
 
 nav:
   - Start: index.md
-  - Das Projekt: projekt.md
-  - Wissenschaftlicher Ansatz: ansatz.md
-  - Arbeitspakete: arbeitspakete.md
-  - Ergebnisse & Transfer: ergebnisse.md
-  - Rechtlicher Rahmen: recht.md
-  - Konsortium & Netzwerk: netzwerk.md
-  - Kontakt: kontakt.md
-  - Glossar: glossar.md
+  - Das Projekt: project.md
+  - Wissenschaftlicher Ansatz: approach.md
+  - Arbeitspakete: work-packages.md
+  - Ergebnisse & Transfer: results.md
+  - Rechtlicher Rahmen: legal-framework.md
+  - Konsortium & Netzwerk: network.md
+  - Kontakt: contact.md
+  - Glossar: glossary.md
   - Über DAISY:
       - Impressum: Impressum.md
       - Datenschutz: Datenschutz.md

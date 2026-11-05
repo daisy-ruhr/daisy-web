@@ -38,7 +38,7 @@ folder structure:
 - `docs/en/` – English (served at `/en/`)
 
 Both folders must use the same file names so the language switcher can map each page to its
-translation. Links between pages are relative (e.g. `projekt.md`), so they stay within the
+translation. Links between pages are relative (e.g. `project.md`), so they stay within the
 current language. Shared assets live in `docs/assets/`. Navigation titles are written in
 German in `nav` and translated via `nav_translations` in the plugin configuration.
 
@@ -63,7 +63,7 @@ definition lists (`def_list`), `attr_list` and `md_in_html`.
 The site deliberately contains placeholders that must be replaced before going live:
 
 - `site_url` and `repo_url` in `mkdocs.yml` (domain and repository URL)
-- Contact e-mail in `mkdocs.yml` and `docs/*/kontakt.md` (currently `steffen.becker@rub.de`)
+- Contact e-mail in `mkdocs.yml` and `docs/*/contact.md` (currently `steffen.becker@rub.de`)
 - Legal notice (Impressum): responsible body and a valid postal address (§ 5 TMG)
 - Logo and image rights, and approval of the persons named
 - `docs/assets/img/favicon.svg` is a placeholder graphic

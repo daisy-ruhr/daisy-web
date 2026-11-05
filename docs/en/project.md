@@ -84,4 +84,4 @@ organizational implementation processes developed implement European data protec
 
 Risk profiles, technical requirements, process models, decision catalogs, training formats
 and demonstrators will be made publicly available and free of charge. Details on the page
-[Results & Transfer](ergebnisse.md).
+[Results & Transfer](results.md).

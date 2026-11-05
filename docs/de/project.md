@@ -90,4 +90,4 @@ durch „Privacy by Design" um.
 
 Risiko-Profile, technische Anforderungen, Prozessmodelle, Entscheidungskataloge,
 Schulungsformate und Demonstratoren werden öffentlich zugänglich und kostenfrei nutzbar
-bereitgestellt. Details auf der Seite [Ergebnisse & Transfer](ergebnisse.md).
+bereitgestellt. Details auf der Seite [Ergebnisse & Transfer](results.md).

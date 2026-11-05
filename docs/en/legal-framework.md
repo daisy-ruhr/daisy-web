@@ -80,9 +80,9 @@ accompanied by it on a professional level.
 ## Relation to the project work
 
 The legal perspective is integrated into all work packages: In
-[Work Package 1](arbeitspakete.md) the opinion is commissioned and BoWE records the legal
+[Work Package 1](work-packages.md) the opinion is commissioned and BoWE records the legal
 and practical problem areas in AIaaS introductions. In
-[Work Package 3](arbeitspakete.md) the findings lead into technical requirements for
+[Work Package 3](work-packages.md) the findings lead into technical requirements for
 data-protection-compliant configurations. The transferable, application-oriented version of
 the opinion is a separate transfer result (see
-[Results & Transfer](ergebnisse.md)).
+[Results & Transfer](results.md)).

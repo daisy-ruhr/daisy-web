@@ -36,7 +36,7 @@ E-Mail: [steffen.becker@rub.de](mailto:steffen.becker@rub.de)
 
 Gefördert im Rahmen der Förderrichtlinie „Plattform Privatheit – IT-Sicherheit schützt
 Privatheit und stützt Demokratie" („Digital.Sicher.Souverän"). Details siehe
-[Kontakt](kontakt.md).
+[Kontakt](contact.md).
 
 ## Haftung für Inhalte
 

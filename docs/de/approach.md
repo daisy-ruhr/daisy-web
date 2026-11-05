@@ -112,7 +112,7 @@ theoretisch untersucht, sondern praktisch in Organisationen unterstützt werden.
 Rahmenbedingungen für einen datenschutz- und mitarbeitendeninteressenkonformen Einsatz von
 AIaaS. Es beleuchtet insbesondere den Digital Services Act und dessen Zusammenspiel mit
 dem Arbeitsrecht und ordnet ihn in die weiteren relevanten Rechtsrahmen ein. Mehr auf der
-Seite [Rechtlicher Rahmen](recht.md).
+Seite [Rechtlicher Rahmen](legal-framework.md).
 
 ## Vorarbeit: eine gemeinsame Feldstudie
 

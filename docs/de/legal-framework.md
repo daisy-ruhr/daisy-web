@@ -81,9 +81,9 @@ RUB und fachlich begleitet.
 ## Bezug zur Projektarbeit
 
 Die rechtliche Perspektive ist in alle Arbeitspakete eingebunden: Im
-[Arbeitspaket 1](arbeitspakete.md) wird das Gutachten vergeben und erfasst die BoWE die
+[Arbeitspaket 1](work-packages.md) wird das Gutachten vergeben und erfasst die BoWE die
 rechtlich-praktischen Problembereiche bei AIaaS-Einführungen. Im
-[Arbeitspaket 3](arbeitspakete.md) münden die Erkenntnisse in technische Anforderungen für
+[Arbeitspaket 3](work-packages.md) münden die Erkenntnisse in technische Anforderungen für
 datenschutzkonforme Konfigurationen. Die übertragbare, anwendungsnah aufbereitete Fassung
 des Gutachtens ist ein eigenes Transferergebnis (siehe
-[Ergebnisse & Transfer](ergebnisse.md)).
+[Ergebnisse & Transfer](results.md)).

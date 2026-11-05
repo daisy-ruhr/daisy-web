@@ -15,8 +15,8 @@ organizationally, tested in everyday business operations.
 
 <div class="daisy-hero-actions" markdown="1">
 
-[To the project](projekt.md){ .md-button .md-button--primary }
-[Contact](kontakt.md){ .md-button }
+[To the project](project.md){ .md-button .md-button--primary }
+[Contact](contact.md){ .md-button }
 
 </div>
 
