@@ -15,7 +15,6 @@ theme:
   font: false   # deactivates Google Fonts completely -> no external requests
   custom_dir: overrides # for footer with BMFTR logo
   features:
-    - navigation.instant
     - navigation.tracking
     - navigation.top
     - navigation.sections
@@ -41,7 +40,53 @@ extra_css:
 
 plugins:
   - search:
-      lang: de
+      lang:
+        - de
+        - en
+  - i18n:
+      docs_structure: folder
+      reconfigure_material: true
+      reconfigure_search: false
+      languages:
+        - locale: de
+          name: Deutsch
+          default: true
+          build: true
+          site_name: Projekt DAISY
+          site_description: Datenschutz und Arbeitnehmendeninteressen in AI-as-a-Service-Systemen
+          nav_translations: {}
+        - locale: en
+          name: English
+          build: true
+          site_name: Project DAISY
+          site_description: Data Protection and Employee Interests in AI-as-a-Service Systems
+          theme:
+            palette:
+              - scheme: slate
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-4
+                  name: Switch to light mode
+              - scheme: default
+                primary: custom
+                accent: custom
+                toggle:
+                  icon: material/brightness-7
+                  name: Switch to dark mode
+          nav_translations:
+            Start: Home
+            Das Projekt: The Project
+            Wissenschaftlicher Ansatz: Scientific Approach
+            Arbeitspakete: Work Packages
+            Ergebnisse & Transfer: Results & Transfer
+            Rechtlicher Rahmen: Legal Framework
+            Konsortium & Netzwerk: Consortium & Network
+            Kontakt: Contact
+            Glossar: Glossary
+            Über DAISY: About DAISY
+            Impressum: Legal Notice
+            Datenschutz: Privacy Policy
 
 markdown_extensions:
   - admonition

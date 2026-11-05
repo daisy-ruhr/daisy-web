@@ -32,7 +32,7 @@ Die statische Ausgabe landet in `site/` (`.gitignore`).
 | Aufgabe | Ort |
 | --- | --- |
 | Navigation und Theme-Optionen | `mkdocs.yml` |
-| Inhalte | `docs/*.md` |
+| Inhalte | `docs/de/*.md` (Deutsch), `docs/en/*.md` (Englisch) – gleiche Dateinamen in beiden Ordnern |
 | Farben, Hero-Banner, Sonderblöcke | `docs/assets/styles/extra.css` |
 | Bilder und Favicon | `docs/assets/img/` |
 
