@@ -1,4 +1,4 @@
-/* DAISY Farbwelt: tiefes Petrol + warmes Akzent-Orange */
+/* DAISY color scheme: deep teal + warm accent orange */
 :root {
   --md-primary-fg-color: #0f4c5c;
   --md-primary-fg-color--light: #1b6f82;
@@ -6,15 +6,15 @@
   --md-accent-fg-color: #f2a541;
 }
 
-/* Dunkler Modus: Material uebernimmt die Linkfarbe von --md-primary-fg-color.
-   Bei unserem dunklen Petrol waeren Links dort kaum lesbar, deshalb eine
-   aufgehelle Petrol-Variante fuer Links und Akzente im Slate-Schema. */
+/* Dark mode: Material takes the link color from --md-primary-fg-color.
+   With our dark teal, links would be barely readable there, so use a
+   lightened teal variant for links and accents in the slate scheme. */
 [data-md-color-scheme=slate] {
   --md-typeset-a-color: #6fb6c8;
   --md-primary-fg-color--light: #2c8296;
 }
 
-/* Hero-Banner auf der Startseite */
+/* Hero banner on the home page */
 .daisy-hero {
   background: linear-gradient(135deg, #093642, #1b6f82 60%, #508d99);
   color: #fff;
@@ -51,12 +51,12 @@
   color: #093642;
 }
 
-/* Card-Grids: etwas Luft und ruhigerer Rand */
+/* Card grids: some breathing room and a calmer border */
 .md-typeset .grid.cards > ul > li {
   border-radius: 0.4rem;
 }
-/* Die Groessenklassen .lg/.middle stammen aus Material Insiders und sind in der
-   freien Version ungestylt – hier selbst definiert, damit die Card-Icons wirken. */
+/* The .lg/.middle size classes come from Material Insiders and are unstyled in the
+   free version – defined here so the card icons take effect. */
 .md-typeset .twemoji.lg {
   --md-icon-size: 1.6rem;
 }
@@ -70,7 +70,7 @@
   margin-bottom: 0;
 }
 
-/* Partner-Kuerzel als Akzent */
+/* Partner abbreviations as accent */
 .daisy-kicker {
   color: var(--md-accent-fg-color);
   font-weight: 700;
@@ -81,7 +81,7 @@
   margin-bottom: 0.25rem;
 }
 
-/* Förderbox */
+/* Funding box */
 .daisy-funding {
   border-left: 0.25rem solid var(--md-primary-fg-color);
   background: var(--md-code-bg-color);
@@ -90,7 +90,7 @@
   font-size: 0.85rem;
 }
 
-/* Tabellen auf schmalen Screens scrollbar statt ueberzulaufen */
+/* Tables scroll on narrow screens instead of overflowing */
 .md-typeset__scrollwrap {
   overflow-x: auto;
 }

@@ -20,8 +20,8 @@ jobs:
           python-version: "3.12"
           cache: pip
 
-      - name: Abhängigkeiten installieren
+      - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build (strict – bricht bei toten Links und Warnungen ab)
+      - name: Build (strict – fails on broken links and warnings)
         run: mkdocs build --strict
