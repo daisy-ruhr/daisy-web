@@ -1,0 +1,78 @@
+site_name: Projekt DAISY
+site_description: Datenschutz und Arbeitnehmendeninteressen in AI-as-a-Service-Systemen
+site_author: DAISY Team
+site_url: https://daisy.ruhr
+repo_name: daisy-web
+# repo_url: https://github.com/daisy-ruhr/daisy-web  # we don't want to show the GitHub link in the header
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: de
+  favicon: assets/img/favicon.svg
+  font: false   # deactivates Google Fonts completely -> no external requests
+  custom_dir: overrides # for footer with BMFTR logo
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.sections
+    - navigation.footer
+    - content.code.copy
+  palette:
+    # First entry = default scheme, here dark
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Zu hellem Modus wechseln
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Zu dunklem Modus wechseln
+
+extra_css:
+  - assets/styles/extra.css
+
+plugins:
+  - search:
+      lang: de
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.betterem
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  generator: false
+
+nav:
+  - Start: index.md
+  - Das Projekt: projekt.md
+  - Wissenschaftlicher Ansatz: ansatz.md
+  - Arbeitspakete: arbeitspakete.md
+  - Ergebnisse & Transfer: ergebnisse.md
+  - Rechtlicher Rahmen: recht.md
+  - Konsortium & Netzwerk: netzwerk.md
+  - Kontakt: kontakt.md
+  - Glossar: glossar.md
+  - Über DAISY:
+      - Impressum: Impressum.md
+      - Datenschutz: Datenschutz.md

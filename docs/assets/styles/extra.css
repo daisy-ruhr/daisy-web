@@ -1,0 +1,96 @@
+/* DAISY Farbwelt: tiefes Petrol + warmes Akzent-Orange */
+:root {
+  --md-primary-fg-color: #0f4c5c;
+  --md-primary-fg-color--light: #1b6f82;
+  --md-primary-fg-color--dark: #093642;
+  --md-accent-fg-color: #f2a541;
+}
+
+/* Dunkler Modus: Material uebernimmt die Linkfarbe von --md-primary-fg-color.
+   Bei unserem dunklen Petrol waeren Links dort kaum lesbar, deshalb eine
+   aufgehelle Petrol-Variante fuer Links und Akzente im Slate-Schema. */
+[data-md-color-scheme=slate] {
+  --md-typeset-a-color: #6fb6c8;
+  --md-primary-fg-color--light: #2c8296;
+}
+
+/* Hero-Banner auf der Startseite */
+.daisy-hero {
+  background: linear-gradient(135deg, #093642, #1b6f82 60%, #508d99);
+  color: #fff;
+  border-radius: 0.4rem;
+  padding: 2.5rem 2rem;
+  margin-bottom: 2rem;
+}
+.daisy-hero h1 {
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+.daisy-hero p {
+  color: #e8f1f2;
+  font-size: 1.1rem;
+  max-width: 46rem;
+  margin: 0;
+}
+.daisy-hero .daisy-hero-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.daisy-hero .md-button {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.6);
+  border-radius: 100rem;
+}
+.daisy-hero .md-button--primary {
+  background-color: #f2a541;
+  border-color: #f2a541;
+  color: #093642;
+}
+
+/* Card-Grids: etwas Luft und ruhigerer Rand */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 0.4rem;
+}
+/* Die Groessenklassen .lg/.middle stammen aus Material Insiders und sind in der
+   freien Version ungestylt – hier selbst definiert, damit die Card-Icons wirken. */
+.md-typeset .twemoji.lg {
+  --md-icon-size: 1.6rem;
+}
+.md-typeset .twemoji.middle {
+  vertical-align: middle;
+}
+.md-typeset .grid.cards > ul > li > p > .twemoji {
+  color: var(--md-primary-fg-color--light);
+}
+.md-typeset .grid.cards > ul > li > p {
+  margin-bottom: 0;
+}
+
+/* Partner-Kuerzel als Akzent */
+.daisy-kicker {
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Förderbox */
+.daisy-funding {
+  border-left: 0.25rem solid var(--md-primary-fg-color);
+  background: var(--md-code-bg-color);
+  padding: 1rem 1.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+}
+
+/* Tabellen auf schmalen Screens scrollbar statt ueberzulaufen */
+.md-typeset__scrollwrap {
+  overflow-x: auto;
+}

@@ -1,0 +1,13 @@
+<!-- overrides/main.html -->
+{% extends "base.html" %}
+
+{% block footer %}
+  <!-- BMFTR funding image container -->
+  <div class="custom-footer" style="text-align: center; padding: 20px 0; background-color: var(--md-footer-bg-color);">
+    <a href="{{ base_url }}">
+      <img src="{{ 'assets/img/bmftr.png' | url }}" alt="Gefördert durch BMFTR" style="max-height: 150px;">
+    </a>
+  </div>
+  <!-- original Material for MkDocs footer -->
+  {{ super() }}
+{% endblock %}
