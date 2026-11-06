@@ -137,6 +137,47 @@
   font-size: 0.85rem;
 }
 
+/* Publication category labels */
+.md-typeset .daisy-publication-tag {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  margin: 0 0.25rem 0.25rem 0;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 100rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.md-typeset .daisy-publication-tag.inter {
+  color: #7C3AED;
+  border-color: #7C3AED;
+}
+
+.md-typeset .daisy-publication-tag.psy {
+  color: #bb0707;
+  border-color: #bb0707;
+}
+
+.md-typeset .daisy-publication-tag.tech {
+  color: #0a66c2;
+  border-color: #0a66c2;
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-publication-tag.inter {
+  color: #c4a4ff;
+  border-color: #c4a4ff;
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-publication-tag.psy {
+  color: #ff6565;
+  border-color: #ff6565;
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-publication-tag.tech {
+  color: #83bfff;
+  border-color: #83bfff;
+}
+
 /* Tables scroll on narrow screens instead of overflowing */
 .md-typeset__scrollwrap {
   overflow-x: auto;

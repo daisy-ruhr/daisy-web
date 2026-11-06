@@ -156,6 +156,7 @@ security & privacy and IT security as well as in psychological and human-technol
 research. The aim is both independent contributions from the sub-projects and
 interdisciplinary joint publications that bring together technical risk profiles with
 mental models and implementation processes.
+Scientific publications are listed on the [Publications](publications.md) page.
 
 Through the sub-projects, several doctorates as well as project-related theses are made
 possible, embedded in interdisciplinary structures – including the graduate school of the

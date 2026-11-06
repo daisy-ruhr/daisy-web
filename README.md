@@ -78,7 +78,20 @@ both builds by Zensical's theme override directory. In Markdown, use paths such 
 
 Markdown extensions in use: admonitions (`!!!`), collapsible blocks (`???`),
 tabs (`=== "Tab"`), grid cards (`<div class="grid cards" markdown="1">`),
-definition lists (`def_list`), `attr_list` and `md_in_html`.
+definition lists (`def_list`), `attr_list`, `md_in_html`, and snippets (`--8<--`).
+
+### Publications
+
+Edit `docs/shared/publications.md` once to update both language versions. The localized
+introductions are in `docs/de/publications.md` and `docs/en/publications.md`. The shared
+file contains commented-out examples; replace the placeholder details and DOI with the
+real publication details, then remove the comment markers around each entry to publish
+it. Keep titles and authors in their original language, list entries newest first, and
+use one or more of the `Technical`, `Psychology/HCI`, and `Interdisciplinary` labels.
+Add the corresponding `tech`, `psy`, or `inter` CSS class alongside
+`daisy-publication-tag` to color each label, as shown in the examples.
+DOI buttons should link to the corresponding `https://doi.org/` URL. The examples are
+not real publications. Changes to the shared file are watched by the preview servers.
 
 ## To clarify before publishing
 

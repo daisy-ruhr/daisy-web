@@ -1,6 +1,8 @@
 import functools
 import http.server
 import json
+import re
+import tempfile
 import threading
 import tomllib
 import unittest
@@ -9,6 +11,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.request import urlopen
 from urllib.parse import urljoin, urlsplit
+
+import markdown
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
@@ -108,11 +112,11 @@ class SiteTests(unittest.TestCase):
     def test_localized_navigation_and_palette(self):
         for prefix, labels, palette in (
             ("de/", {"Start", "Das Projekt", "Wissenschaftlicher Ansatz", "Arbeitspakete",
-                  "Ergebnisse & Transfer", "Rechtlicher Rahmen", "Konsortium & Netzwerk",
+                  "Ergebnisse & Transfer", "Publikationen", "Rechtlicher Rahmen", "Konsortium & Netzwerk",
                   "Kontakt", "Glossar", "Über DAISY", "Impressum", "Datenschutz"},
              {"slate": "Zu hellem Modus wechseln", "default": "Zu dunklem Modus wechseln"}),
             ("en/", {"Home", "The Project", "Scientific Approach", "Work Packages",
-                     "Results & Transfer", "Legal Framework", "Consortium & Network",
+                     "Results & Transfer", "Publications", "Legal Framework", "Consortium & Network",
                      "Contact", "Glossary", "About DAISY", "Legal Notice", "Privacy Policy"},
              {"slate": "Switch to light mode", "default": "Switch to dark mode"}),
         ):
@@ -230,6 +234,80 @@ class SiteTests(unittest.TestCase):
                 search = json.loads((SITE / language / "search.json").read_text(encoding="utf-8"))
                 self.assertIn(language, search["config"]["lang"])
                 self.assertTrue(any(item["location"].startswith("results/") for item in search["items"]))
+
+    def test_shared_publications(self):
+        class PublicationsParser(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.links = []
+                self.tags = []
+                self.text = ""
+
+            def handle_starttag(self, tag, attrs):
+                attrs = dict(attrs)
+                if tag == "a":
+                    self.links.append(attrs)
+                if "daisy-publication-tag" in attrs.get("class", "").split():
+                    self.tags.append(attrs)
+
+            def handle_data(self, data):
+                self.text += data
+
+        shared = (ROOT / "docs/shared/publications.md").read_text(encoding="utf-8")
+        for language in ("de", "en"):
+            with self.subTest(language=language):
+                built = (SITE / language / "publications/index.html").read_text(encoding="utf-8")
+                parser = PublicationsParser()
+                parser.feed(built)
+                self.assertIn('class="daisy-publications"', built)
+                self.assertNotIn("Example journal article", parser.text)
+                self.assertNotIn("example-journal", json.dumps(json.loads(
+                    (SITE / language / "search.json").read_text(encoding="utf-8"))))
+
+        # Render the same uncommented examples through the configured snippet mechanism.
+        with tempfile.TemporaryDirectory() as directory:
+            snippet = Path(directory) / "publications.md"
+            example = shared.split("<!--\n", 1)[1].split("\n-->", 1)[0]
+            snippet.write_text(f'<div class="daisy-publications" markdown="1">\n\n{example}\n\n</div>',
+                               encoding="utf-8")
+            for language in ("de", "en"):
+                with self.subTest(language=language, examples="enabled"):
+                    page = (ROOT / "docs" / language / "publications.md").read_text(encoding="utf-8")
+                    page = page.replace("docs/shared/publications.md", snippet.name)
+                    rendered = markdown.markdown(
+                        page,
+                        extensions=["pymdownx.snippets", "md_in_html", "attr_list"],
+                        extension_configs={"pymdownx.snippets": {
+                            "base_path": [directory], "check_paths": True,
+                        }},
+                    )
+                    parser = PublicationsParser()
+                    parser.feed(rendered)
+                    self.assertIn("Example journal article", parser.text)
+                    self.assertIn("Example conference paper", parser.text)
+                    self.assertEqual(len(parser.tags), 3)
+                    for category in ("tech", "psy", "inter"):
+                        self.assertTrue(any(category in tag["class"].split() for tag in parser.tags))
+                    for doi in ("10.XXXX/example-journal", "10.XXXX/example-conference"):
+                        self.assertTrue(any(
+                            link.get("href") == f"https://doi.org/{doi}"
+                            and "md-button" in link.get("class", "").split()
+                            for link in parser.links
+                        ))
+
+    def test_publication_category_colors(self):
+        css = (ROOT / "overrides/assets/styles/extra.css").read_text(encoding="utf-8")
+        for category in ("tech", "psy", "inter"):
+            for prefix in ("", "[data-md-color-scheme=slate] "):
+                selector = f"{prefix}.md-typeset .daisy-publication-tag.{category}"
+                with self.subTest(selector=selector):
+                    match = re.search(re.escape(selector) + r"\s*\{([^}]*)\}", css)
+                    self.assertIsNotNone(match)
+                    color = re.search(r"(?<![\w-])color:\s*(#[0-9a-fA-F]{6})\s*;", match[1])
+                    border = re.search(r"border-color:\s*(#[0-9a-fA-F]{6})\s*;", match[1])
+                    self.assertIsNotNone(color)
+                    self.assertIsNotNone(border)
+                    self.assertEqual(color[1].lower(), border[1].lower())
 
     def test_language_links_over_http(self):
         class QuietHandler(http.server.SimpleHTTPRequestHandler):

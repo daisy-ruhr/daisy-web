@@ -159,6 +159,8 @@ im Bereich Usable Security & Privacy und IT-Sicherheit ebenso wie in der psychol
 und Mensch-Technik-Forschung. Angestrebt werden eigenständige Beiträge der Teilvorhaben
 ebenso wie interdisziplinäre Gemeinschaftspublikationen, in denen technische Risiko-Profile
 mit mentalen Modellen und Implementierungsprozessen zusammengeführt werden.
+Die wissenschaftlichen Veröffentlichungen sammeln wir auf der Seite
+[Publikationen](publications.md).
 
 Über die Teilvorhaben werden mehrere Promotionen sowie projektbezogene Abschlussarbeiten
 ermöglicht, eingebettet in interdisziplinäre Strukturen – unter anderem die
