@@ -1,0 +1,77 @@
+[project]
+site_name = "Projekt DAISY"
+site_description = "Datenschutz und Arbeitnehmendeninteressen in AI-as-a-Service-Systemen"
+site_author = "DAISY Team"
+site_url = "https://daisy.ruhr"
+docs_dir = "docs/de"
+site_dir = "site"
+extra_css = ["assets/styles/extra.css"]
+watch = ["assets"]
+nav = [
+  { "Start" = "index.md" },
+  { "Das Projekt" = "project.md" },
+  { "Wissenschaftlicher Ansatz" = "approach.md" },
+  { "Arbeitspakete" = "work-packages.md" },
+  { "Ergebnisse & Transfer" = "results.md" },
+  { "Rechtlicher Rahmen" = "legal-framework.md" },
+  { "Konsortium & Netzwerk" = "network.md" },
+  { "Kontakt" = "contact.md" },
+  { "Glossar" = "glossary.md" },
+  { "Über DAISY" = [
+    { "Impressum" = "Impressum.md" },
+    { "Datenschutz" = "Datenschutz.md" },
+  ] },
+]
+
+[project.extra]
+generator = false
+alternate = [
+  { name = "Deutsch", link = "/", lang = "de" },
+  { name = "English", link = "/en/", lang = "en" },
+]
+
+[project.plugins.search]
+enabled = true
+
+[project.theme]
+language = "de"
+variant = "classic"
+font = false
+favicon = "assets/img/favicon.svg"
+custom_dir = "overrides"
+features = [
+  "navigation.tracking",
+  "navigation.top",
+  "navigation.sections",
+  "navigation.footer",
+  "content.code.copy",
+]
+
+[[project.theme.palette]]
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle.icon = "material/brightness-4"
+toggle.name = "Zu hellem Modus wechseln"
+
+[[project.theme.palette]]
+scheme = "default"
+primary = "custom"
+accent = "custom"
+toggle.icon = "material/brightness-7"
+toggle.name = "Zu dunklem Modus wechseln"
+
+[project.markdown_extensions]
+admonition = {}
+attr_list = {}
+def_list = {}
+md_in_html = {}
+tables = {}
+toc.permalink = true
+pymdownx.betterem = {}
+pymdownx.blocks.caption = {}
+pymdownx.details = {}
+pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
+pymdownx.superfences = {}
+pymdownx.tabbed.alternate_style = true

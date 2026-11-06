@@ -14,6 +14,11 @@
   --md-primary-fg-color--light: #2c8296;
 }
 
+/* Don't reserve header space for a repository link when none is configured. */
+.md-header__source:not(:has(.md-source)) {
+  display: none;
+}
+
 /* Hero banner on the home page */
 .daisy-hero {
   background: linear-gradient(135deg, #093642, #1b6f82 60%, #508d99);

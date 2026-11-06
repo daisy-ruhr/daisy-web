@@ -1,4 +1,4 @@
-name: MkDocs
+name: Zensical
 
 on:
   push:
@@ -23,5 +23,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build (strict – fails on broken links and warnings)
-        run: mkdocs build --strict
+      - name: Build both languages
+        run: python scripts/site.py build
+
+      - name: Check site configuration, assets and language switcher
+        run: python -m unittest discover -s tests
