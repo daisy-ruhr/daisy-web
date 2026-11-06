@@ -2,8 +2,7 @@
 
 The overall project is divided into five work packages (WPs). They comprise 43 sub-work
 packages and contribute to 26 cross-project milestones. The project runs from
-1 September 2026 to 31 August 2029. Here you find the overview level – the detailed tables
-of the proposal have deliberately not been carried over.
+1 September 2026 to 31 August 2029. Here you find an overview:
 
 | WP | Title | Responsibility |
 |---|---|---|
@@ -87,9 +86,9 @@ The fifth work package bundles the transfer and communication activities spread 
 entire project duration.
 
 ???+ info "Content"
-    RUB creates this project website, turns the legal opinion into an application-oriented
-    version, designs and coordinates the podcast series and prepares the developed solutions
-    as interactive demonstrators. The partners contribute target-group-specific materials,
+    RUB creates this project website, prepares a practical version of the legal opinion,
+    designs and coordinates the podcast series and presents the developed solutions as
+    interactive demonstrators. The partners contribute target-group-specific materials,
     podcast episodes, the online decision tree and visualized future scenarios; BoWE
     activates and supports regional actors. The conclusion is the joint compilation of the
     results into the final report.

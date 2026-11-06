@@ -2,8 +2,7 @@
 
 Das Gesamtprojekt gliedert sich in fünf Arbeitspakete (APs). Sie umfassen 43
 Unterarbeitspakete und zahlen auf 26 projektübergreifende Meilensteine ein. Das Projekt
-läuft vom 1. September 2026 bis zum 31. August 2029. Hier finden Sie die Überblicksebene –
-die Detailtabellen des Antrags sind bewusst nicht übernommen.
+läuft vom 1. September 2026 bis zum 31. August 2029. Hier finden Sie einen Überblick:
 
 | AP | Titel | Verantwortung |
 |---|---|---|
@@ -18,7 +17,7 @@ die Detailtabellen des Antrags sind bewusst nicht übernommen.
 *Verantwortung: Ruhr-Universität Bochum (Verbundkoordination)*
 
 Das erste Arbeitspaket schafft die konzeptionellen, wissenschaftlichen und rechtlichen
-Grundlagen des Vorhabens.
+Grundlagen des Projekts.
 
 ???+ info "Inhalt"
     Die drei wissenschaftlichen Partner sichten in parallel angelegten, aufeinander
@@ -93,7 +92,7 @@ und Kommunikationsaktivitäten.
 
 ???+ info "Inhalt"
     Die RUB erstellt diese Projektwebsite, überführt das Rechtsgutachten in eine
-    anwendungsorientierte Fassung, konzipiert und koordiniert die Podcast-Serie und
+    für die Praxis aufbereitete Fassung, konzipiert und koordiniert die Podcast-Serie und
     bereitet die entwickelten Lösungen als interaktive Demonstratoren auf. Die Partner
     steuern zielgruppengerechte Materialien, Podcast-Folgen, den Online-Entscheidungsbaum
     sowie visualisierte Zukunftsbilder bei; die BoWE aktiviert und begleitet regionale

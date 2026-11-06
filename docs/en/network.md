@@ -85,8 +85,7 @@ Dr. Magdalena Wischnewski (UDE).
 === "Practice"
 
     **Philippe Skender** (BoWE) is responsible for execution at the practice partner as a
-    cybersecurity expert. BoWE contributes its dual role as application partner and
-    multiplier of the results.
+    cybersecurity expert. BoWE tests the solutions in practice and shares the results.
 
 ## Competence profile of the consortium
 
@@ -95,9 +94,9 @@ The consortium unites complementary competences:
 * individual- and organizational-psychological expertise on human-centered AI use in the
   world of work (UDE and UW/H),
 * technical and user-centered IT security and privacy research (RUB),
-* application and transfer expertise of the practice partner (BoWE).
+* practical implementation and transfer expertise of the practice partner (BoWE).
 
-The applicants have already worked together in various constellations – for example on a
+The researchers have already worked together in various constellations – for example on a
 widely cited review on human-AI teaming and in founding the HAITeC network. Several of them
 are structurally connected through their shared affiliation with the RC Trust. In addition
 there is experience in carrying out projects funded by the BMFTR.
@@ -139,9 +138,9 @@ the results.
 
     ---
 
-    Dialogue partner on the application side, specialized in conveying data protection and
-    cybersecurity topics in the form of serious games. Supports the project's game-based
-    awareness and science communication formats.
+    Practice partner specializing in communicating data protection and cybersecurity
+    through serious games. Supports the project's game-based awareness and science
+    communication formats.
 
 </div>
 

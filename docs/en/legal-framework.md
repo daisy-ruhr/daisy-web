@@ -20,9 +20,9 @@ accompanied by it on a professional level.
   prepared so that companies can work with them.
 
 !!! info "Status"
-    The opinion is being prepared within the project (milestone M3). An application-oriented
-    version for decision-makers follows as a separate result (milestone M19). This page will
-    be updated as soon as the results are available.
+    The opinion is being prepared within the project (milestone M3). A version adapted for
+    practical use by decision-makers follows as a separate result (milestone M19). This page
+    will be updated as soon as the results are available.
 
 ## Relevant legal frameworks
 
@@ -83,6 +83,6 @@ The legal perspective is integrated into all work packages: In
 [Work Package 1](work-packages.md) the opinion is commissioned and BoWE records the legal
 and practical problem areas in AIaaS introductions. In
 [Work Package 3](work-packages.md) the findings lead into technical requirements for
-data-protection-compliant configurations. The transferable, application-oriented version of
-the opinion is a separate transfer result (see
+data-protection-compliant configurations. The version of the opinion adapted for practical
+use is a separate transfer result (see
 [Results & Transfer](results.md)).

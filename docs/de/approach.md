@@ -75,9 +75,9 @@ umsetzbarer AIaaS-Einführungen.
 
 === "BoWE – Praxis"
 
-    Die WirtschaftsEntwicklungsGesellschaft Bochum mbH bringt **Anwendungs- und
-    Transferkompetenz** ein. Im Fokus steht eine regionale Betrachtung
-    privatheitssensitiver KI-Konzepte in der organisatorischen Anwendung, die die
+    Die WirtschaftsEntwicklungsGesellschaft Bochum mbH bringt **Praxis- und
+    Transferkompetenz** ein. Im Fokus steht die regionale Perspektive auf den Einsatz
+    privatheitssensitiver KI-Konzepte in Organisationen, die die
     breiteren wissenschaftlichen Erkenntnisse der Partner ergänzt und konkretisiert.
 
     BoWE erfasst rechtlich-praktische Problembereiche bei AIaaS-Einführungen, unterstützt

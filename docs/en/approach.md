@@ -33,8 +33,8 @@ implementable AIaaS introductions.
 
     ---
 
-    The legal framework for AIaaS introductions and the aspect of privacy in
-    organizational application are examined (externally commissioned legal opinion).
+    The legal framework for AIaaS introductions and privacy in organizational use are
+    examined (externally commissioned legal opinion).
     In addition, we look at implementability and transfer to companies in various
     sectors – with the aim of strengthening Germany as a business location (BoWE).
 
@@ -73,10 +73,10 @@ implementable AIaaS introductions.
 
 === "BoWE – Practice"
 
-    WirtschaftsEntwicklungsGesellschaft Bochum mbH contributes **application and transfer
-    expertise**. The focus is on a regional view of privacy-sensitive AI concepts in
-    organizational application, which complements and makes concrete the broader scientific
-    findings of the partners.
+    WirtschaftsEntwicklungsGesellschaft Bochum mbH contributes **practical implementation
+    and transfer expertise**. The focus is on how privacy-sensitive AI concepts are used in
+    organizations in the region, complementing and making the partners' broader scientific
+    findings more concrete.
 
     BoWE records legal and practical problem areas in AIaaS introductions, supports the
     scientific work, continuously reflects on it using the case example, and enables the

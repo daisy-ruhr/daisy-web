@@ -25,7 +25,7 @@ No separate patent or property right applications are planned.
     Interactive format that guides through the key points of privacy-sensitive AI
     implementation – including stakeholders and levers. *(M21)*
 
-- __Legal opinion, application-oriented__
+- __Legal opinion, adapted for practical use__
 
     ---
 
@@ -165,7 +165,7 @@ RC Trust, and the cooperation with the Cluster of Excellence CASA and the MPI-SP
 
 The economic impact arises indirectly: the results enable companies and public
 organizations in Germany to use AIaaS in a data-protection-compliant and employee-centered
-way. This transfer is carried by BoWE as application partner and multiplier as well as by
+way. This transfer is carried by BoWE as practice partner and multiplier as well as by
 the associated partners – IG Metall into employee representation, HUMAINE Network e.V.
 into industry, Edgeless Systems into product development. Details on the page
 [Consortium & Network](network.md).

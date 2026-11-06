@@ -1,8 +1,8 @@
 # Konsortium & Netzwerk
 
-DAISY verbindet Informatik, Psychologie und Praxis. Zum Verbund gehören drei
-wissenschaftliche Partner und ein Praxispartner; vier assoziierte Partner wirken als
-Multiplikatoren und Dialogpartner ohne eigene Förderung mit.
+DAISY verbindet Informatik, Psychologie und Praxis. Drei Hochschulen und ein
+Praxispartner bilden den Verbund; vier assoziierte Partner wirken ohne eigene Förderung als
+Multiplikatoren und Dialogpartner mit.
 
 ## Das Team
 
@@ -24,66 +24,61 @@ Dr. Magdalena Wischnewski (UDE).
 
     ---
 
-    Konsortialführung und Fokus auf das technische Subsystem: Sicherheits- und
-    Datenschutzarchitekturen von AIaaS-Systemen, empirische Systemanalyse, Demonstratoren.
+    Leitet das Konsortium und untersucht die Technik: Sicherheits- und
+    Datenschutzarchitekturen von AIaaS-Diensten, empirische Systemanalysen, Demonstratoren.
 
 - __UW/H – Universität Witten/Herdecke__
 
     ---
 
-    Organisationale Verknüpfung zwischen sozialem und technischem Subsystem:
-    Entscheidungs- und Aushandlungsprozesse, Prozessmodelle für kalibrierte
-    AIaaS-Einführungen.
+    Verbindet Mensch und Technik im Unternehmen: Wie fallen Entscheidungen über
+    AIaaS, und wie führt man sie so ein, dass Erwartungen und Risiken zusammenpassen?
 
 - __UDE – Universität Duisburg-Essen__
 
     ---
 
-    Soziales Subsystem und individuelle Ebene: mentale Modelle von AIaaS-Nutzenden,
-    Interventionsformate zur Kompetenzförderung.
+    Blickt auf die Nutzenden: Welche Vorstellungen haben Menschen von AIaaS, und wie
+    lässt sich ihre Kompetenz im Umgang damit stärken?
 
 - __BoWE – WirtschaftsEntwicklungsGesellschaft Bochum mbH__
 
     ---
 
-    Praxispartner in Doppelrolle: setzt Lösungen als Pilotanwender operativ um und wirkt
-    als regionaler Multiplikator in die Bochumer Wirtschaft und Stadtverwaltung.
+    Praxispartner mit zwei Rollen: erprobt die Lösungen selbst als Pilotanwender und
+    trägt sie in die Bochumer Wirtschaft und Stadtverwaltung.
 
 </div>
 
 ## Schlüsselpersonen
 
 !!! note "Freigabe erforderlich"
-    Die Nennung von Personen auf dieser Seite erfolgt erst nach Abstimmung mit den
-    Genannten – hinsichtlich Name, Funktion und Bild. Bis dahin nennen wir Rollen
-    statt Personen.
+    Personen nennen wir erst, wenn Name, Funktion und Bild mit ihnen abgestimmt sind.
+    Bis dahin stehen hier Rollen.
 
 === "Technik"
 
     **Dr.-Ing. Steffen Becker** (RUB), Nachwuchsgruppe „Human-Centered Hardware Security".
-    Er verbindet IT-Sicherheit und Mensch-Computer-Interaktion, um Sicherheits- und
-    Datenschutzmechanismen technisch robust und zugleich verständlich zu gestalten.
-    Einschlägig sind seine großangelegten, international vergleichenden Erhebungen zu
-    Sicherheits- und Privatheitswahrnehmungen, darunter eine Zwölf-Länder-Studie zu
-    verbreiteten Fehlvorstellungen in der IT-Sicherheit.
+    Er verbindet IT-Sicherheit und Mensch-Computer-Interaktion, damit Schutzmechanismen
+    technisch robust und trotzdem verständlich sind. Er hat in großen internationalen
+    Umfragen untersucht, wie Menschen Sicherheit und Privatheit wahrnehmen, darunter in
+    einer Zwölf-Länder-Studie zu verbreiteten Irrtümern in der IT-Sicherheit.
 
 === "Individuelle Psychologie"
 
-    **Dr. Greta Ontrup** (UDE), Expertin für die psychologischen Auswirkungen
-    datengestützter Strategien im Arbeits- und Organisationskontext. Sie leitet seit 2020
-    das „AI at Work"-Netzwerk zum Transfer zwischen Wissenschaft und Praxis.
+    **Dr. Greta Ontrup** (UDE) erforscht, wie sich datengestützte Entscheidungen auf
+    Beschäftigte auswirken. Seit 2020 leitet sie das „AI at Work"-Netzwerk zum Transfer zwischen Wissenschaft und Praxis.
 
-    **Dr. Magdalena Wischnewski** (UDE), Sozialpsychologin; forscht zur Entwicklung
-    menschenzentrierter, vertrauenswürdiger KI – etwa zur Kalibrierung und Messung von
-    Vertrauen sowie zu KI-Zertifizierungen.
+    **Dr. Magdalena Wischnewski** (UDE), Sozialpsychologin, forscht zu vertrauenswürdiger
+    KI: Wie misst man Vertrauen, wie gelingt es, dass es zur tatsächlichen Verlässlichkeit
+    passt, und was leisten KI-Zertifizierungen?
 
 === "Organisationspsychologie"
 
     **Dr. Alina Tausch** (UW/H), Vertretung der Professur für Personal- und
-    Organisationspsychologie. Sie befasst sich mit der Zusammenarbeit von Menschen und
-    neuen Technologien wie Cobots und KI-Systemen, rückt den Menschen in den Fokus der
-    Technologieimplementierung und setzt einen Schwerpunkt auf die arbeitsorganisatorische
-    Gestaltung von Prozessen.
+    Organisationspsychologie. Sie erforscht die Zusammenarbeit von Menschen mit Cobots
+    und KI-Systemen und wie sich Arbeitsabläufe so gestalten lassen, dass die
+    Beschäftigten bei der Einführung neuer Technik im Mittelpunkt stehen.
 
 === "Praxis"
 
@@ -93,23 +88,21 @@ Dr. Magdalena Wischnewski (UDE).
 
 ## Kompetenzprofil des Verbunds
 
-Der Verbund vereint einander ergänzende Kompetenzen:
+Die Partner ergänzen sich:
 
-* individual- und organisationspsychologische Expertise zur menschzentrierten KI-Nutzung in
-  der Arbeitswelt (UDE und UW/H),
-* technische und nutzendenzentrierte IT-Sicherheits- und Privatheitsforschung (RUB),
-* Anwendungs- und Transferkompetenz des Praxispartners (BoWE).
+* Psychologie der KI-Nutzung im Arbeitsalltag, individuell und organisational (UDE und UW/H)
+* IT-Sicherheit und Privatheit, technisch und aus Sicht der Nutzenden (RUB)
+* Praxiserfahrung und Transfer in die Region (BoWE)
 
-Die Antragstellenden haben bereits in verschiedenen Konstellationen zusammengearbeitet –
-etwa an einer vielzitierten Übersichtsarbeit zum Human-AI Teaming und bei der Gründung des
-HAITeC-Netzwerks. Mehrere von ihnen sind über die gemeinsame Anbindung an das RC Trust
-strukturell vernetzt. Hinzu kommt Erfahrung in der Durchführung BMFTR-geförderter
-Vorhaben.
+Die Forschenden kennen sich aus früheren Projekten, etwa einer vielzitierten
+Übersichtsarbeit zu Human-AI Teaming und der Gründung des HAITeC-Netzwerks. Mehrere
+arbeiten zudem im RC Trust zusammen, und das Team hat bereits BMFTR-geförderte Projekte
+durchgeführt.
 
 ## Assoziierte Partner
 
-Assoziierte Partner binden die Zielgruppen und sichern die branchenübergreifende
-Übertragbarkeit der Ergebnisse.
+Sie bringen die Perspektive der Zielgruppen ein und helfen, die Ergebnisse in
+verschiedenen Branchen nutzbar zu machen.
 
 <div class="grid cards" markdown="1">
 
@@ -117,65 +110,59 @@ Assoziierte Partner binden die Zielgruppen und sichern die branchenübergreifend
 
     ---
 
-    Multiplikator und organisierte Arbeitnehmervertretung. Eröffnet Zugang zu
-    Entscheidungsträger:innen in Organisationen – unter anderem über die KI-Konferenz für
-    Betriebsräte als Plattform für Befragungen und Workshops. Kommuniziert Ergebnisse an
-    Beschäftigte und Betriebsrät:innen und überführt kompetenzfördernde Maßnahmen in eigene
-    Fortbildungsangebote.
+    Gewerkschaft. Vermittelt den Kontakt zu Verantwortlichen in Unternehmen, u. a. über
+    die KI-Konferenz für Betriebsräte, auf der Befragungen und Workshops stattfinden können.
+    Gibt Ergebnisse an Beschäftigte und Betriebsräte weiter und übernimmt
+    Qualifizierungsmaßnahmen in eigene Fortbildungen.
 
 - __HUMAINE Network e.V.__
 
     ---
 
-    Gemeinnütziger Verein und Unternehmensnetzwerk. Ermöglicht Wissenstransfer zu
-    AIaaS-Strategien in die Wirtschaft, insbesondere in die Technologieentwicklung und
-    KI-Implementierung der Metropolregion Ruhr, und bringt die Erkenntnisse in den
-    überregionalen Dialog über menschzentrierte AIaaS-Lösungen ein.
+    Gemeinnütziger Verein und Unternehmensnetzwerk. Bringt Wissen über AIaaS-Strategien
+    zu Unternehmen der Metropolregion Ruhr, die KI entwickeln oder einführen, und trägt die
+    Erkenntnisse in den überregionalen Austausch über menschzentrierte AIaaS-Lösungen.
 
 - __Edgeless Systems GmbH__
 
     ---
 
-    Technologiepartner auf Entwicklerseite. Prüft die Implementierbarkeit der im Projekt
-    entwickelten Schutzmaßnahmen in eigene Produkte und spiegelt damit die technische
-    Anschlussfähigkeit der Ergebnisse an den Markt.
+    Technologiepartner aus der Entwicklung. Prüft, ob sich die im Projekt entwickelten
+    Schutzmaßnahmen in eigene Produkte implementieren lassen, und zeigt damit, wie gut sie
+    im Markt funktionieren.
 
 - __SBG Serious Business Gaming GmbH__
 
     ---
 
-    Dialogpartner auf Anwendungsseite, spezialisiert auf die Vermittlung von Datenschutz-
-    und Cybersicherheitsthemen in Form von Serious Games. Unterstützt die spielbasierten
-    Sensibilisierungs- und Wissenschaftskommunikationsformate des Projekts.
+    Vermittelt Datenschutz und Cybersicherheit in Form von Serious Games. Unterstützt die
+    spielerischen Formate des Projekts zur Sensibilisierung und Wissenschaftskommunikation.
 
 </div>
 
-## Einordnung in Forschungs- und Transfernetzwerke
+## Netzwerke
 
-Das Vorhaben ist in einschlägige Netzwerke der Partner eingebunden, die Verbreitung und
-Anschlussfähigkeit der Ergebnisse verstärken:
+DAISY nutzt bestehende Netzwerke der Partner, um Ergebnisse zu verbreiten und
+weiterzuentwickeln:
 
-* Research Center Trustworthy Data Science and Security (RC Trust) – gemeinsame Anbindung
-  der RUB- und UDE-Forschenden und strukturelle Anschlussstruktur für die
-  Ergebnisweiterentwicklung
+* Research Center Trustworthy Data Science and Security ([RC Trust](https://rc-trust.ai/)) – gemeinsamer
+  Forschungsverbund von RUB und UDE
 * Exzellenzcluster CASA und MPI-SP – bestehende Kooperationen
 * „AI at Work"-Netzwerk – Transfer zwischen Wissenschaft und Praxis
 * HAITeC-Netzwerk – Human-AI Teaming und Kooperation
 * Regionale Wirtschafts- und Innovationsnetzwerke der BoWE
 
-## Nähe zu anderen Vorhaben
+## Abgrenzung zu anderen Projekten
 
-DAISY unterscheidet sich von bestehenden Förderprojekten der Plattform Privatheit durch
-seinen Fokus auf AI-as-a-Service: Da sich diese Dienste der direkten Kontrolle von
-Unternehmen und Beschäftigten entziehen, entstehen neuartige Herausforderungen für
-Datenschutz und Privatheit, die bislang kaum adressiert werden. Kein gefördertes Vorhaben
-hat einen expliziten Fokus auf den Arbeitskontext und die organisationalen
-Rahmenbedingungen und Entscheidungsprozesse der KI-Nutzung.
+Andere Projekte der Plattform Privatheit befassen sich nicht mit AI-as-a-Service. Diese
+Dienste laufen außerhalb der Kontrolle von Unternehmen und Beschäftigten, was neue
+Datenschutz- und Privatheitsrisiken schafft, die bisher kaum untersucht sind. Auch den
+Arbeitskontext und die Frage, wie Organisationen über KI-Nutzung entscheiden, behandelt
+kein anderes gefördertes Vorhaben.
 
-Die größte inhaltliche Nähe besteht zum ebenfalls im Ruhrgebiet verankerten
-Kompetenzzentrum humAIne, das menschenzentrierte KI in der Arbeitswelt erforscht. DAISY
-knüpft an dessen Erkenntnisse zu Menschzentrierung und Implementierungsprozessen an; der
-neuartige Beitrag liegt in der Implementierung und der partizipativen, datenschutzsensiblen
-Einführung **bestehender** statt neu zu entwickelnder KI-Systeme. Mit dem HUMAINE Network
-wird in assoziierter Partnerschaft zusammengearbeitet, mit PrivacyE2E ergeben sich
-Synergien über die RUB.
+Am nächsten steht DAISY das Kompetenzzentrum humAIne, ebenfalls im Ruhrgebiet, das
+menschenzentrierte KI in der Arbeitswelt erforscht. DAISY baut auf dessen Erkenntnissen zur
+Einführung von KI auf. Neu ist der Fokus auf eine partizipative, datenschutzsensible
+Einführung **bestehender** statt neu entwickelter KI-Systeme. Mit dem HUMAINE Network
+besteht eine assoziierte Partnerschaft, mit PrivacyE2E gibt es über die RUB
+Berührungspunkte.
