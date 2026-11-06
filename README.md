@@ -9,7 +9,7 @@ live in the repository, and no Google Fonts or CDN resources are loaded.
 
 ## Development
 
-The Python environment lives in `.venv/` (not checked in).
+The Python environment lives in `.venv/` (not checked in). Python 3.11 or newer is required.
 
 ```bash
 python3 -m venv .venv            # once, if the environment is missing
@@ -40,28 +40,27 @@ The German and English sites are built separately from their respective folders:
 
 The [Zensical language selector](https://zensical.org/docs/setup/language/#site-language-selector)
 links to existing translated sites; it does not build the translated content. This project
-uses two configurations so each build has its own language, navigation, and metadata.
-The build command above runs both configurations and combines their sitemaps.
+stores German settings and English overrides in `zensical.toml`. The build script derives a
+temporary English configuration from those settings, builds each language, and combines
+their sitemaps. Both builds inherit the same theme and extension settings.
 
 Both folders must use the same file names so the language switcher can map each page to its
 translation. Links between pages are relative (e.g. `project.md`), so they stay within the
 current language. Both language folders link their `assets/` directory to the shared
-repository-level `assets/` directory. Both Zensical configurations watch that directory so
+repository-level `assets/` directory. The shared Zensical settings watch that directory so
 its files are included in each build. Checkouts must preserve symbolic links.
-The corresponding Zensical settings and translated navigation are in `zensical.toml` and
-`zensical.en.toml`.
+The translated navigation and metadata are in `zensical.toml` under
+`[project.extra.localization.en]`.
 
 ## Maintaining pages
 
 | Task | Location |
 | --- | --- |
-| German navigation and theme options | `zensical.toml` |
-| English navigation and theme options | `zensical.en.toml` |
+| German navigation, metadata, and shared theme options | `zensical.toml` |
+| English navigation and metadata | `zensical.toml`, under `[project.extra.localization.en]` |
 | Content | `docs/de/*.md` (German), `docs/en/*.md` (English) – same file names in both folders |
 | Colors, hero banner, special blocks | `assets/styles/extra.css` |
 | Images and favicon | `assets/img/` |
-
-Keep both language configurations in sync when changing shared theme settings.
 
 Markdown extensions in use: admonitions (`!!!`), collapsible blocks (`???`),
 tabs (`=== "Tab"`), grid cards (`<div class="grid cards" markdown="1">`),
@@ -71,7 +70,7 @@ definition lists (`def_list`), `attr_list` and `md_in_html`.
 
 The site deliberately contains placeholders that must be replaced before going live:
 
-- `site_url` in `zensical.toml` and `zensical.en.toml` (domain)
+- `site_url` in `zensical.toml` (domain)
 - Contact e-mail in `docs/*/contact.md` (currently `steffen.becker@rub.de`)
 - Legal notice (Impressum): responsible body and a valid postal address (§ 5 TMG)
 - Logo and image rights, and approval of the persons named

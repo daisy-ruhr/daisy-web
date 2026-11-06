@@ -1,11 +1,14 @@
 import functools
 import http.server
 import threading
+import tomllib
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.request import urlopen
 from urllib.parse import urljoin, urlsplit
+
+from scripts.site import english_config
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,6 +45,10 @@ class RenderedPage(HTMLParser):
         self.resources = []
         self.title = ""
         self.in_title = False
+        self.ellipsis_depth = 0
+        self.ellipsis_text = ""
+        self.labels = set()
+        self.palette_labels = {}
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -57,17 +64,62 @@ class RenderedPage(HTMLParser):
             self.resources.append(attrs["href"])
         elif tag == "img" and "src" in attrs:
             self.resources.append(attrs["src"])
+        elif tag == "input" and attrs.get("name") == "__palette":
+            self.palette_labels[attrs["data-md-color-scheme"]] = attrs["aria-label"]
+        if self.ellipsis_depth:
+            self.ellipsis_depth += 1
+        elif tag == "span" and "md-ellipsis" in attrs.get("class", "").split():
+            self.ellipsis_depth = 1
+            self.ellipsis_text = ""
 
     def handle_data(self, data):
         if self.in_title:
             self.title += data
+        if self.ellipsis_depth:
+            self.ellipsis_text += data
 
     def handle_endtag(self, tag):
         if tag == "title":
             self.in_title = False
+        if self.ellipsis_depth:
+            self.ellipsis_depth -= 1
+            if not self.ellipsis_depth:
+                self.labels.add(self.ellipsis_text.strip())
 
 
 class SiteTests(unittest.TestCase):
+    def test_english_config_inherits_shared_settings(self):
+        with (ROOT / "zensical.toml").open("rb") as file:
+            german = tomllib.load(file)["project"]
+        english = english_config()
+        for key in ("site_author", "extra_css", "watch", "markdown_extensions", "plugins"):
+            self.assertEqual(english[key], german[key], key)
+        for key in ("variant", "font", "favicon", "custom_dir", "features"):
+            self.assertEqual(english["theme"][key], german["theme"][key], key)
+        for original, localized in zip(german["theme"]["palette"], english["theme"]["palette"], strict=True):
+            self.assertEqual(original["scheme"], localized["scheme"])
+            self.assertEqual(original["primary"], localized["primary"])
+            self.assertEqual(original["accent"], localized["accent"])
+            self.assertEqual(original["toggle"]["icon"], localized["toggle"]["icon"])
+        self.assertEqual(english["site_url"], "https://daisy.ruhr/en/")
+
+    def test_localized_navigation_and_palette(self):
+        for prefix, labels, palette in (
+            ("", {"Start", "Das Projekt", "Wissenschaftlicher Ansatz", "Arbeitspakete",
+                  "Ergebnisse & Transfer", "Rechtlicher Rahmen", "Konsortium & Netzwerk",
+                  "Kontakt", "Glossar", "Über DAISY", "Impressum", "Datenschutz"},
+             {"slate": "Zu hellem Modus wechseln", "default": "Zu dunklem Modus wechseln"}),
+            ("en/", {"Home", "The Project", "Scientific Approach", "Work Packages",
+                     "Results & Transfer", "Legal Framework", "Consortium & Network",
+                     "Contact", "Glossary", "About DAISY", "Legal Notice", "Privacy Policy"},
+             {"slate": "Switch to light mode", "default": "Switch to dark mode"}),
+        ):
+            with self.subTest(language=prefix or "de"):
+                parser = RenderedPage()
+                parser.feed((SITE / prefix / "index.html").read_text(encoding="utf-8"))
+                self.assertTrue(labels.issubset(parser.labels), labels - parser.labels)
+                self.assertEqual(parser.palette_labels, palette)
+
     def test_theme_configuration_and_assets(self):
         for language, prefix, site_name, description in (
             ("de", "", "Projekt DAISY", "Datenschutz und Arbeitnehmendeninteressen in AI-as-a-Service-Systemen"),

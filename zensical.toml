@@ -30,6 +30,28 @@ alternate = [
   { name = "English", link = "/en/", lang = "en" },
 ]
 
+[project.extra.localization.en]
+site_name = "DAISY Project"
+site_description = "Data Protection and Employee Interests in AI-as-a-Service Systems"
+docs_dir = "docs/en"
+site_dir = "site/en"
+nav = [
+  { "Home" = "index.md" },
+  { "The Project" = "project.md" },
+  { "Scientific Approach" = "approach.md" },
+  { "Work Packages" = "work-packages.md" },
+  { "Results & Transfer" = "results.md" },
+  { "Legal Framework" = "legal-framework.md" },
+  { "Consortium & Network" = "network.md" },
+  { "Contact" = "contact.md" },
+  { "Glossary" = "glossary.md" },
+  { "About DAISY" = [
+    { "Legal Notice" = "Impressum.md" },
+    { "Privacy Policy" = "Datenschutz.md" },
+  ] },
+]
+palette_toggle_names = { slate = "Switch to light mode", default = "Switch to dark mode" }
+
 [project.plugins.search]
 enabled = true
 
