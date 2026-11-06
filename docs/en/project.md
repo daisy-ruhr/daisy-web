@@ -23,7 +23,7 @@ order to protect citizens' privacy where they spend a large part of their day: a
 
 !!! quote "Core idea"
     Bringing the mental models of AIaaS on the decision-maker and user side together with
-    the actual properties of the systems – within data protection guardrails. This is the
+    the actual properties of the systems while preserving privacy and performance. This is the
     challenge the entire project is built around.
 
 Specifically, DAISY addresses five goals:

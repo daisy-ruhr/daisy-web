@@ -4,6 +4,18 @@ DAISY verbindet Informatik, Psychologie und Praxis. Zum Verbund gehören drei
 wissenschaftliche Partner und ein Praxispartner; vier assoziierte Partner wirken als
 Multiplikatoren und Dialogpartner ohne eigene Förderung mit.
 
+## Das Team
+
+![Konsortiumsmitglieder DAISY](assets/img/daisy_staff.webp){ loading=lazy }
+/// caption
+Im Foto von links nach rechts:
+Dr. Steffen Becker (RUB),
+Gregor Mähler (WirtschaftsEntwicklungsGesellschaft Bochum mbH),
+Dr. Greta Ontrup (UDE),
+Dr. Alina Tausch (Uni Witten-Herdecke),
+Dr. Magdalena Wischnewski (UDE).
+///
+
 ## Verbundpartner
 
 <div class="grid cards" markdown="1">

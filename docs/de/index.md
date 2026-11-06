@@ -74,6 +74,13 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 
 ## Projekt auf einen Blick
 
+<div class="daisy-stats">
+  <div class="daisy-stat"><span class="daisy-stat-value">36</span><span class="daisy-stat-label">Monate</span><span class="daisy-stat-note">09/2026 – 08/2029</span></div>
+  <div class="daisy-stat"><span class="daisy-stat-value">5</span><span class="daisy-stat-label">Arbeitspakete</span></div>
+  <div class="daisy-stat"><span class="daisy-stat-value">4</span><span class="daisy-stat-label">Konsortialpartner</span></div>
+  <div class="daisy-stat"><span class="daisy-stat-value">4</span><span class="daisy-stat-label">Assoziierte Partner</span></div>
+</div>
+
 **Verbundkoordination**
 : Ruhr-Universität Bochum (RUB)
 
@@ -82,12 +89,6 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 
 **Praxispartner**
 : WirtschaftsEntwicklungsGesellschaft Bochum mbH (BoWE)
-
-**Laufzeit**
-: 1. September 2026 – 31. August 2029
-
-**Struktur**
-: 5 Arbeitspakete, 4 Konsortialpartner, 4 assoziierte Partner
 
 **Region**
 : Bochum und Ruhrgebiet, mit überregionaler Ausstrahlung

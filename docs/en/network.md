@@ -4,6 +4,18 @@ DAISY connects computer science, psychology and practice. The consortium compris
 scientific partners and one practice partner; four associated partners contribute as
 multipliers and dialogue partners without funding of their own.
 
+## Project team
+
+![Consortium members of DAISY](assets/img/daisy_staff.webp){ loading=lazy }
+/// caption
+Photo left to right:
+Dr. Steffen Becker (RUB),
+Gregor Mähler (WirtschaftsEntwicklungsGesellschaft Bochum mbH),
+Dr. Greta Ontrup (UDE),
+Dr. Alina Tausch (Uni Witten-Herdecke),
+Dr. Magdalena Wischnewski (UDE).
+///
+
 ## Consortium partners
 
 <div class="grid cards" markdown="1">

@@ -9,8 +9,9 @@ hide:
 
 **Data Protection and Employee Interests in AI-as-a-Service Systems**
 
-Companies mostly buy AI rather than develop it. DAISY aims to research services that are
-practical while minimizing data protection risks: technically, psychologically and
+Companies mostly buy AI rather than develop it themselves.  
+DAISY aims to research services that are
+practical while minimizing privacy risks: technically, psychologically and
 organizationally, tested in everyday business operations.
 
 <div class="daisy-hero-actions" markdown="1">
@@ -24,11 +25,11 @@ organizationally, tested in everyday business operations.
 
 Many companies use artificial intelligence as a service: employees query an internally
 configured chatbot whose language model is operated in the cloud by a third-party provider.
-This is cheap, fast and requires hardly any in-house AI expertise.
+This is cheap, fast,and requires hardly any in-house AI expertise.
 
 What remains open is what happens to employees' data, who bears responsibility and where
 the limits of the system lie. These risks are rarely intuitive for users and
-decision-makers – they differ significantly from the commercial chatbots many people know
+decision-makers, as they differ significantly from the commercial chatbots people know
 from their private lives.
 
 DAISY starts exactly there. As a consortium of computer science, psychology and practice,
@@ -44,8 +45,7 @@ transparent way. The legal framework is taken into account from the very beginni
 
     ---
 
-    We build on open-source tools and test configurations that address typical data
-    protection risks of AIaaS. Interactive demonstrators make them tangible.
+    We build on open-source tools and test configurations that address typical privacy risks of AIaaS. Interactive demonstrators make them tangible.
 
 - :material-brain:{ .lg .middle } __Sound insights__
 
@@ -72,6 +72,13 @@ transparent way. The legal framework is taken into account from the very beginni
 
 ## The project at a glance
 
+<div class="daisy-stats">
+  <div class="daisy-stat"><span class="daisy-stat-value">36</span><span class="daisy-stat-label">Months</span><span class="daisy-stat-note">09/2026 – 08/2029</span></div>
+  <div class="daisy-stat"><span class="daisy-stat-value">5</span><span class="daisy-stat-label">Work packages</span></div>
+  <div class="daisy-stat"><span class="daisy-stat-value">4</span><span class="daisy-stat-label">Consortium partners</span></div>
+  <div class="daisy-stat"><span class="daisy-stat-value">4</span><span class="daisy-stat-label">Associated partners</span></div>
+</div>
+
 **Consortium coordination**
 : Ruhr University Bochum (RUB)
 
@@ -80,12 +87,6 @@ transparent way. The legal framework is taken into account from the very beginni
 
 **Practice partner**
 : WirtschaftsEntwicklungsGesellschaft Bochum mbH (BoWE)
-
-**Duration**
-: 1 September 2026 – 31 August 2029
-
-**Structure**
-: 5 work packages, 4 consortium partners, 4 associated partners
 
 **Region**
 : Bochum and the Ruhr area, with nationwide impact

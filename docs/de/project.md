@@ -26,8 +26,7 @@ Großteil ihres Tages verbringen: am Arbeitsplatz.
 
 !!! quote "Kernidee"
     Die mentalen Modelle von AIaaS auf Entscheider- und Nutzungsseite mit den
-    tatsächlichen Systemeigenschaften zusammenzubringen – innerhalb datenschutzrechtlicher
-    Leitplanken. Das ist die Herausforderung, an der das gesamte Projekt ansetzt.
+    tatsächlichen Systemeigenschaften zusammenzubringen und gleichzeitig sicher Datenschutz und Performanz gewährleisten zu können. Das ist die Herausforderung, an der das gesamte Projekt ansetzt.
 
 Konkret adressiert DAISY fünf Ziele:
 

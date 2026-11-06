@@ -57,6 +57,6 @@ Demokratie" ("Digital.Sicher.Souverän")
 
 **Funding reference number:** 16KIS2669K
 
-![Funded by the Federal Ministry of Research, Technology and Space (BMFTR)](assets/img/bmftr.png){ loading=lazy, width="250"  }
+![Funded by the Federal Ministry of Research, Technology and Space (BMFTR)](assets/img/bmftr_en.png){ loading=lazy, width="250"  }
 
 </div>

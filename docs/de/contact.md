@@ -14,10 +14,6 @@
 
 **E-Mail:** [steffen.becker@rub.de](mailto:steffen.becker@rub.de)
 
-## Das Team
-
-![Konsortiumsmitglieder DAISY](assets/img/daisy_staff.jpg){ loading=lazy }
-
 ## Ansprechpersonen nach Thema
 
 === "Technik & PoCs"
@@ -57,6 +53,6 @@ Demokratie" („Digital.Sicher.Souverän")
 
 **Förderkennzeichen:** 16KIS2669K
 
-![Gefördert durch das Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR)](assets/img/bmftr.png){ loading=lazy, width="250"  }
+![Gefördert durch das Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR)](assets/img/bmftr_de.png){ loading=lazy, width="250"  }
 
 </div>
