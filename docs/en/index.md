@@ -23,6 +23,14 @@ organizationally, tested in everyday business operations.
 
 </div>
 
+## Latest news
+
+<div class="daisy-latest-news" data-news-url="news/" data-news-error="The latest news could not be loaded." data-news-empty="There are no news posts yet." aria-live="polite"></div>
+
+[All news](news/index.md){ .md-button }
+
+## Project summary
+
 Many companies use artificial intelligence as a service: employees query an internally
 configured chatbot whose language model is operated in the cloud by a third-party provider.
 This is cheap, fast,and requires hardly any in-house AI expertise.

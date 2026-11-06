@@ -22,6 +22,14 @@ erprobt im Unternehmensalltag.
 
 </div>
 
+## Aktuelles
+
+<div class="daisy-latest-news" data-news-url="news/" data-news-error="Die aktuellen Meldungen konnten nicht geladen werden." data-news-empty="Es gibt noch keine Meldungen." aria-live="polite"></div>
+
+[Alle Meldungen](news/index.md){ .md-button }
+
+## Das Projekt auf einen Blick
+
 Viele Unternehmen nutzen künstliche Intelligenz als Dienstleistung: Beschäftigte
 fragen einen organisationsintern konfigurierten Chatbot ab, dessen Sprachmodell von einem
 Drittanbieter in der Cloud betrieben wird. Das ist günstig, schnell und braucht kaum

@@ -6,9 +6,11 @@ site_url = "https://daisy.ruhr/de/"
 docs_dir = "docs/de"
 site_dir = "site/de"
 extra_css = ["assets/styles/extra.css"]
+extra_javascript = ["assets/javascripts/news.js"]
 watch = ["overrides/assets", "docs/shared"]
 nav = [
   { "Start" = "index.md" },
+  { "News" = "news/index.md" },
   { "Das Projekt" = "project.md" },
   { "Wissenschaftlicher Ansatz" = "approach.md" },
   { "Arbeitspakete" = "work-packages.md" },
@@ -33,6 +35,15 @@ alternate = [
 
 [project.plugins.search]
 enabled = true
+
+[project.plugins.blog]
+blog_dir = "news"
+post_url_format = "{slug}"
+post_readtime = false
+archive = false
+categories = false
+authors = false
+pagination = false
 
 [project.theme]
 language = "de"

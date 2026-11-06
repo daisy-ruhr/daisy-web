@@ -2,6 +2,8 @@ import functools
 import http.server
 import json
 import re
+import shutil
+import subprocess
 import tempfile
 import threading
 import tomllib
@@ -13,9 +15,29 @@ from urllib.request import urlopen
 from urllib.parse import urljoin, urlsplit
 
 import markdown
+import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
+
+
+def post_metadata(source, language):
+    if source.relative_to(ROOT / "docs" / language).parts[:2] == ("news", "posts"):
+        return yaml.safe_load(source.read_text(encoding="utf-8").split("---", 2)[1])
+    return None
+
+
+def published_source(source, language):
+    metadata = post_metadata(source, language)
+    return not metadata or not metadata.get("draft", False)
+
+
+def output_page(source, language):
+    relative = source.relative_to(ROOT / "docs" / language)
+    metadata = post_metadata(source, language)
+    if metadata is not None:
+        return Path("news") / metadata["slug"]
+    return relative.parent if relative.name == "index.md" else relative.with_suffix("")
 
 
 class PageLinks(HTMLParser):
@@ -98,7 +120,7 @@ class SiteTests(unittest.TestCase):
             german = tomllib.load(file)["project"]
         with (ROOT / "zensical.en.toml").open("rb") as file:
             english = tomllib.load(file)["project"]
-        for key in ("site_author", "extra_css", "watch", "markdown_extensions", "plugins"):
+        for key in ("site_author", "extra_css", "extra_javascript", "watch", "markdown_extensions", "plugins"):
             self.assertEqual(english[key], german[key], key)
         for key in ("variant", "font", "favicon", "custom_dir", "features"):
             self.assertEqual(english["theme"][key], german["theme"][key], key)
@@ -111,11 +133,11 @@ class SiteTests(unittest.TestCase):
 
     def test_localized_navigation_and_palette(self):
         for prefix, labels, palette in (
-            ("de/", {"Start", "Das Projekt", "Wissenschaftlicher Ansatz", "Arbeitspakete",
+            ("de/", {"Start", "Aktuelles", "Das Projekt", "Wissenschaftlicher Ansatz", "Arbeitspakete",
                   "Ergebnisse & Transfer", "Publikationen", "Rechtlicher Rahmen", "Konsortium & Netzwerk",
                   "Kontakt", "Glossar", "Über DAISY", "Impressum", "Datenschutz"},
              {"slate": "Zu hellem Modus wechseln", "default": "Zu dunklem Modus wechseln"}),
-            ("en/", {"Home", "The Project", "Scientific Approach", "Work Packages",
+            ("en/", {"Home", "News", "The Project", "Scientific Approach", "Work Packages",
                      "Results & Transfer", "Publications", "Legal Framework", "Consortium & Network",
                      "Contact", "Glossary", "About DAISY", "Legal Notice", "Privacy Policy"},
              {"slate": "Switch to light mode", "default": "Switch to dark mode"}),
@@ -144,8 +166,9 @@ class SiteTests(unittest.TestCase):
                 self.assertTrue((SITE / prefix / "assets/img" / own_image).is_file())
 
                 for source in sorted((ROOT / "docs" / language).rglob("*.md")):
-                    relative = source.relative_to(ROOT / "docs" / language)
-                    page_path = relative.parent if relative.name == "index.md" else relative.with_suffix("")
+                    if not published_source(source, language):
+                        continue
+                    page_path = output_page(source, language)
                     page_url = "" if str(page_path) == "." else f"{page_path.as_posix()}/"
                     file = SITE / prefix / page_path / "index.html"
                     parser = RenderedPage()
@@ -172,7 +195,17 @@ class SiteTests(unittest.TestCase):
         self.assertTrue(german_pages)
 
         for source in sorted(german_pages):
-            page_path = source.parent if source.name == "index.md" else source.with_suffix("")
+            german_source = ROOT / "docs/de" / source
+            english_source = ROOT / "docs/en" / source
+            german_post = post_metadata(german_source, "de")
+            english_post = post_metadata(english_source, "en")
+            if german_post is not None:
+                for key in ("slug", "date", "draft"):
+                    self.assertEqual(german_post.get(key), english_post.get(key), (source, key))
+            if not published_source(german_source, "de"):
+                continue
+            page_path = output_page(german_source, "de")
+            self.assertEqual(page_path, output_page(english_source, "en"))
             page_url = "" if str(page_path) == "." else f"{page_path.as_posix()}/"
             for language in ("de", "en"):
                 prefix = f"{language}/"
@@ -211,11 +244,13 @@ class SiteTests(unittest.TestCase):
         urls = {entry.text for entry in sitemap.findall("s:url/s:loc", namespace)}
         for language in ("de", "en"):
             for source in (ROOT / "docs" / language).rglob("*.md"):
+                if not published_source(source, language):
+                    continue
                 relative = source.relative_to(ROOT / "docs" / language)
-                page = relative.parent if relative.name == "index.md" else relative.with_suffix("")
+                page = output_page(source, language)
                 suffix = "" if page == Path(".") else f"{page.as_posix()}/"
                 self.assertIn(f"https://daisy.ruhr/{language}/{suffix}", urls)
-                if language == "de" and suffix:
+                if language == "de" and suffix and relative.parts[0] != "news":
                     old_page = SITE / page / "index.html"
                     content = old_page.read_text(encoding="utf-8")
                     parser = RedirectPage()
@@ -234,6 +269,48 @@ class SiteTests(unittest.TestCase):
                 search = json.loads((SITE / language / "search.json").read_text(encoding="utf-8"))
                 self.assertIn(language, search["config"]["lang"])
                 self.assertTrue(any(item["location"].startswith("results/") for item in search["items"]))
+
+    def test_news_pages(self):
+        for language, title in (("de", "KI in Unternehmen sicher nutzen"),
+                                ("en", "Using AI safely in companies")):
+            with self.subTest(language=language):
+                overview = (SITE / language / "news/index.html").read_text(encoding="utf-8")
+                post = (SITE / language / "news/using-ai-safely/index.html").read_text(encoding="utf-8")
+                home = (SITE / language / "index.html").read_text(encoding="utf-8")
+                self.assertIn('class="md-post md-post--excerpt"', overview)
+                self.assertIn('datetime="2026-09-29', overview)
+                self.assertIn(title, overview)
+                self.assertIn(title, post)
+                self.assertIn("https://rc-trust.ai/news/news-detail/using-ai-safely-in-companies", post)
+                self.assertIn("https://news.rub.de/presseinformationen/wissenschaft/2026-09-29-projektstart-ki-unternehmen-sicher-nutzen", post)
+                self.assertIn("assets/img/daisy_staff.webp", post)
+                self.assertIn('class="daisy-latest-news"', home)
+                self.assertIn("assets/javascripts/news.js", home)
+                search = json.loads((SITE / language / "search.json").read_text(encoding="utf-8"))
+                self.assertTrue(any(item["location"].startswith("news/using-ai-safely/")
+                                    for item in search["items"]))
+
+    def test_news_chronology_and_drafts(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project = Path(directory)
+            shutil.copytree(ROOT / "docs", project / "docs")
+            shutil.copytree(ROOT / "overrides", project / "overrides")
+            shutil.copyfile(ROOT / "zensical.toml", project / "zensical.toml")
+            posts = project / "docs/de/news/posts"
+            for day in range(2, 7):
+                draft = "draft: true\n" if day == 6 else ""
+                (posts / f"test-{day}.md").write_text(
+                    f"---\ndate: 2026-09-{day:02d}\nslug: test-{day}\n{draft}---\n\n"
+                    f"# Test {day}\n\nIntroduction.\n\n<!-- more -->\n\nDetails.\n",
+                    encoding="utf-8",
+                )
+            subprocess.run([str(ROOT / ".venv/bin/zensical"), "build", "--strict"],
+                           cwd=project, check=True, capture_output=True, text=True)
+            overview = (project / "site/de/news/index.html").read_text(encoding="utf-8")
+            dates = re.findall(r'<time datetime="(2026-09-\d\d)', overview)
+            self.assertEqual(dates, ["2026-09-29"] + [f"2026-09-{day:02d}" for day in range(5, 1, -1)])
+            self.assertNotIn("Test 6", overview)
+            self.assertFalse((project / "site/de/news/test-6/index.html").exists())
 
     def test_shared_publications(self):
         class PublicationsParser(HTMLParser):
@@ -321,8 +398,9 @@ class SiteTests(unittest.TestCase):
             try:
                 base = f"http://127.0.0.1:{server.server_port}/"
                 for source in sorted((ROOT / "docs/de").rglob("*.md")):
-                    relative = source.relative_to(ROOT / "docs/de")
-                    page_path = relative.parent if relative.name == "index.md" else relative.with_suffix("")
+                    if not published_source(source, "de"):
+                        continue
+                    page_path = output_page(source, "de")
                     page_url = "" if str(page_path) == "." else f"{page_path.as_posix()}/"
                     for prefix in ("de/", "en/"):
                         current = urljoin(base, prefix + page_url)

@@ -93,6 +93,22 @@ Add the corresponding `tech`, `psy`, or `inter` CSS class alongside
 DOI buttons should link to the corresponding `https://doi.org/` URL. The examples are
 not real publications. Changes to the shared file are watched by the preview servers.
 
+### News
+
+The Zensical blog builds the news overview at `/de/news/` and `/en/news/` in reverse
+chronological order. To add a post, create matching Markdown files under
+`docs/de/news/posts/` and `docs/en/news/posts/`. Give both versions the same `date`
+(`YYYY-MM-DD`) and explicit, URL-safe `slug` in their front matter; the shared slug is
+necessary for language switching. Use a unique slug for each article, and keep it stable
+after publication. Add `<!-- more -->` after the introduction to set the overview excerpt.
+Individual posts must not be added to navigation. Set `draft: true` in both versions to
+preview a post without publishing it, then remove it from both versions when ready.
+
+The home page loads up to three posts from the generated news overview, so it stays in
+sync with the blog without maintaining a separate list. This requires JavaScript and an
+HTTP server (including Zensical's preview); the link to all news remains available
+without JavaScript.
+
 ## To clarify before publishing
 
 The site deliberately contains placeholders that must be replaced before going live:
