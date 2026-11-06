@@ -10,9 +10,6 @@ from pathlib import Path
 from urllib.request import urlopen
 from urllib.parse import urljoin, urlsplit
 
-from scripts.site import english_config
-
-
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
 
@@ -92,10 +89,11 @@ class RenderedPage(HTMLParser):
 
 
 class SiteTests(unittest.TestCase):
-    def test_english_config_inherits_shared_settings(self):
+    def test_language_configs_share_theme_settings(self):
         with (ROOT / "zensical.toml").open("rb") as file:
             german = tomllib.load(file)["project"]
-        english = english_config()
+        with (ROOT / "zensical.en.toml").open("rb") as file:
+            english = tomllib.load(file)["project"]
         for key in ("site_author", "extra_css", "watch", "markdown_extensions", "plugins"):
             self.assertEqual(english[key], german[key], key)
         for key in ("variant", "font", "favicon", "custom_dir", "features"):
@@ -130,11 +128,16 @@ class SiteTests(unittest.TestCase):
             ("en", "en/", "DAISY Project", "Data Protection and Employee Interests in AI-as-a-Service Systems"),
         ):
             with self.subTest(language=language):
-                for source in (ROOT / "assets").rglob("*"):
-                    if source.is_file():
-                        output = SITE / prefix / "assets" / source.relative_to(ROOT / "assets")
-                        self.assertTrue(output.is_file(), f"Missing generated asset: {output}")
-                        self.assertEqual(source.read_bytes(), output.read_bytes())
+                for assets in (ROOT / "overrides" / "assets", ROOT / "docs" / language / "assets"):
+                    self.assertTrue(assets.is_dir())
+                    self.assertFalse(assets.is_symlink())
+                    for source in assets.rglob("*"):
+                        if source.is_file():
+                            output = SITE / prefix / "assets" / source.relative_to(assets)
+                            self.assertTrue(output.is_file(), f"Missing generated asset: {output}")
+                            self.assertEqual(source.read_bytes(), output.read_bytes())
+                own_image = f"bmftr_{language}.png"
+                self.assertTrue((SITE / prefix / "assets/img" / own_image).is_file())
 
                 for source in sorted((ROOT / "docs" / language).rglob("*.md")):
                     relative = source.relative_to(ROOT / "docs" / language)
@@ -149,8 +152,8 @@ class SiteTests(unittest.TestCase):
                     self.assertEqual(parser.body.get("data-md-color-scheme"), "slate")
                     self.assertEqual(parser.body.get("data-md-color-primary"), "custom")
                     self.assertEqual(parser.body.get("data-md-color-accent"), "custom")
-                    self.assertTrue(any(url.endswith("assets/styles/extra.css") for url in parser.resources))
-                    self.assertTrue(any(url.endswith("assets/img/favicon.svg") for url in parser.resources))
+                    self.assertTrue(any(url.endswith("assets/common/styles/extra.css") for url in parser.resources))
+                    self.assertTrue(any(url.endswith("assets/common/img/favicon.svg") for url in parser.resources))
                     for resource in parser.resources:
                         url = urlsplit(urljoin(f"https://example.org/{prefix}{page_url}", resource))
                         if url.netloc == "example.org":

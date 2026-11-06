@@ -6,7 +6,7 @@ multipliers and dialogue partners without funding of their own.
 
 ## Project team
 
-![Consortium members of DAISY](assets/img/daisy_staff.webp){ loading=lazy }
+![Consortium members of DAISY](assets/common/img/daisy_staff.webp){ loading=lazy }
 /// caption
 Photo left to right:
 Dr. Steffen Becker (RUB),

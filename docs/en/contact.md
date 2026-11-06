@@ -16,7 +16,7 @@
 
 ## The team
 
-![DAISY consortium members](assets/img/daisy_staff.webp){ loading=lazy }
+![DAISY consortium members](assets/common/img/daisy_staff.webp){ loading=lazy }
 
 ## Contacts by topic
 
