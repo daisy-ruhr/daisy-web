@@ -24,7 +24,7 @@ ihrer Domain geladen.
 ## Hosting
 
 Die Website wird über GitHub Pages ausgeliefert. Dabei verarbeitet der Hoster
-( GitHub Inc. , USA) aus technischen Gründen Zugriffsdaten in Server-Logfiles
+(GitHub Inc. , USA) aus technischen Gründen Zugriffsdaten in Server-Logfiles
 (IP-Adresse, Zeitpunkt, angeforderte Datei, Browsertyp). Rechtsgrundlage ist Art. 6 Abs. 1
 S. 1 lit. f DSGVO – berechtigtes Interesse am sicheren Betrieb. Details regelt die
 Datenschutzerklärung von GitHub.

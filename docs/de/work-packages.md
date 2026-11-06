@@ -1,8 +1,8 @@
 # Arbeitspakete
 
-Das Gesamtprojekt gliedert sich in fünf Arbeitspakete (APs). Sie umfassen 43
-Unterarbeitspakete und zahlen auf 26 projektübergreifende Meilensteine ein. Das Projekt
-läuft vom 1. September 2026 bis zum 31. August 2029. Hier finden Sie einen Überblick:
+Das Gesamtprojekt gliedert sich in fünf Arbeitspakete (APs).  
+Sie umfassen 43 Unterarbeitspakete, die zu 26 projektübergreifenden Meilensteinen führen.  
+Das Projekt läuft vom 1. September 2026 bis zum 31. August 2029. Hier finden Sie einen Überblick:
 
 | AP | Titel | Verantwortung |
 |---|---|---|

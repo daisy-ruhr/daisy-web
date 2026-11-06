@@ -1,8 +1,10 @@
 import functools
 import http.server
+import json
 import threading
 import tomllib
 import unittest
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.request import urlopen
@@ -20,6 +22,7 @@ class PageLinks(HTMLParser):
         super().__init__()
         self.in_header = False
         self.language_links = {}
+        self.language_targets = {}
         self.alternates = {}
 
     def handle_starttag(self, tag, attrs):
@@ -28,6 +31,7 @@ class PageLinks(HTMLParser):
             self.in_header = True
         elif tag == "a" and self.in_header and "md-select__link" in attrs.get("class", "").split():
             self.language_links[attrs["hreflang"]] = attrs["href"]
+            self.language_targets[attrs["hreflang"]] = attrs.get("target")
         elif tag == "link" and attrs.get("rel") == "alternate" and "hreflang" in attrs:
             self.alternates[attrs["hreflang"]] = attrs["href"]
 
@@ -105,7 +109,7 @@ class SiteTests(unittest.TestCase):
 
     def test_localized_navigation_and_palette(self):
         for prefix, labels, palette in (
-            ("", {"Start", "Das Projekt", "Wissenschaftlicher Ansatz", "Arbeitspakete",
+            ("de/", {"Start", "Das Projekt", "Wissenschaftlicher Ansatz", "Arbeitspakete",
                   "Ergebnisse & Transfer", "Rechtlicher Rahmen", "Konsortium & Netzwerk",
                   "Kontakt", "Glossar", "Über DAISY", "Impressum", "Datenschutz"},
              {"slate": "Zu hellem Modus wechseln", "default": "Zu dunklem Modus wechseln"}),
@@ -122,7 +126,7 @@ class SiteTests(unittest.TestCase):
 
     def test_theme_configuration_and_assets(self):
         for language, prefix, site_name, description in (
-            ("de", "", "Projekt DAISY", "Datenschutz und Arbeitnehmendeninteressen in AI-as-a-Service-Systemen"),
+            ("de", "de/", "Projekt DAISY", "Datenschutz und Arbeitnehmendeninteressen in AI-as-a-Service-Systemen"),
             ("en", "en/", "DAISY Project", "Data Protection and Employee Interests in AI-as-a-Service Systems"),
         ):
             with self.subTest(language=language):
@@ -164,14 +168,15 @@ class SiteTests(unittest.TestCase):
             page_path = source.parent if source.name == "index.md" else source.with_suffix("")
             page_url = "" if str(page_path) == "." else f"{page_path.as_posix()}/"
             for language in ("de", "en"):
-                prefix = "en/" if language == "en" else ""
+                prefix = f"{language}/"
                 file = SITE / prefix / page_path / "index.html"
                 with self.subTest(page=str(source), language=language):
                     parser = PageLinks()
                     parser.feed(file.read_text(encoding="utf-8"))
                     self.assertEqual(set(parser.language_links), {"de", "en"})
+                    self.assertEqual(set(parser.language_targets.values()), {"_self"})
                     self.assertEqual(set(parser.alternates), {"de", "en"})
-                    for target, target_prefix in (("de", ""), ("en", "en/")):
+                    for target, target_prefix in (("de", "de/"), ("en", "en/")):
                         # Exercise the relative links both at the domain root and under a URL prefix.
                         for base in ("https://example.org/", "https://example.org/preview/"):
                             current = urljoin(base, prefix + page_url)
@@ -182,6 +187,46 @@ class SiteTests(unittest.TestCase):
                             "/" + target_prefix + page_url,
                         )
                         self.assertTrue((SITE / target_prefix / page_path / "index.html").is_file())
+
+    def test_sitemap_and_legacy_redirects(self):
+        class RedirectPage(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.target = None
+
+            def handle_starttag(self, tag, attrs):
+                attrs = dict(attrs)
+                if tag == "meta" and attrs.get("http-equiv", "").lower() == "refresh":
+                    self.target = attrs["content"].split("url=", 1)[1]
+
+        namespace = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+        sitemap = ET.parse(SITE / "sitemap.xml")
+        urls = {entry.text for entry in sitemap.findall("s:url/s:loc", namespace)}
+        for language in ("de", "en"):
+            for source in (ROOT / "docs" / language).rglob("*.md"):
+                relative = source.relative_to(ROOT / "docs" / language)
+                page = relative.parent if relative.name == "index.md" else relative.with_suffix("")
+                suffix = "" if page == Path(".") else f"{page.as_posix()}/"
+                self.assertIn(f"https://daisy.ruhr/{language}/{suffix}", urls)
+                if language == "de" and suffix:
+                    old_page = SITE / page / "index.html"
+                    content = old_page.read_text(encoding="utf-8")
+                    parser = RedirectPage()
+                    parser.feed(content)
+                    self.assertIsNotNone(parser.target)
+                    for base in ("https://example.org/", "https://example.org/preview/"):
+                        self.assertEqual(
+                            urljoin(urljoin(base, suffix), parser.target),
+                            urljoin(base, f"de/{suffix}"),
+                        )
+                    self.assertIn("location.search + location.hash", content)
+
+    def test_language_search_indexes(self):
+        for language in ("de", "en"):
+            with self.subTest(language=language):
+                search = json.loads((SITE / language / "search.json").read_text(encoding="utf-8"))
+                self.assertIn(language, search["config"]["lang"])
+                self.assertTrue(any(item["location"].startswith("results/") for item in search["items"]))
 
     def test_language_links_over_http(self):
         class QuietHandler(http.server.SimpleHTTPRequestHandler):
@@ -198,7 +243,7 @@ class SiteTests(unittest.TestCase):
                     relative = source.relative_to(ROOT / "docs/de")
                     page_path = relative.parent if relative.name == "index.md" else relative.with_suffix("")
                     page_url = "" if str(page_path) == "." else f"{page_path.as_posix()}/"
-                    for prefix in ("", "en/"):
+                    for prefix in ("de/", "en/"):
                         current = urljoin(base, prefix + page_url)
                         with self.subTest(page=str(source), language=prefix or "de"):
                             with urlopen(current) as response:

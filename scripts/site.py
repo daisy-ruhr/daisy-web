@@ -1,12 +1,16 @@
 import argparse
 import functools
+import html
 import http.server
+import json
+import os
+import shutil
 import subprocess
 import sys
 import tempfile
 import tomllib
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import quote, urljoin
 
 import yaml
 
@@ -22,7 +26,7 @@ def english_config():
     for key in ("site_name", "site_description", "docs_dir", "site_dir", "nav"):
         project[key] = localization[key]
     alternate = next(item for item in project["extra"]["alternate"] if item["lang"] == "en")
-    project["site_url"] = urljoin(project["site_url"].rstrip("/") + "/", alternate["link"].lstrip("/"))
+    project["site_url"] = urljoin(project["site_url"].rstrip("/") + "/", "../" + alternate["link"].strip("/") + "/")
     project["theme"]["language"] = "en"
     for palette in project["theme"]["palette"]:
         palette["toggle"]["name"] = localization["palette_toggle_names"][palette["scheme"]]
@@ -48,7 +52,34 @@ def build():
         )
     finally:
         Path(config.name).unlink()
+    for language in ("de", "en"):
+        shutil.copytree(ROOT / "assets", ROOT / "site" / language / "assets", dirs_exist_ok=True)
     subprocess.run([sys.executable, "scripts/merge_sitemaps.py"], cwd=ROOT, check=True)
+    write_entry_pages()
+
+
+def write_entry_pages():
+    site = ROOT / "site"
+    shutil.copyfile(ROOT / "overrides" / "language-landing.html", site / "index.html")
+    for source in (ROOT / "docs" / "de").rglob("*.md"):
+        relative = source.relative_to(ROOT / "docs" / "de")
+        page = relative.parent if relative.name == "index.md" else relative.with_suffix("")
+        if page == Path("."):
+            continue
+        if page.parts[0] in ("de", "en", "assets"):
+            raise ValueError(f"Legacy page conflicts with a reserved output path: {relative}")
+        directory = site / page
+        directory.mkdir(parents=True, exist_ok=True)
+        target = quote(os.path.relpath(site / "de" / page, directory).replace(os.sep, "/") + "/", safe="/")
+        escaped = html.escape(target, quote=True)
+        javascript_target = json.dumps(target)
+        (directory / "index.html").write_text(
+            '<!doctype html>\n<html lang="de"><head><meta charset="utf-8">\n'
+            f'<meta http-equiv="refresh" content="0; url={escaped}">\n'
+            f'<script>location.replace({javascript_target} + location.search + location.hash);</script>\n'
+            f'</head><body><a href="{escaped}">Weiter zur deutschen Seite</a></body></html>\n',
+            encoding="utf-8",
+        )
 
 
 def main():

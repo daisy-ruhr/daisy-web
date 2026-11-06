@@ -2,9 +2,9 @@
 site_name = "Projekt DAISY"
 site_description = "Datenschutz und Arbeitnehmendeninteressen in AI-as-a-Service-Systemen"
 site_author = "DAISY Team"
-site_url = "https://daisy.ruhr"
+site_url = "https://daisy.ruhr/de/"
 docs_dir = "docs/de"
-site_dir = "site"
+site_dir = "site/de"
 extra_css = ["assets/styles/extra.css"]
 watch = ["assets"]
 nav = [
@@ -26,7 +26,7 @@ nav = [
 [project.extra]
 generator = false
 alternate = [
-  { name = "Deutsch", link = "/", lang = "de" },
+  { name = "Deutsch", link = "/de/", lang = "de" },
   { name = "English", link = "/en/", lang = "en" },
 ]
 

@@ -30,9 +30,9 @@
   {% if page.next_page %}
     <link rel="next" href="{{ page.next_page.url | url }}">
   {% endif %}
-  {% set site_root = config.site_url | replace('/en/', '/') if config.theme.language == 'en' else config.site_url %}
+  {% set site_root = config.site_url | replace('/' ~ config.theme.language ~ '/', '/') %}
   {% for alt in config.extra.alternate %}
-    <link rel="alternate" href="{{ site_root }}{{ 'en/' if alt.lang == 'en' else '' }}{{ page.url }}" hreflang="{{ alt.lang }}">
+    <link rel="alternate" href="{{ site_root }}{{ alt.link | trim('/') }}/{{ page.url }}" hreflang="{{ alt.lang }}">
   {% endfor %}
   {% set href = config.theme.favicon | d("assets/images/favicon.png") %}
   <link rel="icon" href="{{ href | url }}">
