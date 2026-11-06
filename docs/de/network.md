@@ -6,7 +6,7 @@ Multiplikatoren und Dialogpartner mit.
 
 ## Das Team
 
-![Konsortiumsmitglieder DAISY](assets/common/img/daisy_staff.webp){ loading=lazy }
+![Konsortiumsmitglieder DAISY](assets/img/daisy_staff.webp){ loading=lazy }
 /// caption
 Im Foto von links nach rechts:
 Dr. Steffen Becker (RUB),

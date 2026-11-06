@@ -62,11 +62,9 @@ selector and legacy redirects. Keep shared theme and extension settings synchron
 
 Both folders must use the same file names so the language switcher can map each page to its
 translation. Links between pages are relative (e.g. `project.md`), so they stay within the
-current language. Shared assets live in `overrides/assets/common/` and are included in
-both builds by Zensical's theme override directory. Language-specific assets live in
-`docs/de/assets/` or `docs/en/assets/`. These are ordinary folders, not symbolic links.
-In Markdown, use paths such as `assets/common/img/daisy_staff.webp` for shared images and
-`assets/img/bmftr_de.png` for German-only images.
+current language. All images and styles live in `overrides/assets/` and are included in
+both builds by Zensical's theme override directory. In Markdown, use paths such as
+`assets/img/daisy_staff.webp` or `assets/img/bmftr_de.png`.
 
 ## Maintaining pages
 
@@ -75,9 +73,8 @@ In Markdown, use paths such as `assets/common/img/daisy_staff.webp` for shared i
 | German navigation, metadata, and shared theme options | `zensical.toml` |
 | English navigation and metadata | `zensical.en.toml` |
 | Content | `docs/de/*.md` (German), `docs/en/*.md` (English) – same file names in both folders |
-| Colors, hero banner, special blocks | `overrides/assets/common/styles/extra.css` |
-| Shared images and favicon | `overrides/assets/common/img/` |
-| Language-specific images | `docs/de/assets/img/`, `docs/en/assets/img/` |
+| Colors, hero banner, special blocks | `overrides/assets/styles/extra.css` |
+| Images and favicon | `overrides/assets/img/` |
 
 Markdown extensions in use: admonitions (`!!!`), collapsible blocks (`???`),
 tabs (`=== "Tab"`), grid cards (`<div class="grid cards" markdown="1">`),
@@ -91,7 +88,7 @@ The site deliberately contains placeholders that must be replaced before going l
 - Contact e-mail in `docs/*/contact.md` (currently `steffen.becker@rub.de`)
 - Legal notice (Impressum): responsible body and a valid postal address (§ 5 TMG)
 - Logo and image rights, and approval of the persons named
-- `overrides/assets/common/img/favicon.svg` is a placeholder graphic
+- `overrides/assets/img/favicon.svg` is a placeholder graphic
 
 ## Deployment
 

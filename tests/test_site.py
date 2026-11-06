@@ -128,14 +128,14 @@ class SiteTests(unittest.TestCase):
             ("en", "en/", "DAISY Project", "Data Protection and Employee Interests in AI-as-a-Service Systems"),
         ):
             with self.subTest(language=language):
-                for assets in (ROOT / "overrides" / "assets", ROOT / "docs" / language / "assets"):
-                    self.assertTrue(assets.is_dir())
-                    self.assertFalse(assets.is_symlink())
-                    for source in assets.rglob("*"):
-                        if source.is_file():
-                            output = SITE / prefix / "assets" / source.relative_to(assets)
-                            self.assertTrue(output.is_file(), f"Missing generated asset: {output}")
-                            self.assertEqual(source.read_bytes(), output.read_bytes())
+                assets = ROOT / "overrides" / "assets"
+                self.assertTrue(assets.is_dir())
+                self.assertFalse(assets.is_symlink())
+                for source in assets.rglob("*"):
+                    if source.is_file():
+                        output = SITE / prefix / "assets" / source.relative_to(assets)
+                        self.assertTrue(output.is_file(), f"Missing generated asset: {output}")
+                        self.assertEqual(source.read_bytes(), output.read_bytes())
                 own_image = f"bmftr_{language}.png"
                 self.assertTrue((SITE / prefix / "assets/img" / own_image).is_file())
 
@@ -152,8 +152,8 @@ class SiteTests(unittest.TestCase):
                     self.assertEqual(parser.body.get("data-md-color-scheme"), "slate")
                     self.assertEqual(parser.body.get("data-md-color-primary"), "custom")
                     self.assertEqual(parser.body.get("data-md-color-accent"), "custom")
-                    self.assertTrue(any(url.endswith("assets/common/styles/extra.css") for url in parser.resources))
-                    self.assertTrue(any(url.endswith("assets/common/img/favicon.svg") for url in parser.resources))
+                    self.assertTrue(any(url.endswith("assets/styles/extra.css") for url in parser.resources))
+                    self.assertTrue(any(url.endswith("assets/img/favicon.svg") for url in parser.resources))
                     for resource in parser.resources:
                         url = urlsplit(urljoin(f"https://example.org/{prefix}{page_url}", resource))
                         if url.netloc == "example.org":
