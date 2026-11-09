@@ -1,0 +1,17 @@
+# Zensical build output
+site/
+
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Tooling caches
+.cache/
+.pytest_cache/
+
+# OS/Editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
