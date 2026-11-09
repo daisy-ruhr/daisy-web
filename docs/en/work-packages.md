@@ -114,7 +114,3 @@ entire project duration.
 | M24 | Transfer workshops for companies |
 | M26 | Final report |
 
-!!! note "Scheduling"
-    The project runs from 1 September 2026 to 31 August 2029; the final report (M26) falls
-    at the end of this period. The detailed Gantt chart of all work packages and sub-work
-    packages will be added as a graphic once the milestone dates have been published.

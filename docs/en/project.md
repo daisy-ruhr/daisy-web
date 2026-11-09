@@ -21,7 +21,7 @@ order to protect citizens' privacy where they spend a large part of their day: a
 
 ## Goals
 
-!!! quote "Core idea"
+!!! info "Core idea"
     Bringing the mental models of AIaaS on the decision-maker and user side together with
     the actual properties of the systems while preserving privacy and performance. This is the
     challenge the entire project is built around.
@@ -36,12 +36,12 @@ Specifically, DAISY addresses five goals:
 4. **Develop strategies** for secure, privacy-preserving and human-centered implementation
    processes – including better communication about AI functionalities and data
    protection in organizations.
-5. **Test and evaluate solutions** and make them usable for practitioners.
+5. **Test and evaluate solutions** and make them usable for employees.
 
-## Approach in one sentence
+## Our Approach
 
 Data protection law is taken into account from the start and forms the framework for
-technical, individual-psychological and organizational solutions. In this way, the project
+technical, individual-psychological and organizational solutions. Thereby, the project
 reconciles the economic interests of German companies with the psychological needs of
 employees and legal interests worthy of protection.
 
@@ -57,7 +57,7 @@ resources for the strategic use of AI and depend on practical, affordable suppor
 | Consortium lead | Ruhr University Bochum (RUB) |
 | Consortium partners | RUB, Witten/Herdecke University (UW/H), University of Duisburg-Essen (UDE), WirtschaftsEntwicklungsGesellschaft Bochum mbH (BoWE) |
 | Work packages | 5 |
-| Funding guideline | "Plattform Privatheit – IT-Sicherheit schützt Privatheit und stützt Demokratie" ("Digital.Sicher.Souverän") |
+| Funding guideline | "Plattform Privatheit – IT-Sicherheit schützt Privatheit und stützt Demokratie" ("Digital.Sicher.Souverän") / i.e. "Privacy Platform – IT security guards privacy and supports democracy" ("Digital.Secure.Sovereign") |
 | Duration | 1 September 2026 – 31 August 2029 |
 | Funding reference number | 16KIS2669K |
 
@@ -70,8 +70,7 @@ determined aspects: the workplace.
 
 Organizational actors today no longer have to understand only "classic" AI risks, but must
 also be able to assess dangers arising from the architecture of the models themselves, from
-operational implementations or from dependence on foreign third-party providers. This
-requires adequate cognitive frameworks for interpreting how the systems work, their limits
+operational implementations like agentic frameworks or from dependence on foreign third-party providers. This requires adequate cognitive frameworks for interpreting how the systems work, their limits
 and their risks – which are rarely present on the user and decision-maker side.
 
 DAISY strengthens awareness of data protection, privacy and employee orientation, and thus

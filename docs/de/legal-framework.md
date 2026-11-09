@@ -1,6 +1,6 @@
 # Rechtlicher Rahmen
 
-Rechtliche Vorgaben sind bei DAISY nicht nachgelagert, sondern Teil des Ausgangspunkts:
+Rechtliche Vorgaben sind bei DAISY direkt Teil des Ausgangspunkts:
 Sie bilden die Leitplanken, innerhalb derer technische, psychologische und organisatorische
 Lösungen entwickelt werden.
 

@@ -1,11 +1,10 @@
 # Legal Framework
 
-At DAISY, legal requirements are not an afterthought but part of the starting point: they
+At DAISY, legal requirements are part of the starting point, not an afterthought: they
 form the guardrails within which technical, psychological and organizational solutions are
 developed.
 
-For companies – especially small and medium-sized ones without in-house legal expertise –
-the situation is hard to oversee. The project aims to identify legal guardrails, gray areas
+For companies, the situation is hard to comprehend, especially for small and medium-sized ones without in-house legal expertise. The project aims to identify legal guardrails, gray areas
 and prerequisites and make them manageable. The findings are closely interlinked with the
 other project results.
 

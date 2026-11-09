@@ -1,3 +1,3 @@
-# Aktuelles
+# News
 
 Neuigkeiten aus dem Projekt DAISY.

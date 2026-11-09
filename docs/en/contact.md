@@ -1,10 +1,5 @@
 # Contact
 
-!!! warning "Placeholder"
-    The following details are still to be confirmed: project e-mail inbox, address of the
-    consortium lead and the body responsible for the legal notice. See open questions in the
-    implementation plan.
-
 ## Consortium coordination
 
 **Ruhr University Bochum** (consortium coordinator)
@@ -13,10 +8,6 @@
 *Universitätsstraße 150, 44801 Bochum*
 
 **E-mail:** [steffen.becker@rub.de](mailto:steffen.becker@rub.de)
-
-## The team
-
-![DAISY consortium members](assets/img/daisy_staff.webp){ loading=lazy }
 
 ## Contacts by topic
 
@@ -56,6 +47,8 @@ above.
 Demokratie" ("Digital.Sicher.Souverän")
 
 **Funding reference number:** 16KIS2669K
+
+**Project funding sum:** 1.55 mio. € (of which 1.29 mio. is funded by BMFTR)
 
 ![Funded by the Federal Ministry of Research, Technology and Space (BMFTR)](assets/img/bmftr_en.png){ loading=lazy, width="250"  }
 

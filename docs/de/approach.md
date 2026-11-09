@@ -91,7 +91,7 @@ Auf technischer Ebene verfolgt DAISY zwei Ziele:
 * Ein **technischer Demonstrator** für eine datenschutzkonforme AIaaS-Lösung soll
   verfügbar werden. Aus bestehenden Open-Source-Werkzeugen entwickeln wir
   demonstratorische Konfigurationen, die typische Datenschutzrisiken adressieren. Sie
-  werden evaluiert, optimiert und als interaktive Demonstratoren aufbereitet – so wird
+  werden evaluiert, optimiert und als interaktive Demonstratoren aufbereitet: so wird
   die technische Komponente gezielt erlebbar.
 * Eine entsprechende Lösung wird bei der BoWE als Praxispartner **operativ implementiert**
   und im Testbetrieb erprobt. Ziel ist neben der weitergehenden Evaluierung der Transfer
@@ -104,7 +104,7 @@ ermöglicht. Das fördert den Bildungs- und Wissenschaftsstandort Deutschland un
 Wirtschaft durch praxisorientierte Innovationen.
 
 **Wissenschaftskommunikation.** Erkenntnisse und Lösungen gelangen über diese
-Projektwebsite und über Veranstaltungen in Unternehmen – zu
+Projektwebsite und über Veranstaltungen in Unternehmen zu
 Entscheidungsträger:innen und Mitarbeitenden. Privatheitssensitivität soll nicht nur
 theoretisch untersucht, sondern praktisch in Organisationen unterstützt werden.
 
@@ -120,6 +120,3 @@ Eine entscheidende Grundlage von DAISY ist eine [gemeinsame Feldstudie von RUB u
 An über 500 Nutzenden wurde die Wahrnehmung eines an einer Universität implementierten
 LLM-Chatbots im Vergleich zu ChatGPT untersucht. Dem institutionellen System wurden dabei
 unter anderem höheres Vertrauen und eine höhere wahrgenommene Privatheit entgegengebracht.
-
-Die Studie belegt zugleich die Fähigkeit des Teams zu interdisziplinären Feldstudien im
-As-a-Service-Setting.

@@ -120,7 +120,3 @@ und Kommunikationsaktivitäten.
 | M24 | Transfer-Workshops für Unternehmen |
 | M26 | Endbericht |
 
-!!! note "Zeitplanung"
-    Das Projekt läuft vom 1. September 2026 bis zum 31. August 2029; der Endbericht (M26)
-    fällt an das Ende dieses Zeitraums. Der detaillierte Balkenplan aller Arbeits- und
-    Unterarbeitspakete wird nach Veröffentlichung der Meilenstein-Termine als Grafik ergänzt.

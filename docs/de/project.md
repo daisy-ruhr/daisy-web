@@ -24,9 +24,9 @@ Großteil ihres Tages verbringen: am Arbeitsplatz.
 
 ## Ziele
 
-!!! quote "Kernidee"
+!!! info "Kernidee"
     Die mentalen Modelle von AIaaS auf Entscheider- und Nutzungsseite mit den
-    tatsächlichen Systemeigenschaften zusammenzubringen und gleichzeitig sicher Datenschutz und Performanz gewährleisten zu können. Das ist die Herausforderung, an der das gesamte Projekt ansetzt.
+    tatsächlichen Systemeigenschaften zusammenzubringen und gleichzeitig sicher Datenschutz und Performanz gewährleisten zu können. Dies ist die Herausforderung, an der das gesamte Projekt ansetzt.
 
 Konkret adressiert DAISY fünf Ziele:
 
@@ -41,7 +41,7 @@ Konkret adressiert DAISY fünf Ziele:
    Funktionalitäten und Datenschutz in Organisationen.
 5. **Lösungen erproben und evaluieren** und sie für Anwender:innen nutzbar machen.
 
-## Ansatz in einem Satz
+## Unser Ansatz
 
 Datenschutzrechtliche Rahmenbedingungen werden von Beginn an einbezogen und bilden den
 Rahmen für technische, individualpsychologische und organisatorische Lösungen. Damit
@@ -74,8 +74,7 @@ ergänzt wird: dem Arbeitsplatz.
 
 Organisationale Akteure müssen heute nicht mehr „nur" klassische Risiken von KI verstehen,
 sondern auch Gefahren einschätzen können, die aus der Architektur der Modelle selbst, den
-betrieblichen Implementierungen oder aus der Abhängigkeit von ausländischen Drittanbietern
-resultieren. Dafür braucht es angemessene kognitive Rahmen zur Interpretation von
+betrieblichen Implementierungen, agenten-basierten Tools oder aus der Abhängigkeit von ausländischen Drittanbietern resultieren. Dafür braucht es angemessene kognitive Rahmen zur Interpretation von
 Funktionsweisen, Grenzen und Risiken – die auf Nutzenden- und Entscheiderseite selten
 vorhanden sind.
 

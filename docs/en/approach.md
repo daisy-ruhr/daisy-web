@@ -4,8 +4,7 @@ DAISY regards the introduction of AI services in organizations as a
 **sociotechnical system**: technology and people are inseparably linked, and data
 protection only succeeds if both are considered together.
 
-To this end, the consortium works inter- and transdisciplinarily. This allows, on the one
-hand, the separate examination of individual system elements and levels and, on the other,
+Therefore, the consortium works inter- and transdisciplinarily. On one hand, this allows for separate examination of individual system elements and levels and, on the other,
 their integration into a holistic model of human-centered, privacy-sensitive and practically
 implementable AIaaS introductions.
 
@@ -27,7 +26,7 @@ implementable AIaaS introductions.
 
     Organizational structures come into focus: decision-makers are interviewed, and
     processes for privacy-sensitive AI introduction are examined, optimized and prepared
-    for use (UW/H).
+    for practical use (UW/H).
 
 - __Macro level__
 
@@ -36,7 +35,7 @@ implementable AIaaS introductions.
     The legal framework for AIaaS introductions and privacy in organizational use are
     examined (externally commissioned legal opinion).
     In addition, we look at implementability and transfer to companies in various
-    sectors – with the aim of strengthening Germany as a business location (BoWE).
+    sectors – with the aim of strengthening Germany as an economic center (BoWE).
 
 </div>
 
@@ -89,8 +88,8 @@ At the technical level, DAISY pursues two goals:
 * A **technical demonstrator** for a data-protection-compliant AIaaS solution is to be made
   available. From existing open-source tools we develop demonstrator configurations that
   address typical data protection risks. They are evaluated, optimized and prepared as
-  interactive demonstrators – making the technical component tangible.
-* A corresponding solution is **operationally implemented** at BoWE as the practice partner
+  interactive demonstrators: making the technical component tangible.
+* A candidate solution is **operationally implemented** at the practice partner BoWE
   and tested in trial operation. In addition to further evaluation, the aim is transfer in
   the form of technical recommendations and recommendations for action for other companies.
 
@@ -101,7 +100,7 @@ possible. This promotes Germany as a location for education and science, and the
 through practice-oriented innovation.
 
 **Science communication.** Findings and solutions reach decision-makers and employees via
-this project website and via events in companies. Privacy sensitivity is not only to be
+this project website and events in companies. Privacy sensitivity is not only to be
 studied theoretically, but supported practically in organizations.
 
 **Legal guardrails.** An externally commissioned legal opinion clarifies the conditions for
@@ -113,9 +112,6 @@ context of other relevant legal frameworks. More on the page
 ## Prior work: a joint field study
 
 A key foundation of DAISY is a [joint field study by RUB and UDE](https://dl.acm.org/doi/10.1145/3772318.3790622):
-the perception of an LLM chatbot implemented at a university was examined with more than 500
+the perception of a custom LLM chatbot implemented at a university was examined with more than 500
 users in comparison to ChatGPT. Among other things, the institutional system was met with
 higher trust and higher perceived privacy.
-
-At the same time, the study demonstrates the team's ability to conduct interdisciplinary
-field studies in the as-a-service setting.

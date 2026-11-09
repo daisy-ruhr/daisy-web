@@ -7,7 +7,7 @@ hide:
 
 ## Diese Website verarbeitet keine personenbezogenen Daten
 
-DAISY ist eine statische Website. Sie wird aus Markdown-Quellen gebaut und als reine
+DAISY ist eine statische Website. Sie wird aus [Markdown-Quellen](https://github.com/daisy-ruhr/daisy-web/) gebaut und als reine
 HTML-, CSS- und Bilddateien ausgeliefert. Es gibt:
 
 * **kein Tracking** – keine Analytics, keine Cookies, keine Messung des

@@ -52,10 +52,6 @@ Dr. Magdalena Wischnewski (UDE).
 
 ## Key people
 
-!!! note "Approval required"
-    People are named on this page only after agreement with those concerned – regarding
-    name, role and picture. Until then, we name roles instead of people.
-
 === "Technology"
 
     **Dr.-Ing. Steffen Becker** (RUB), junior research group "Human-Centered Hardware
@@ -149,7 +145,7 @@ the results.
 The project is embedded in relevant networks of the partners that reinforce the
 dissemination and connectivity of the results:
 
-* Research Center Trustworthy Data Science and Security (RC Trust) – shared affiliation of
+* Research Center Trustworthy Data Science and Security ([RC Trust](https://rc-trust.ai/) – shared affiliation of
   the RUB and UDE researchers and structural basis for the further development of results
 * Cluster of Excellence CASA and MPI-SP – existing collaborations
 * "AI at Work" network – transfer between science and practice

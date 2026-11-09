@@ -1,6 +1,6 @@
 # Results & Transfer
 
-All DAISY results are made publicly accessible and free of charge – under an open license.
+All DAISY results are made publicly accessible, openly licensed, and free of charge.
 No separate patent or property right applications are planned.
 
 !!! tip "Work in progress"
@@ -23,7 +23,7 @@ No separate patent or property right applications are planned.
     ---
 
     Interactive format that guides through the key points of privacy-sensitive AI
-    implementation – including stakeholders and levers. *(M21)*
+    implementation – including stakeholders and deployment options. *(M21)*
 
 - __Legal opinion, adapted for practical use__
 

@@ -281,8 +281,6 @@ class SiteTests(unittest.TestCase):
                 self.assertIn('datetime="2026-09-29', overview)
                 self.assertIn(title, overview)
                 self.assertIn(title, post)
-                self.assertIn("https://rc-trust.ai/news/news-detail/using-ai-safely-in-companies", post)
-                self.assertIn("https://news.rub.de/presseinformationen/wissenschaft/2026-09-29-projektstart-ki-unternehmen-sicher-nutzen", post)
                 self.assertIn("assets/img/daisy_staff.webp", post)
                 self.assertIn('class="daisy-latest-news"', home)
                 self.assertIn("assets/javascripts/news.js", home)

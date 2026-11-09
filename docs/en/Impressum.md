@@ -5,16 +5,10 @@ hide:
 
 # Legal Notice
 
-Information pursuant to § 5 TMG.
+Information pursuant to German § 5 TMG.
 
 !!! note "Courtesy translation"
     This is a courtesy translation. The German version of this page is legally binding.
-
-!!! warning "Placeholder – fill in before publication"
-    This page must be filled with the official details of the publishing institute before
-    going live. When publishing via a university domain, the university's legal notice is
-    usually authoritative – in that case a link to it is sufficient. To be clarified with
-    RUB communications.
 
 ## Provider
 
@@ -25,7 +19,7 @@ Information pursuant to § 5 TMG.
 
 ## Authorized representative
 
-*Name of the rector, job title*
+Rector Prof. Dr. Martin Paul
 
 ## Contact
 
@@ -33,7 +27,7 @@ E-mail: [steffen.becker@rub.de](mailto:steffen.becker@rub.de)
 
 ## Responsible for content
 
-*Name, role, address of the editorially responsible body*
+Dr. Steffen Becker (project coordinator)
 
 ## Project sponsor
 

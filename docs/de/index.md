@@ -9,7 +9,7 @@ hide:
 
 **Datenschutz und Arbeitnehmendeninteressen in AI-as-a-Service-Systemen**
 
-KI wird in Unternehmen meist eingekauft statt entwickelt. DAISY hat das Ziel, praktikale und gleichzeitig 
+KI wird in Unternehmen meist eingekauft statt entwickelt. DAISY hat das Ziel, praktikale und zugleich
 Datenschutzrisiken minimierende Dienste zu erforschen: technisch, psychologisch und organisatorisch,
 erprobt im Unternehmensalltag.
 
@@ -37,7 +37,7 @@ eigene KI-Expertise.
 
 Offen bleibt, was dabei mit den Daten der Beschäftigten passiert, wer Verantwortung trägt
 und wo die Grenzen des Systems liegen. Diese Risiken sind für Nutzende und
-Entscheidungsträger:innen selten intuitiv erkennbar – sie unterscheiden sich deutlich von
+Entscheidungsträger:innen selten intuitiv erkennbar: sie unterscheiden sich deutlich von
 den kommerziellen Chatbots, die viele aus dem Privatleben kennen.
 
 DAISY setzt genau dort an. Im Verbund aus Informatik, Psychologie und Praxis entwickeln
@@ -61,7 +61,7 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 
     ---
 
-    Wir erheben, wie Beschäftigte und Entscheidungsträger:innen AIaaS verstehen, und
+    Wir untersuchen, wie Beschäftigte und Entscheidungsträger:innen AIaaS verstehen, und
     gleichen diese mentalen Modelle mit den tatsächlichen Systemeigenschaften ab.
 
 - :material-handshake:{ .lg .middle } __Praxisprozesse__
@@ -69,7 +69,7 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
     ---
 
     Wir entwickeln evidenzbasierte Prozessmodelle für eine kalibrierte,
-    mitarbeitendenzentrierte Einführung von KI-Diensten – passend zur Organisationskultur.
+    mitarbeitendenzentrierte Einführung von KI-Diensten, passend zur Organisationskultur.
 
 - :material-package-variant-closed:{ .lg .middle } __Freie Nutzung__
 

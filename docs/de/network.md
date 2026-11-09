@@ -52,10 +52,6 @@ Dr. Magdalena Wischnewski (UDE).
 
 ## Schlüsselpersonen
 
-!!! note "Freigabe erforderlich"
-    Personen nennen wir erst, wenn Name, Funktion und Bild mit ihnen abgestimmt sind.
-    Bis dahin stehen hier Rollen.
-
 === "Technik"
 
     **Dr.-Ing. Steffen Becker** (RUB), Nachwuchsgruppe „Human-Centered Hardware Security".

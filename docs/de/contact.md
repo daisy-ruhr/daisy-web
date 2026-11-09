@@ -1,10 +1,5 @@
 # Kontakt
 
-!!! warning "Platzhalter"
-    Die folgenden Angaben sind noch zu bestätigen: Projekt-E-Mail-Postfach,
-    Anschrift des Konsortialführers und die für das Impressum verantwortliche Stelle.
-    Siehe Klärungspunkte im Implementierungsplan.
-
 ## Konsortialkoordination
 
 **Ruhr-Universität Bochum** (Verbundkoordinatorin)
@@ -52,6 +47,8 @@ Kontakt über die oben genannte Adresse.
 Demokratie" („Digital.Sicher.Souverän")
 
 **Förderkennzeichen:** 16KIS2669K
+
+**Projektvolumen:** 1,55 Mio. € (davon BMFTR-Förderung: 1,29 Mio.)
 
 ![Gefördert durch das Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR)](assets/img/bmftr_de.png){ loading=lazy, width="250"  }
 

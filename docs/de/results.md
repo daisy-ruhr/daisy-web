@@ -1,7 +1,7 @@
 # Ergebnisse & Transfer
 
-Alle Ergebnisse von DAISY werden öffentlich zugänglich und kostenfrei nutzbar
-bereitgestellt – offen lizenziert. Eine eigene Schutzrechtsanmeldung ist nicht vorgesehen.
+Alle Ergebnisse von DAISY werden öffentlich zugänglich, offen lizenziert und kostenfrei nutzbar
+bereitgestellt. Eine eigene Schutzrechtsanmeldung ist nicht vorgesehen.
 
 !!! tip "Noch in Arbeit"
     Das Projekt entwickelt die folgenden Ergebnisse. Diese Seite listet die geplanten

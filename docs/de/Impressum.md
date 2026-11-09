@@ -7,12 +7,6 @@ hide:
 
 Angaben gemäß § 5 TMG.
 
-!!! warning "Platzhalter – vor Veröffentlichung ausfüllen"
-    Diese Seite muss vor dem Live-Gang mit den offiziellen Angaben des
-    veröffentlichenden Instituts gefüllt werden. Bei Veröffentlichung über eine
-    Hochschuldomain ist in der Regel das Impressum der Hochschule maßgeblich – dann genügt
-    ein Link darauf. Klärung mit der Kommunikation der RUB.
-
 ## Anbieter
 
 **Ruhr-Universität Bochum** (Konsortialführung DAISY)
@@ -22,7 +16,7 @@ Angaben gemäß § 5 TMG.
 
 ## Vertretungsberechtigt
 
-*Name der Rektorin / des Rektors, Funktionsbezeichnung*
+Rektor Prof. Dr. Martin Paul
 
 ## Kontakt
 
@@ -30,7 +24,7 @@ E-Mail: [steffen.becker@rub.de](mailto:steffen.becker@rub.de)
 
 ## Verantwortlich für den Inhalt
 
-*Name, Funktion, Anschrift der redaktionell verantwortlichen Stelle*
+Dr. Steffen Becker (Projektkoordinator)
 
 ## Projektträger
 

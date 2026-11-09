@@ -10,7 +10,7 @@ hide:
 
 ## This website does not process personal data
 
-DAISY is a static website. It is built from Markdown sources and delivered as plain HTML,
+DAISY is a static website. It is built from [Markdown sources](https://github.com/daisy-ruhr/daisy-web/) and delivered as plain HTML,
 CSS and image files. There is:
 
 * **no tracking** – no analytics, no cookies, no measurement of usage behavior,

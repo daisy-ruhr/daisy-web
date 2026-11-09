@@ -67,7 +67,7 @@ transparent way. The legal framework is taken into account from the very beginni
     ---
 
     We develop evidence-based process models for a calibrated, employee-centered
-    introduction of AI services – tailored to the organizational culture.
+    introduction of AI services, tailored to the organizational culture.
 
 - :material-package-variant-closed:{ .lg .middle } __Free use__
 
