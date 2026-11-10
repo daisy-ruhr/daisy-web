@@ -5,6 +5,10 @@ hide:
 
 <div class="daisy-hero" markdown="1">
 
+<div class="daisy-hero-layout" markdown="1">
+
+<div class="daisy-hero-content" markdown="1">
+
 # DAISY
 
 **Datenschutz und Arbeitnehmendeninteressen in AI-as-a-Service-Systemen**
@@ -17,6 +21,10 @@ erprobt im Unternehmensalltag.
 
 [Publikationen](publications.md){ .md-button .md-button--primary }
 [Kontakt](team.md){ .md-button }
+
+</div>
+
+</div>
 
 </div>
 
