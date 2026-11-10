@@ -45,7 +45,7 @@
 
 /* Hero banner on the home page */
 .daisy-hero {
-  background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-primary-fg-color--light) 60%, #32a4c2);
+  background: linear-gradient(200deg, var(--daisy-primary-600), var(--daisy-primary-800) 48%, var(--daisy-primary-900));
   color: #fff;
   border-radius: 0.4rem;
   container-type: inline-size;
@@ -59,19 +59,33 @@
 .daisy-hero-content {
   padding: 2.5rem 0 2.5rem 2rem;
 }
+.daisy-hero-layout::after,
+.daisy-summary-art {
+  background: url("../img/daisy_hero_art_m2.png") no-repeat center / auto 100%;
+  image-rendering: pixelated;
+}
 .daisy-hero-layout::after {
   content: "";
-  background: url("../img/daisy_hero_art_m2.png") no-repeat right center / auto 100%;
-  image-rendering: pixelated;
+  background-position: right center;
+}
+.daisy-summary-art-container {
+  container-type: inline-size;
+}
+.daisy-summary-art {
+  display: none;
 }
 @container (max-width: 41rem) {
   .daisy-hero-layout {
     grid-template-columns: minmax(0, 1fr);
   }
   .daisy-hero-content {
-    padding: 2rem 1.5rem 0;
+    padding: 2rem 1.5rem;
   }
   .daisy-hero-layout::after {
+    display: none;
+  }
+  .daisy-summary-art {
+    display: block;
     height: 10rem;
   }
 }

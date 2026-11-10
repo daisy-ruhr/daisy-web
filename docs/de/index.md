@@ -53,6 +53,8 @@ wir IT-Sicherheitslösungen, stärken die Kompetenz von Entscheidenden und Mitar
 und gestalten die Einführung von KI-Diensten im Unternehmen partizipativ und
 nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 
+<div class="daisy-summary-art-container"><div class="daisy-summary-art" aria-hidden="true"></div></div>
+
 ## Was DAISY auszeichnet
 
 <div class="grid cards" markdown="1">

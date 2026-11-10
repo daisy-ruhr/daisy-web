@@ -53,6 +53,8 @@ we develop IT security solutions, strengthen the competence of decision-makers a
 employees, and shape the introduction of AI services in companies in a participatory and
 transparent way. The legal framework is taken into account from the very beginning.
 
+<div class="daisy-summary-art-container"><div class="daisy-summary-art" aria-hidden="true"></div></div>
+
 ## What sets DAISY apart
 
 <div class="grid cards" markdown="1">
