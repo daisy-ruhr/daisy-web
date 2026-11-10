@@ -175,4 +175,4 @@ mitarbeitendenzentrierten AIaaS-Nutzung. Getragen wird dieser Transfer über die
 Anwendungspartner und Multiplikator sowie über die assoziierten Partner – die IG Metall
 in die Arbeitnehmervertretungen, das HUMAINE Network e.V. in die Wirtschaft, Edgeless
 Systems in die Produktentwicklung. Details auf der Seite
-[Konsortium & Netzwerk](network.md).
+[Konsortium & Kontakt](team.md).

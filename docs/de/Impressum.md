@@ -30,7 +30,7 @@ Dr. Steffen Becker (Projektkoordinator)
 
 Gefördert im Rahmen der Förderrichtlinie „Plattform Privatheit – IT-Sicherheit schützt
 Privatheit und stützt Demokratie" („Digital.Sicher.Souverän"). Details siehe
-[Kontakt](contact.md).
+[Kontakt](team.md).
 
 ## Haftung für Inhalte
 

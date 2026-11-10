@@ -1,17 +1,41 @@
-/* DAISY color scheme: deep teal + warm accent orange */
+/* DAISY colour scheme: deep teal-blue primary + golden-orange accent. */
+
+/* DAISY palette */
 :root {
-  --md-primary-fg-color: #0f4c5c;
-  --md-primary-fg-color--light: #1b6f82;
-  --md-primary-fg-color--dark: #093642;
-  --md-accent-fg-color: #f2a541;
+  /* Primary ramp: hue 197 (HSV/HSL), oklch hue ≈ 230 */
+  --daisy-primary-50:  #F1F8FC;  /* oklch(0.975 0.009 230) */
+  --daisy-primary-100: #E2F1F8;  /* oklch(0.948 0.018 230) */
+  --daisy-primary-200: #C3E3F3;  /* oklch(0.897 0.040 230) */
+  --daisy-primary-300: #90CFED;  /* oklch(0.822 0.077 230) */
+  --daisy-primary-400: #55B7E2;  /* oklch(0.738 0.111 230) */
+  --daisy-primary-500: #35A3D0;  /* oklch(0.675 0.117 230) */
+  --daisy-primary-600: #1584AC;  /* oklch(0.575 0.109 230) */
+  --daisy-primary-700: #0C6889;  /* oklch(0.485 0.093 230) */
+  --daisy-primary-800: #145670;  /* oklch(0.426 0.076 230), header color */
+  --daisy-primary-900: #16475C;  /* oklch(0.375 0.062 230) */
+  --daisy-primary-950: #0E2D3A;  /* oklch(0.280 0.044 230) */
+
+  /* Accent */
+  --daisy-accent:             #F2A541;
+  --daisy-accent-transparent: #F2A5411A;  /* 10% alpha */
+  --daisy-on-accent:          #3A2405;    /* text on accent fills */
 }
 
-/* Dark mode: Material takes the link color from --md-primary-fg-color.
-   With our dark teal, links would be barely readable there, so use a
-   lightened teal variant for links and accents in the slate scheme. */
-[data-md-color-scheme=slate] {
-  --md-typeset-a-color: #6fb6c8;
-  --md-primary-fg-color--light: #2c8296;
+/* mkdocs-material mapping (light and dark mode) */
+:root > * {
+  --md-primary-fg-color:        var(--daisy-primary-800);
+  --md-primary-fg-color--light: var(--daisy-primary-600);
+  --md-primary-fg-color--dark:  var(--daisy-primary-950);
+
+  --md-accent-fg-color:              var(--daisy-accent);
+  --md-accent-fg-color--transparent: var(--daisy-accent-transparent);
+  --md-accent-bg-color:              var(--daisy-primary-50);
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] {
+  --md-hue: 197;                                  /* tint the dark greys toward the primary hue */
+  --md-typeset-a-color: var(--daisy-primary-300); /* lighter links on the dark background */
 }
 
 /* Don't reserve header space for a repository link when none is configured. */
@@ -21,7 +45,7 @@
 
 /* Hero banner on the home page */
 .daisy-hero {
-  background: linear-gradient(135deg, #093642, #1b6f82 60%, #508d99);
+  background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-primary-fg-color--light) 60%, #32a4c2);
   color: #fff;
   border-radius: 0.4rem;
   padding: 2.5rem 2rem;
@@ -51,9 +75,9 @@
   border-radius: 100rem;
 }
 .daisy-hero .md-button--primary {
-  background-color: #f2a541;
-  border-color: #f2a541;
-  color: #093642;
+  background-color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-primary-fg-color--dark);
 }
 
 .daisy-latest-news ul {

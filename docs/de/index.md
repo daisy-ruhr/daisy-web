@@ -15,8 +15,8 @@ erprobt im Unternehmensalltag.
 
 <div class="daisy-hero-actions" markdown="1">
 
-[Zum Projekt](project.md){ .md-button .md-button--primary }
-[Kontakt](contact.md){ .md-button }
+[Publikationen](publications.md){ .md-button .md-button--primary }
+[Kontakt](team.md){ .md-button }
 
 </div>
 
@@ -102,8 +102,20 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 : Bochum und Ruhrgebiet, mit überregionaler Ausstrahlung
 
 **Förderung**
-: Förderrichtlinie „Plattform Privatheit – IT-Sicherheit schützt Privatheit und stützt
-  Demokratie" („Digital.Sicher.Souverän")
+<div class="daisy-funding" markdown="1">
+
+**Gefördert durch:** Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR)
+
+**Förderrichtlinie:** „Plattform Privatheit – IT-Sicherheit schützt Privatheit und stützt
+Demokratie" („Digital.Sicher.Souverän")
+
+**Förderkennzeichen:** 16KIS2669K
+
+**Projektvolumen:** 1,55 Mio. € (davon BMFTR-Förderung: 1,29 Mio.)
+
+![Gefördert durch das Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR)](assets/img/bmftr_de.png){ loading=lazy, width="250"  }
+
+</div>
 
 !!! info "Für wen ist dieses Projekt?"
     DAISY richtet sich an Entscheidungsträger:innen, Beschäftigte und

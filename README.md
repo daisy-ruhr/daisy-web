@@ -7,7 +7,7 @@ Built with [Zensical](https://zensical.org/) (successor to Material for MkDocs),
 bilingual (German and English), without external JavaScript or CSS libraries – all assets
 live in the repository, and no Google Fonts or CDN resources are loaded.
 
-## Development
+## Editing
 
 The Python environment lives in `.venv/` (not checked in). Python 3.11 or newer is required.
 
@@ -80,6 +80,8 @@ Markdown extensions in use: admonitions (`!!!`), collapsible blocks (`???`),
 tabs (`=== "Tab"`), grid cards (`<div class="grid cards" markdown="1">`),
 definition lists (`def_list`), `attr_list`, `md_in_html`, and snippets (`--8<--`).
 
+Currenty disabled pages are listed in `draft_docs` in each .toml file. These are excluded from the build and have also been disabled in the nav manually.
+
 ### Publications
 
 Edit `docs/shared/publications.md` once to update both language versions. The localized
@@ -113,7 +115,6 @@ without JavaScript.
 
 The site deliberately contains placeholders that must be replaced before going live:
 
-- `site_url` in `zensical.toml` and `zensical.en.toml` (domain)
 - Contact e-mail in `docs/*/contact.md` (currently `steffen.becker@rub.de`)
 - Legal notice (Impressum): responsible body and a valid postal address (§ 5 TMG)
 - Logo and image rights, and approval of the persons named

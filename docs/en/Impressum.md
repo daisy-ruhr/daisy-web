@@ -33,7 +33,7 @@ Dr. Steffen Becker (project coordinator)
 
 Funded under the funding guideline "Plattform Privatheit – IT-Sicherheit schützt Privatheit
 und stützt Demokratie" ("Digital.Sicher.Souverän"). For details see
-[Contact](contact.md).
+[Contact](team.md).
 
 ## Liability for content
 

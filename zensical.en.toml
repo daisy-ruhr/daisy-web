@@ -9,22 +9,33 @@ extra_css = ["assets/styles/extra.css"]
 extra_javascript = ["assets/javascripts/news.js"]
 watch = ["overrides/assets", "docs/shared"]
 nav = [
-  { "Home" = "index.md" },
+  { "Project" = "index.md" },
   { "News" = "news/index.md" },
-  { "The Project" = "project.md" },
-  { "Scientific Approach" = "approach.md" },
-  { "Work Packages" = "work-packages.md" },
-  { "Results & Transfer" = "results.md" },
+#  { "The Project" = "project.md" },
+#  { "Scientific Approach" = "approach.md" },
+#  { "Work Packages" = "work-packages.md" },
+#  { "Results & Transfer" = "results.md" },
   { "Publications" = "publications.md" },
-  { "Legal Framework" = "legal-framework.md" },
-  { "Consortium & Network" = "network.md" },
-  { "Contact" = "contact.md" },
-  { "Glossary" = "glossary.md" },
+#  { "Legal Framework" = "legal-framework.md" },
+  { "Consortium & Contact" = "team.md" },
+#  { "Contact" = "contact.md" },
+#  { "Glossary" = "glossary.md" },
   { "About DAISY" = [
     { "Legal Notice" = "Impressum.md" },
     { "Privacy Policy" = "Datenschutz.md" },
   ] },
 ]
+
+draft_docs = """
+*.draft.md
+project.md
+approach.md
+work-packages.md
+results.md
+legal-framework.md
+contact.md
+glossary.md
+"""
 
 [project.extra]
 generator = false

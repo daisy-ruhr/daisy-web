@@ -9,22 +9,33 @@ extra_css = ["assets/styles/extra.css"]
 extra_javascript = ["assets/javascripts/news.js"]
 watch = ["overrides/assets", "docs/shared"]
 nav = [
-  { "Start" = "index.md" },
+  { "Projekt" = "index.md" },
   { "News" = "news/index.md" },
-  { "Das Projekt" = "project.md" },
-  { "Wissenschaftlicher Ansatz" = "approach.md" },
-  { "Arbeitspakete" = "work-packages.md" },
-  { "Ergebnisse & Transfer" = "results.md" },
+#  { "Das Projekt" = "project.md" },
+#  { "Wissenschaftlicher Ansatz" = "approach.md" },
+#  { "Arbeitspakete" = "work-packages.md" },
+#  { "Ergebnisse & Transfer" = "results.md" },
   { "Publikationen" = "publications.md" },
-  { "Rechtlicher Rahmen" = "legal-framework.md" },
-  { "Konsortium & Netzwerk" = "network.md" },
-  { "Kontakt" = "contact.md" },
-  { "Glossar" = "glossary.md" },
+#  { "Rechtlicher Rahmen" = "legal-framework.md" },
+  { "Konsortium & Kontakt" = "team.md" },
+#  { "Kontakt" = "contact.md" },
+#  { "Glossar" = "glossary.md" },
   { "Über DAISY" = [
     { "Impressum" = "Impressum.md" },
     { "Datenschutz" = "Datenschutz.md" },
   ] },
 ]
+
+draft_docs = """
+*.draft.md
+project.md
+approach.md
+work-packages.md
+results.md
+legal-framework.md
+contact.md
+glossary.md
+"""
 
 [project.extra]
 generator = false
@@ -50,6 +61,7 @@ language = "de"
 variant = "classic"
 font = false
 favicon = "assets/img/favicon.svg"
+logo = "assets/img/logo_w_shadow.svg"
 custom_dir = "overrides"
 features = [
   "navigation.tracking",

@@ -16,8 +16,8 @@ organizationally, tested in everyday business operations.
 
 <div class="daisy-hero-actions" markdown="1">
 
-[To the project](project.md){ .md-button .md-button--primary }
-[Contact](contact.md){ .md-button }
+[Publications](publications.md){ .md-button .md-button--primary }
+[Contact](team.md){ .md-button }
 
 </div>
 
@@ -100,8 +100,21 @@ transparent way. The legal framework is taken into account from the very beginni
 : Bochum and the Ruhr area, with nationwide impact
 
 **Funding**
-: Funding guideline "Plattform Privatheit – IT-Sicherheit schützt Privatheit und stützt
-  Demokratie" ("Digital.Sicher.Souverän")
+<div class="daisy-funding" markdown="1">
+
+**Funded by:** Federal Ministry of Research, Technology and Space (BMFTR)
+
+**Funding guideline:** "Plattform Privatheit – IT-Sicherheit schützt Privatheit und stützt
+Demokratie" ("Digital.Sicher.Souverän")
+
+**Funding reference number:** 16KIS2669K
+
+**Project funding sum:** 1.55 mio. € (of which 1.29 mio. is funded by BMFTR)
+
+![Funded by the Federal Ministry of Research, Technology and Space (BMFTR)](assets/img/bmftr_en.png){ loading=lazy, width="250"  }
+
+</div>
+
 
 !!! info "Who is this project for?"
     DAISY is aimed at decision-makers, employees and employee representatives in
