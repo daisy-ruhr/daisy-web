@@ -82,6 +82,19 @@ diesen Systemen widerspiegelt.
 </div>
 </div>
 
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
+
+#### Deniz Barut
+
+<p class="daisy-person-role">Promotionsstelle - Individuelle Psychologie</p>
+
+Ich bin Doktorandin an der Universität Duisburg-Essen und beschäftige mich mit den psychologischen Aspekten der Mensch-KI-Interaktion. Im DAISY-Projekt untersuche ich, wie Beschäftigte AI-as-a-Service-Systeme verstehen und welche mentalen Modelle sie von deren Funktionsweise sowie von den damit verbundenen Datenschutz- und Sicherheitsrisiken entwickeln. Ziel ist es, mögliche Fehlvorstellungen zu erkennen und einen informierten und datenschutzbewussten Umgang mit KI am Arbeitsplatz zu fördern.
+
+</div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Deniz_Barut.JPG" alt="" loading="lazy"></div>
+</div>
+
 </div>
 </div>
 
@@ -105,6 +118,16 @@ Ich übernehme im Projekt die Leitung des organisationspsychologischen Parts, ak
 
 </div>
 <div class="daisy-person-photo"><img src="assets/img/staff/Alina_Tausch.JPG" alt="" loading="lazy"></div>
+</div>
+
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
+
+#### Lukas Bring
+
+<p class="daisy-person-role">Promotionsstelle - Organisationspsychologie</p>
+
+</div>
 </div>
 
 </div>

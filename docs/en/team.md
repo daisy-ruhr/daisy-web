@@ -87,7 +87,10 @@ I lead the junior research group on human factors in AI systems. In my research,
 
 <p class="daisy-person-role">PhD - Individual psychology</p>
 
+I am a PhD researcher at the University of Duisburg-Essen, focusing on the psychological aspects of human-AI interaction. In DAISY, I investigate how employees understand AI-as-a-Service systems and the mental models they develop about how these systems work, as well as the associated privacy and security risks. The goal is to identify potential misconceptions and promote informed and privacy-conscious AI use in the workplace.
+
 </div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Deniz_Barut.JPG" alt="" loading="lazy"></div>
 </div>
 
 </div>

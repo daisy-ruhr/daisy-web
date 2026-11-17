@@ -111,6 +111,27 @@ sync with the blog without maintaining a separate list. This requires JavaScript
 HTTP server (including Zensical's preview); the link to all news remains available
 without JavaScript.
 
+### Team
+
+Use the following template to add a new person within the `daisy-people` div of the correct org.
+Ensure that both the German and English pages are updated in sync.
+
+```html
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
+
+#### Maria Mustermann
+
+<p class="daisy-person-role">Awesomeness Manager</p>
+
+I am responsible for making DAISY a full success! Replace me with your actual bio.
+
+</div>
+<!-- following line is optional, only needed if photo is present. Filename pattern GivenName_Surname.JPG -->
+<div class="daisy-person-photo"><img src="assets/img/staff/Maria_Mustermann.JPG" alt="" loading="lazy"></div>
+</div>
+```
+
 ## To clarify before publishing
 
 The site contains placeholders that must be replaced before going live:

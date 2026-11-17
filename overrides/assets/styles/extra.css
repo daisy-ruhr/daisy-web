@@ -263,6 +263,7 @@
   }
 }
 
+/* Team page */
 .daisy-partner + .daisy-partner {
   border-top: 1px solid var(--md-default-fg-color--lightest);
   margin-top: 1.5rem;
@@ -270,6 +271,7 @@
 .daisy-people {
   display: grid;
   gap: 1.4rem;
+  padding-inline-start: 1rem;
 }
 .daisy-person {
   display: flex;
@@ -307,6 +309,9 @@
   object-fit: cover;
 }
 @media (max-width: 480px) {
+  .daisy-people {
+    padding-inline-start: 0.5rem;
+  }
   .daisy-person {
     flex-direction: column-reverse;
     align-items: center;
