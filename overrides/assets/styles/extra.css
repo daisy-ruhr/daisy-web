@@ -282,47 +282,6 @@
   margin-bottom: 0.25rem;
 }
 
-/* Stat tiles: key numbers at a glance */
-.daisy-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-  gap: 0.75rem;
-  margin: 1rem 0 1.5rem;
-}
-.daisy-stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1rem 0.5rem;
-  border-radius: 0.4rem;
-  border-top: 0.2rem solid var(--md-accent-fg-color);
-  background: var(--md-code-bg-color);
-}
-.daisy-stat-value {
-  font-size: 2.6rem;
-  font-weight: 700;
-  line-height: 1.1;
-  color: var(--md-primary-fg-color--light);
-}
-.daisy-stat-value {
-  background: linear-gradient(120deg, var(--md-primary-fg-color--light) 30%, var(--md-accent-fg-color));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.daisy-stat-label {
-  margin-top: 0.3rem;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-.daisy-stat-note {
-  margin-top: 0.15rem;
-  font-size: 0.65rem;
-  opacity: 0.7;
-}
 
 /* Funding box */
 .daisy-funding {

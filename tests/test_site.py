@@ -133,13 +133,10 @@ class SiteTests(unittest.TestCase):
 
     def test_localized_navigation_and_palette(self):
         for prefix, labels, palette in (
-            ("de/", {"Start", "Aktuelles", "Das Projekt", "Wissenschaftlicher Ansatz", "Arbeitspakete",
-                  "Ergebnisse & Transfer", "Publikationen", "Rechtlicher Rahmen", "Konsortium & Netzwerk",
-                  "Kontakt", "Glossar", "Über DAISY", "Impressum", "Datenschutz"},
+            ("de/", {"Projekt", "News",
+                  "Publikationen", "Konsortium & Kontakt", "Impressum", "Datenschutz"},
              {"slate": "Zu hellem Modus wechseln", "default": "Zu dunklem Modus wechseln"}),
-            ("en/", {"Home", "News", "The Project", "Scientific Approach", "Work Packages",
-                     "Results & Transfer", "Publications", "Legal Framework", "Consortium & Network",
-                     "Contact", "Glossary", "About DAISY", "Legal Notice", "Privacy Policy"},
+            ("en/", {"Project", "News", "Publications", "Consortium & Contact", "Legal Notice", "Privacy Policy"},
              {"slate": "Switch to light mode", "default": "Switch to dark mode"}),
         ):
             with self.subTest(language=prefix or "de"):

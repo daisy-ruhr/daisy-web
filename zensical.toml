@@ -11,15 +11,8 @@ watch = ["overrides/assets", "docs/shared"]
 nav = [
   { "Projekt" = "index.md" },
   { "News" = "news/index.md" },
-#  { "Das Projekt" = "project.md" },
-#  { "Wissenschaftlicher Ansatz" = "approach.md" },
-#  { "Arbeitspakete" = "work-packages.md" },
-#  { "Ergebnisse & Transfer" = "results.md" },
   { "Publikationen" = "publications.md" },
-#  { "Rechtlicher Rahmen" = "legal-framework.md" },
   { "Konsortium & Kontakt" = "team.md" },
-#  { "Kontakt" = "contact.md" },
-#  { "Glossar" = "glossary.md" },
   { "Über DAISY" = [
     { "Impressum" = "Impressum.md" },
     { "Datenschutz" = "Datenschutz.md" },
@@ -28,13 +21,6 @@ nav = [
 
 draft_docs = """
 *.draft.md
-project.md
-approach.md
-work-packages.md
-results.md
-legal-framework.md
-contact.md
-glossary.md
 """
 
 [project.extra]

@@ -90,16 +90,9 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 
 </div>
 
+## Das Projekt auf einen Blick
+
 --8<-- "docs/shared/partner-logos.html"
-
-## Projekt auf einen Blick
-
-<div class="daisy-stats">
-  <div class="daisy-stat"><span class="daisy-stat-value">36</span><span class="daisy-stat-label">Monate</span><span class="daisy-stat-note">09/2026 – 08/2029</span></div>
-  <div class="daisy-stat"><span class="daisy-stat-value">5</span><span class="daisy-stat-label">Arbeitspakete</span></div>
-  <div class="daisy-stat"><span class="daisy-stat-value">4</span><span class="daisy-stat-label">Konsortialpartner</span></div>
-  <div class="daisy-stat"><span class="daisy-stat-value">4</span><span class="daisy-stat-label">Assoziierte Partner</span></div>
-</div>
 
 **Verbundkoordination**
 : Ruhr-Universität Bochum (RUB)
@@ -121,6 +114,8 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 **Förderrichtlinie:** „Plattform Privatheit – IT-Sicherheit schützt Privatheit und stützt
 Demokratie" („Digital.Sicher.Souverän")
 
+**Förderzeitraum:** September 2026 bis August 2029 (3 Jahre)
+
 **Förderkennzeichen:** 16KIS2669K
 
 **Projektvolumen:** 1,55 Mio. € (davon BMFTR-Förderung: 1,29 Mio.)
@@ -129,7 +124,3 @@ Demokratie" („Digital.Sicher.Souverän")
 
 </div>
 
-!!! info "Für wen ist dieses Projekt?"
-    DAISY richtet sich an Entscheidungsträger:innen, Beschäftigte und
-    Interessenvertretungen in Unternehmen – insbesondere an kleine und mittlere
-    Unternehmen, die keine eigene Datenschutz- oder IT-Sicherheitsabteilung haben.

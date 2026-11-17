@@ -88,16 +88,9 @@ transparent way. The legal framework is taken into account from the very beginni
 
 </div>
 
---8<-- "docs/shared/partner-logos.html"
-
 ## The project at a glance
 
-<div class="daisy-stats">
-  <div class="daisy-stat"><span class="daisy-stat-value">36</span><span class="daisy-stat-label">Months</span><span class="daisy-stat-note">09/2026 – 08/2029</span></div>
-  <div class="daisy-stat"><span class="daisy-stat-value">5</span><span class="daisy-stat-label">Work packages</span></div>
-  <div class="daisy-stat"><span class="daisy-stat-value">4</span><span class="daisy-stat-label">Consortium partners</span></div>
-  <div class="daisy-stat"><span class="daisy-stat-value">4</span><span class="daisy-stat-label">Associated partners</span></div>
-</div>
+--8<-- "docs/shared/partner-logos.html"
 
 **Consortium coordination**
 : Ruhr University Bochum (RUB)
@@ -119,6 +112,8 @@ transparent way. The legal framework is taken into account from the very beginni
 **Funding guideline:** "Plattform Privatheit – IT-Sicherheit schützt Privatheit und stützt
 Demokratie" ("Digital.Sicher.Souverän")
 
+**Funding window:** September 2026 to August 2029 (3 years) 
+
 **Funding reference number:** 16KIS2669K
 
 **Project funding sum:** 1.55 mio. € (of which 1.29 mio. is funded by BMFTR)
@@ -126,9 +121,3 @@ Demokratie" ("Digital.Sicher.Souverän")
 ![Funded by the Federal Ministry of Research, Technology and Space (BMFTR)](assets/img/bmftr_en.png){ loading=lazy, width="250"  }
 
 </div>
-
-
-!!! info "Who is this project for?"
-    DAISY is aimed at decision-makers, employees and employee representatives in
-    companies – especially small and medium-sized enterprises that do not have their own
-    data protection or IT security department.
