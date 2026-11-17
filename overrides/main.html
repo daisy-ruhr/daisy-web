@@ -40,12 +40,16 @@
 {% endblock %}
 
 {% block footer %}
-  <!-- BMFTR funding image container -->
-  <div class="custom-footer" style="text-align: center; padding: 20px 0; background-color: var(--md-footer-bg-color);">
-    <a href="{{ base_url }}">
-      <img src="{{ ('assets/img/bmftr_en.png' if config.theme.language == 'en' else 'assets/img/bmftr_de.png') | url }}" alt="{{ 'Funded by BMFTR' if config.theme.language == 'en' else 'Gefördert durch BMFTR' }}" style="max-height: 150px;">
-    </a>
+  <div class="custom-footer">
+    <div class="custom-footer__content">
+      <a href="{{ base_url }}">
+        <img src="{{ ('assets/img/bmftr_en.png' if config.theme.language == 'en' else 'assets/img/bmftr_de.png') | url }}" alt="{{ 'Funded by BMFTR' if config.theme.language == 'en' else 'Gefördert durch BMFTR' }}">
+      </a>
+      <nav class="custom-footer__links" aria-label="{{ 'Legal information' if config.theme.language == 'en' else 'Rechtliche Informationen' }}">
+        <a href="/{{ config.theme.language }}/Impressum/">{{ 'Legal Notice' if config.theme.language == 'en' else 'Impressum' }}</a>
+        <a href="/{{ config.theme.language }}/Datenschutz/">{{ 'Privacy Policy' if config.theme.language == 'en' else 'Datenschutz' }}</a>
+      </nav>
+    </div>
   </div>
-  <!-- original Material for MkDocs footer -->
   {{ super() }}
 {% endblock %}

@@ -1,4 +1,4 @@
-# Publikationen
+# Publikationen & Ergebnisse
 
 Hier sammeln wir wissenschaftliche Veröffentlichungen aus dem Projekt DAISY, sobald sie
 verfügbar sind. Die Publikationen erscheinen in ihrer jeweiligen Originalsprache.

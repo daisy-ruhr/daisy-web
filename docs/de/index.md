@@ -90,7 +90,7 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 
 </div>
 
-## Das Projekt auf einen Blick
+## Eckdaten zum Projekt
 
 --8<-- "docs/shared/partner-logos.html"
 

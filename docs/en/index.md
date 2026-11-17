@@ -88,7 +88,7 @@ transparent way. The legal framework is taken into account from the very beginni
 
 </div>
 
-## The project at a glance
+## Project information
 
 --8<-- "docs/shared/partner-logos.html"
 

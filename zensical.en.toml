@@ -11,12 +11,8 @@ watch = ["overrides/assets", "docs/shared"]
 nav = [
   { "Project" = "index.md" },
   { "News" = "news/index.md" },
-  { "Publications" = "publications.md" },
-  { "Consortium & Contact" = "team.md" },
-  { "About DAISY" = [
-    { "Legal Notice" = "Impressum.md" },
-    { "Privacy Policy" = "Datenschutz.md" },
-  ] },
+  { "Results" = "publications.md" },
+  { "Team" = "team.md" },
 ]
 
 draft_docs = """
@@ -78,6 +74,7 @@ def_list = {}
 md_in_html = {}
 tables = {}
 toc.permalink = true
+toc.toc_depth = 3
 pymdownx.betterem = {}
 pymdownx.blocks.caption = {}
 pymdownx.details = {}

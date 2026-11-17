@@ -1,10 +1,8 @@
-# Konsortium & Kontakt
+# Das Projektteam
 
 DAISY verbindet Informatik, Psychologie und Praxis. Drei Hochschulen und ein
 Praxispartner bilden den Verbund; vier assoziierte Partner wirken ohne eigene Förderung als
 Multiplikatoren und Dialogpartner mit.
-
-## Das Team
 
 ![Konsortiumsmitglieder DAISY](assets/img/daisy_staff.webp){ loading=lazy }
 /// caption
@@ -16,52 +14,25 @@ Dr. Alina Tausch (Uni Witten-Herdecke),
 Dr. Magdalena Wischnewski (UDE).
 ///
 
-## Verbundpartner
+## Projektpartner
 
 --8<-- "docs/shared/partner-logos.html"
 
-<div class="grid cards" markdown="1">
+<div class="daisy-partner" markdown="1">
 
-- __RUB – Ruhr-Universität Bochum__
+### RUB – Ruhr-Universität Bochum
 
-    ---
-
-    Leitet das Konsortium und untersucht die Technik: Sicherheits- und
-    Datenschutzarchitekturen von AIaaS-Diensten, empirische Systemanalysen, Demonstratoren.
-
-- __UW/H – Universität Witten/Herdecke__
-
-    ---
-
-    Verbindet Mensch und Technik im Unternehmen: Wie fallen Entscheidungen über
-    AIaaS, und wie führt man sie so ein, dass Erwartungen und Risiken zusammenpassen?
-
-- __UDE – Universität Duisburg-Essen__
-
-    ---
-
-    Blickt auf die Nutzenden: Welche Vorstellungen haben Menschen von AIaaS, und wie
-    lässt sich ihre Kompetenz im Umgang damit stärken?
-
-- __BoWE – WirtschaftsEntwicklungsGesellschaft Bochum mbH__
-
-    ---
-
-    Praxispartner mit zwei Rollen: erprobt die Lösungen selbst als Pilotanwender und
-    trägt sie in die Bochumer Wirtschaft und Stadtverwaltung.
-
-</div>
-
-## Schlüsselpersonen
+Leitet das Konsortium und untersucht die Technik: Sicherheits- und
+Datenschutzarchitekturen von AIaaS-Diensten, empirische Systemanalysen, Demonstratoren.
 
 <div class="daisy-people" markdown="1">
 
 <div class="daisy-person" markdown="1">
 <div class="daisy-person-text" markdown="1">
 
-### Dr.-Ing. Steffen Becker
+#### Dr.-Ing. Steffen Becker
 
-<p class="daisy-person-role">Technik - RUB</p>
+<p class="daisy-person-role">Technik</p>
 
 Ich leite das technische Teilprojekt von DAISY an der Ruhr-Universität Bochum. Meine Forschung verbindet IT-Sicherheit und Mensch-Computer-Interaktion. In DAISY untersuchen wir die tatsächlichen Datenschutzrisiken von AI-as-a-Service-Systemen und entwickeln Schutzmaßnahmen, die technisch belastbar und im Arbeitsalltag praktikabel sind.
 
@@ -71,12 +42,24 @@ Ich leite das technische Teilprojekt von DAISY an der Ruhr-Universität Bochum. 
 <div class="daisy-person-photo"><img src="assets/img/staff/Steffen_Becker.jpg" alt="" loading="lazy"></div>
 </div>
 
+</div>
+</div>
+
+<div class="daisy-partner" markdown="1">
+
+### UDE – Universität Duisburg-Essen
+
+Blickt auf die Nutzenden: Welche Vorstellungen haben Menschen von AIaaS, und wie
+lässt sich ihre Kompetenz im Umgang damit stärken?
+
+<div class="daisy-people" markdown="1">
+
 <div class="daisy-person" markdown="1">
 <div class="daisy-person-text" markdown="1">
 
-### Dr. Greta Ontrup
+#### Dr. Greta Ontrup
 
-<p class="daisy-person-role">Individuelle Psychologie - UDE</p>
+<p class="daisy-person-role">Individuelle Psychologie</p>
 
 Sie erforscht, wie sich datengestützte Entscheidungen auf Beschäftigte auswirken. Seit
 2020 leitet sie das „AI at Work"-Netzwerk zum Transfer zwischen Wissenschaft und Praxis.
@@ -87,9 +70,9 @@ Sie erforscht, wie sich datengestützte Entscheidungen auf Beschäftigte auswirk
 <div class="daisy-person" markdown="1">
 <div class="daisy-person-text" markdown="1">
 
-### Dr. Magdalena Wischnewski
+#### Dr. Magdalena Wischnewski
 
-<p class="daisy-person-role">Individuelle Psychologie - UDE</p>
+<p class="daisy-person-role">Individuelle Psychologie</p>
 
 Ich leite die Junior Research Group zu Human Factors in KI-Systemen und untersuche, was
 es bedeutet, „KI zu vertrauen“. Im DAISY-Projekt erforsche ich, wie Beschäftigte
@@ -99,12 +82,24 @@ diesen Systemen widerspiegelt.
 </div>
 </div>
 
+</div>
+</div>
+
+<div class="daisy-partner" markdown="1">
+
+### UW/H – Universität Witten/Herdecke
+
+Verbindet Mensch und Technik im Unternehmen: Wie fallen Entscheidungen über
+AIaaS, und wie führt man sie so ein, dass Erwartungen und Risiken zusammenpassen?
+
+<div class="daisy-people" markdown="1">
+
 <div class="daisy-person" markdown="1">
 <div class="daisy-person-text" markdown="1">
 
-### Dr. Alina Tausch
+#### Dr. Alina Tausch
 
-<p class="daisy-person-role">Organisationspsychologie - UW/H</p>
+<p class="daisy-person-role">Organisationspsychologie</p>
 
 Ich übernehme im Projekt die Leitung des organisationspsychologischen Parts, aktuell noch von der Universität Witten/Herdecke aus. Basierend auf meiner Forschung an der Schnittstelle von Arbeitsgestaltung und Organisationspsychologie betrachte ich als Wirtschaftspsychologin, wie Entscheider:innen in Organisationen Entscheidungen über KI treffen und welche Rolle organisationale Rahmenbedingungen wie Organisationskultur spielen.
 
@@ -112,12 +107,24 @@ Ich übernehme im Projekt die Leitung des organisationspsychologischen Parts, ak
 <div class="daisy-person-photo"><img src="assets/img/staff/Alina_Tausch.JPG" alt="" loading="lazy"></div>
 </div>
 
+</div>
+</div>
+
+<div class="daisy-partner" markdown="1">
+
+### BoWE – WirtschaftsEntwicklungsGesellschaft Bochum mbH
+
+Praxispartner mit zwei Rollen: erprobt die Lösungen selbst als Pilotanwender und
+trägt sie in die Bochumer Wirtschaft und Stadtverwaltung.
+
+<div class="daisy-people" markdown="1">
+
 <div class="daisy-person" markdown="1">
 <div class="daisy-person-text" markdown="1">
 
-### Gregor Mähler
+#### Gregor Mähler
 
-<p class="daisy-person-role">Praxis - BoWE</p>
+<p class="daisy-person-role">Praxis</p>
 
 Ich leite das Projekt DAISY bei der Bochum Wirtschaftsentwicklung und konzentriere mich auf sichere, datenschutzkonforme AI-as-a-Service-Lösungen und ihre praktischen Einsatzmöglichkeiten. Gemeinsam mit unseren Hochschulpartnern untersuche ich die technischen und organisatorischen Voraussetzungen und teile die Erkenntnisse mit anderen Unternehmen.
 
@@ -128,14 +135,16 @@ Ich leite das Projekt DAISY bei der Bochum Wirtschaftsentwicklung und konzentrie
 <div class="daisy-person" markdown="1">
 <div class="daisy-person-text" markdown="1">
 
-### Philippe Skender
+#### Philippe Skender
 
-<p class="daisy-person-role">Praxis - BoWE</p>
+<p class="daisy-person-role">Praxis</p>
 
 Als Cybersecurity-Experte verantwortet er die Durchführung beim Praxispartner. Die BoWE
 bringt ihre Doppelrolle als Anwendungspartner und Multiplikator der Ergebnisse ein.
 
 </div>
+</div>
+
 </div>
 
 </div>
