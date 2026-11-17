@@ -82,7 +82,7 @@ definition lists (`def_list`), `attr_list`, `md_in_html`, and snippets (`--8<--`
 
 Currenty disabled pages are listed in `draft_docs` in each .toml file. These are excluded from the build and have also been disabled in the nav manually.
 
-### Publications
+### Publications/Results
 
 Edit `docs/shared/publications.md` once to update both language versions. The localized
 introductions are in `docs/de/publications.md` and `docs/en/publications.md`. The shared
@@ -113,12 +113,11 @@ without JavaScript.
 
 ## To clarify before publishing
 
-The site deliberately contains placeholders that must be replaced before going live:
+The site contains placeholders that must be replaced before going live:
 
 - Contact e-mail in `docs/*/contact.md` (currently `steffen.becker@rub.de`)
 - Legal notice (Impressum): responsible body and a valid postal address (§ 5 TMG)
 - Logo and image rights, and approval of the persons named
-- `overrides/assets/img/favicon.svg` is a placeholder graphic
 
 ## Deployment
 

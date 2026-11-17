@@ -54,50 +54,89 @@ Dr. Magdalena Wischnewski (UDE).
 
 ## Key people
 
-=== "Technology"
+<div class="daisy-people" markdown="1">
 
-    **Dr.-Ing. Steffen Becker** (RUB), junior research group "Human-Centered Hardware
-    Security". He combines IT security and human-computer interaction to design security
-    and privacy mechanisms that are technically robust and at the same time understandable.
-    Particularly relevant are his large-scale, internationally comparative surveys on
-    security and privacy perceptions, including a twelve-country study on widespread
-    misconceptions in IT security.
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
 
-    **E-mail:** [steffen.becker@rub.de](mailto:steffen.becker@rub.de)
+### Dr.-Ing. Steffen Becker
 
-=== "Individual psychology"
+<p class="daisy-person-role">Technology - RUB</p>
 
-    **Dr. Greta Ontrup** (UDE), expert on the psychological effects of data-driven
-    strategies in work and organizational contexts. Since 2020 she has led the "AI at Work"
-    network for transfer between science and practice.
+I lead DAISY’s technical subproject at Ruhr University Bochum. My research combines IT security and human-computer interaction. In DAISY, we examine the actual privacy risks of AI-as-a-Service systems and develop safeguards that are technically robust and practical in everyday work.
 
-    **Dr. Magdalena Wischnewski** (UDE) leads the junior research group on human factors in AI systems. In her research, she examines what it means to "trust AI". In the DAISY projects, she contributes to the individual psychology perspective by investigating how employees make sense of intelligent systems and how this is reflected in their interaction with them.
+**E-mail:** [steffen.becker@rub.de](mailto:steffen.becker@rub.de)
 
-=== "Organizational psychology"
+</div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Steffen_Becker.jpg" alt="" loading="lazy"></div>
+</div>
 
-    **Dr. Alina Tausch** (UW/H), acting chair of Personnel and Organizational Psychology.
-    She works on the collaboration of humans and new technologies such as cobots and AI
-    systems, puts people at the center of technology implementation and focuses on the
-    work-organizational design of processes.
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
 
-=== "Practice"
+### Dr. Greta Ontrup
 
-    **Philippe Skender** (BoWE) is responsible for execution at the practice partner as a
-    cybersecurity expert. BoWE tests the solutions in practice and shares the results.
+<p class="daisy-person-role">Individual psychology - UDE</p>
 
-## Competence profile of the consortium
+She researches the psychological effects of data-driven strategies in work and
+organizational contexts. Since 2020 she has led the "AI at Work" network for transfer
+between science and practice.
 
-The consortium unites complementary competences:
+</div>
+</div>
 
-* individual- and organizational-psychological expertise on human-centered AI use in the
-  world of work (UDE and UW/H),
-* technical and user-centered IT security and privacy research (RUB),
-* practical implementation and transfer expertise of the practice partner (BoWE).
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
 
-The researchers have already worked together in various constellations – for example on a
-widely cited review on human-AI teaming and in founding the HAITeC network. Several of them
-are structurally connected through their shared affiliation with the RC Trust. In addition
-there is experience in carrying out projects funded by the BMFTR.
+### Dr. Magdalena Wischnewski
+
+<p class="daisy-person-role">Individual psychology - UDE</p>
+
+I lead the junior research group on human factors in AI systems. In my research, I examine what it means to "trust AI". In the DAISY project, I contribute to the individual psychology perspective by investigating how employees make sense of intelligent systems and how this is reflected in their interaction with them.
+
+</div>
+</div>
+
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
+
+### Dr. Alina Tausch
+
+<p class="daisy-person-role">Organizational psychology - UW/H</p>
+
+I am leading the organizational psychology component of the project, currently from the University of Witten/Herdecke. Drawing on my research at the intersection of work design and organizational psychology, I examine - as a business psychologist - how decision-makers in organizations decide about AI and what role organizational factors, such as organizational culture, play.
+
+</div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Alina_Tausch.JPG" alt="" loading="lazy"></div>
+</div>
+
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
+
+### Gregor Mähler
+
+<p class="daisy-person-role">Practice - BoWE</p>
+
+I  lead the DAISY project at Bochum Economic Development, focusing on secure, privacy-compliant AI-as-a-Service and its practical applications. Together with our university partners, I assess technical and organisational requirements and share the findings with other businesses.
+
+</div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Gregor_Maehler.jpg" alt="" loading="lazy"></div>
+</div>
+
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
+
+### Philippe Skender
+
+<p class="daisy-person-role">Practice - WirtschaftsEntwicklungsGesellschaft Bochum (BoWE)</p>
+
+As a cybersecurity expert, he is responsible for execution at the practice partner.
+BoWE tests the solutions in practice and shares the results.
+
+</div>
+</div>
+
+</div>
 
 ## Associated partners
 
@@ -141,30 +180,3 @@ the results.
     communication formats.
 
 </div>
-
-## Placement in research and transfer networks
-
-The project is embedded in relevant networks of the partners that reinforce the
-dissemination and connectivity of the results:
-
-* Research Center Trustworthy Data Science and Security ([RC Trust](https://rc-trust.ai/) – shared affiliation of
-  the RUB and UDE researchers and structural basis for the further development of results
-* Cluster of Excellence CASA and MPI-SP – existing collaborations
-* "AI at Work" network – transfer between science and practice
-* HAITeC network – human-AI teaming and cooperation
-* Regional business and innovation networks of BoWE
-
-## Proximity to other projects
-
-DAISY differs from existing funded projects of the Plattform Privatheit through its focus on
-AI-as-a-Service: since these services elude the direct control of companies and employees,
-novel challenges for data protection and privacy arise that have hardly been addressed so
-far. No funded project has an explicit focus on the work context and on the organizational
-conditions and decision-making processes of AI use.
-
-The closest thematic proximity is to the competence center humAIne, likewise rooted in the
-Ruhr area, which researches human-centered AI in the world of work. DAISY builds on its
-findings on human-centeredness and implementation processes; the novel contribution lies in
-the implementation and the participatory, privacy-sensitive introduction of **existing**
-rather than newly developed AI systems. There is collaboration with the HUMAINE Network as
-an associated partnership, and synergies with PrivacyE2E arise via RUB.

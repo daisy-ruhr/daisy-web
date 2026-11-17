@@ -54,50 +54,91 @@ Dr. Magdalena Wischnewski (UDE).
 
 ## Schlüsselpersonen
 
-=== "Technik"
+<div class="daisy-people" markdown="1">
 
-    **Dr.-Ing. Steffen Becker** (RUB), Nachwuchsgruppe „Human-Centered Hardware Security".
-    Er verbindet IT-Sicherheit und Mensch-Computer-Interaktion, damit Schutzmechanismen
-    technisch robust und trotzdem verständlich sind. Er hat in großen internationalen
-    Umfragen untersucht, wie Menschen Sicherheit und Privatheit wahrnehmen, darunter in
-    einer Zwölf-Länder-Studie zu verbreiteten Irrtümern in der IT-Sicherheit.
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
 
-    **E-mail:** [steffen.becker@rub.de](mailto:steffen.becker@rub.de)
+### Dr.-Ing. Steffen Becker
 
-=== "Individuelle Psychologie"
+<p class="daisy-person-role">Technik - RUB</p>
 
-    **Dr. Greta Ontrup** (UDE) erforscht, wie sich datengestützte Entscheidungen auf
-    Beschäftigte auswirken. Seit 2020 leitet sie das „AI at Work"-Netzwerk zum Transfer zwischen Wissenschaft und Praxis.
+Ich leite das technische Teilprojekt von DAISY an der Ruhr-Universität Bochum. Meine Forschung verbindet IT-Sicherheit und Mensch-Computer-Interaktion. In DAISY untersuchen wir die tatsächlichen Datenschutzrisiken von AI-as-a-Service-Systemen und entwickeln Schutzmaßnahmen, die technisch belastbar und im Arbeitsalltag praktikabel sind.
 
-    **Dr. Magdalena Wischnewski** (UDE) leitet die Junior Reasearch Group zu Human Factors in KI-Systemen. In ihrer Forschung untersucht sie, was es bedeutet, „KI zu vertrauen“. Im DAISY-Projekt bringt sie die individualpsychologische Perspektive ein, indem sie erforscht, wie Beschäftigte intelligente Systeme einordnen und verstehen und wie sich dies in ihrer Interaktion mit diesen Systemen widerspiegelt.
+**E-Mail:** [steffen.becker@rub.de](mailto:steffen.becker@rub.de)
 
-=== "Organisationspsychologie"
+</div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Steffen_Becker.jpg" alt="" loading="lazy"></div>
+</div>
 
-    **Dr. Alina Tausch** (UW/H), Vertretung der Professur für Personal- und
-    Organisationspsychologie. Sie erforscht die Zusammenarbeit von Menschen mit Cobots
-    und KI-Systemen und wie sich Arbeitsabläufe so gestalten lassen, dass die
-    Beschäftigten bei der Einführung neuer Technik im Mittelpunkt stehen.
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
 
-=== "Praxis"
+### Dr. Greta Ontrup
 
-    **Gregor Mähler** (BoWE) leads the DAISY project at Bochum Economic Development, focusing on secure, privacy-compliant AI-as-a-Service and its practical applications. Together with the university partners, he assesses technical and organisational requirements and shares the findings with other businesses.
+<p class="daisy-person-role">Individuelle Psychologie - UDE</p>
 
-    **Philippe Skender** (BoWE) verantwortet als Cybersecurity-Experte die Durchführung
-    beim Praxispartner. Die BoWE bringt ihre Doppelrolle als Anwendungspartner und
-    Multiplikator der Ergebnisse ein.
+Sie erforscht, wie sich datengestützte Entscheidungen auf Beschäftigte auswirken. Seit
+2020 leitet sie das „AI at Work"-Netzwerk zum Transfer zwischen Wissenschaft und Praxis.
 
-## Kompetenzprofil des Verbunds
+</div>
+</div>
 
-Die Partner ergänzen sich:
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
 
-* Psychologie der KI-Nutzung im Arbeitsalltag, individuell und organisational (UDE und UW/H)
-* IT-Sicherheit und Privatheit, technisch und aus Sicht der Nutzenden (RUB)
-* Praxiserfahrung und Transfer in die Region (BoWE)
+### Dr. Magdalena Wischnewski
 
-Die Forschenden kennen sich aus früheren Projekten, etwa einer vielzitierten
-Übersichtsarbeit zu Human-AI Teaming und der Gründung des HAITeC-Netzwerks. Mehrere
-arbeiten zudem im RC Trust zusammen, und das Team hat bereits BMFTR-geförderte Projekte
-durchgeführt.
+<p class="daisy-person-role">Individuelle Psychologie - UDE</p>
+
+Ich leite die Junior Research Group zu Human Factors in KI-Systemen und untersuche, was
+es bedeutet, „KI zu vertrauen“. Im DAISY-Projekt erforsche ich, wie Beschäftigte
+intelligente Systeme einordnen und verstehen und wie sich dies in ihrer Interaktion mit
+diesen Systemen widerspiegelt.
+
+</div>
+</div>
+
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
+
+### Dr. Alina Tausch
+
+<p class="daisy-person-role">Organisationspsychologie - UW/H</p>
+
+Ich übernehme im Projekt die Leitung des organisationspsychologischen Parts, aktuell noch von der Universität Witten/Herdecke aus. Basierend auf meiner Forschung an der Schnittstelle von Arbeitsgestaltung und Organisationspsychologie betrachte ich als Wirtschaftspsychologin, wie Entscheider:innen in Organisationen Entscheidungen über KI treffen und welche Rolle organisationale Rahmenbedingungen wie Organisationskultur spielen.
+
+</div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Alina_Tausch.JPG" alt="" loading="lazy"></div>
+</div>
+
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
+
+### Gregor Mähler
+
+<p class="daisy-person-role">Praxis - BoWE</p>
+
+Ich leite das Projekt DAISY bei der Bochum Wirtschaftsentwicklung und konzentriere mich auf sichere, datenschutzkonforme AI-as-a-Service-Lösungen und ihre praktischen Einsatzmöglichkeiten. Gemeinsam mit unseren Hochschulpartnern untersuche ich die technischen und organisatorischen Voraussetzungen und teile die Erkenntnisse mit anderen Unternehmen.
+
+</div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Gregor_Maehler.jpg" alt="" loading="lazy"></div>
+</div>
+
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
+
+### Philippe Skender
+
+<p class="daisy-person-role">Praxis - BoWE</p>
+
+Als Cybersecurity-Experte verantwortet er die Durchführung beim Praxispartner. Die BoWE
+bringt ihre Doppelrolle als Anwendungspartner und Multiplikator der Ergebnisse ein.
+
+</div>
+</div>
+
+</div>
 
 ## Assoziierte Partner
 
@@ -139,30 +180,3 @@ verschiedenen Branchen nutzbar zu machen.
     spielerischen Formate des Projekts zur Sensibilisierung und Wissenschaftskommunikation.
 
 </div>
-
-## Netzwerke
-
-DAISY nutzt bestehende Netzwerke der Partner, um Ergebnisse zu verbreiten und
-weiterzuentwickeln:
-
-* Research Center Trustworthy Data Science and Security ([RC Trust](https://rc-trust.ai/)) – gemeinsamer
-  Forschungsverbund von RUB und UDE
-* Exzellenzcluster CASA und MPI-SP – bestehende Kooperationen
-* „AI at Work"-Netzwerk – Transfer zwischen Wissenschaft und Praxis
-* HAITeC-Netzwerk – Human-AI Teaming und Kooperation
-* Regionale Wirtschafts- und Innovationsnetzwerke der BoWE
-
-## Abgrenzung zu anderen Projekten
-
-Andere Projekte der Plattform Privatheit befassen sich nicht mit AI-as-a-Service. Diese
-Dienste laufen außerhalb der Kontrolle von Unternehmen und Beschäftigten, was neue
-Datenschutz- und Privatheitsrisiken schafft, die bisher kaum untersucht sind. Auch den
-Arbeitskontext und die Frage, wie Organisationen über KI-Nutzung entscheiden, behandelt
-kein anderes gefördertes Vorhaben.
-
-Am nächsten steht DAISY das Kompetenzzentrum humAIne, ebenfalls im Ruhrgebiet, das
-menschenzentrierte KI in der Arbeitswelt erforscht. DAISY baut auf dessen Erkenntnissen zur
-Einführung von KI auf. Neu ist der Fokus auf eine partizipative, datenschutzsensible
-Einführung **bestehender** statt neu entwickelter KI-Systeme. Mit dem HUMAINE Network
-besteht eine assoziierte Partnerschaft, mit PrivacyE2E gibt es über die RUB
-Berührungspunkte.

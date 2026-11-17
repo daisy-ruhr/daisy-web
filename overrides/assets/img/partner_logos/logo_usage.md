@@ -17,12 +17,12 @@ Only a low-quality JPEG is officially provided at https://www.bochum.de/Referat-
 
 Used high-quality vector from website source
 
-Protected area is complex
+Protected area is complex (about the book/arrow height vertically and its width horizontally to be safe)
 
 ## UW/H
 
 Min. logo h.: 8mm, better 14mm
-Protected area: 1/4 of logo height, better
+Protected area: 1/4 of logo height, better 1/2
 
 Official logo download is not publically accessible, used high-quality vector website logo
 

@@ -223,6 +223,54 @@
   }
 }
 
+.daisy-people {
+  display: grid;
+  gap: 1.4rem;
+}
+.daisy-person {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.daisy-person-text {
+  flex: 1;
+  min-width: 0;
+}
+.md-typeset .daisy-person h3 {
+  margin: 0 0 0.1rem;
+}
+.md-typeset .daisy-person p {
+  margin: 0 0 0.4rem;
+}
+.md-typeset .daisy-person p:last-child {
+  margin-bottom: 0;
+}
+.md-typeset .daisy-person-role {
+  color: var(--md-primary-fg-color--light);
+  font-weight: 600;
+}
+.daisy-person-photo {
+  flex: none;
+  width: 128px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.md-typeset .daisy-person-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 480px) {
+  .daisy-person {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 0.6rem;
+  }
+}
+
 /* Partner abbreviations as accent */
 .daisy-kicker {
   color: var(--md-accent-fg-color);
