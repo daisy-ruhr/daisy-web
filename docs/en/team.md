@@ -1,4 +1,4 @@
-# Consortium & Network
+# Consortium & Contact
 
 DAISY connects computer science, psychology and practice. The consortium comprises three
 scientific partners and one practice partner; four associated partners contribute as
@@ -17,6 +17,8 @@ Dr. Magdalena Wischnewski (UDE).
 ///
 
 ## Consortium partners
+
+--8<-- "docs/shared/partner-logos.html"
 
 <div class="grid cards" markdown="1">
 
@@ -61,15 +63,15 @@ Dr. Magdalena Wischnewski (UDE).
     security and privacy perceptions, including a twelve-country study on widespread
     misconceptions in IT security.
 
+    **E-mail:** [steffen.becker@rub.de](mailto:steffen.becker@rub.de)
+
 === "Individual psychology"
 
     **Dr. Greta Ontrup** (UDE), expert on the psychological effects of data-driven
     strategies in work and organizational contexts. Since 2020 she has led the "AI at Work"
     network for transfer between science and practice.
 
-    **Dr. Magdalena Wischnewski** (UDE), social psychologist; researches the development of
-    human-centered, trustworthy AI – for example the calibration and measurement of trust
-    and AI certifications.
+    **Dr. Magdalena Wischnewski** (UDE) leads the junior research group on human factors in AI systems. In her research, she examines what it means to "trust AI". In the DAISY projects, she contributes to the individual psychology perspective by investigating how employees make sense of intelligent systems and how this is reflected in their interaction with them.
 
 === "Organizational psychology"
 

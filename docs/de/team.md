@@ -1,4 +1,4 @@
-# Konsortium & Netzwerk
+# Konsortium & Kontakt
 
 DAISY verbindet Informatik, Psychologie und Praxis. Drei Hochschulen und ein
 Praxispartner bilden den Verbund; vier assoziierte Partner wirken ohne eigene Förderung als
@@ -17,6 +17,8 @@ Dr. Magdalena Wischnewski (UDE).
 ///
 
 ## Verbundpartner
+
+--8<-- "docs/shared/partner-logos.html"
 
 <div class="grid cards" markdown="1">
 
@@ -60,14 +62,14 @@ Dr. Magdalena Wischnewski (UDE).
     Umfragen untersucht, wie Menschen Sicherheit und Privatheit wahrnehmen, darunter in
     einer Zwölf-Länder-Studie zu verbreiteten Irrtümern in der IT-Sicherheit.
 
+    **E-mail:** [steffen.becker@rub.de](mailto:steffen.becker@rub.de)
+
 === "Individuelle Psychologie"
 
     **Dr. Greta Ontrup** (UDE) erforscht, wie sich datengestützte Entscheidungen auf
     Beschäftigte auswirken. Seit 2020 leitet sie das „AI at Work"-Netzwerk zum Transfer zwischen Wissenschaft und Praxis.
 
-    **Dr. Magdalena Wischnewski** (UDE), Sozialpsychologin, forscht zu vertrauenswürdiger
-    KI: Wie misst man Vertrauen, wie gelingt es, dass es zur tatsächlichen Verlässlichkeit
-    passt, und was leisten KI-Zertifizierungen?
+    **Dr. Magdalena Wischnewski** (UDE) leitet die Junior Reasearch Group zu Human Factors in KI-Systemen. In ihrer Forschung untersucht sie, was es bedeutet, „KI zu vertrauen“. Im DAISY-Projekt bringt sie die individualpsychologische Perspektive ein, indem sie erforscht, wie Beschäftigte intelligente Systeme einordnen und verstehen und wie sich dies in ihrer Interaktion mit diesen Systemen widerspiegelt.
 
 === "Organisationspsychologie"
 
@@ -77,6 +79,8 @@ Dr. Magdalena Wischnewski (UDE).
     Beschäftigten bei der Einführung neuer Technik im Mittelpunkt stehen.
 
 === "Praxis"
+
+    **Gregor Mähler** (BoWE) leads the DAISY project at Bochum Economic Development, focusing on secure, privacy-compliant AI-as-a-Service and its practical applications. Together with the university partners, he assesses technical and organisational requirements and shares the findings with other businesses.
 
     **Philippe Skender** (BoWE) verantwortet als Cybersecurity-Experte die Durchführung
     beim Praxispartner. Die BoWE bringt ihre Doppelrolle als Anwendungspartner und

@@ -90,6 +90,8 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 
 </div>
 
+--8<-- "docs/shared/partner-logos.html"
+
 ## Projekt auf einen Blick
 
 <div class="daisy-stats">

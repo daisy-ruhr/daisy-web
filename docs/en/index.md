@@ -88,6 +88,8 @@ transparent way. The legal framework is taken into account from the very beginni
 
 </div>
 
+--8<-- "docs/shared/partner-logos.html"
+
 ## The project at a glance
 
 <div class="daisy-stats">

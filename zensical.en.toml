@@ -61,6 +61,7 @@ language = "en"
 variant = "classic"
 font = false
 favicon = "assets/img/favicon.svg"
+logo = "assets/img/logo_w_shadow.svg"
 custom_dir = "overrides"
 features = [
   "navigation.tracking",
