@@ -43,6 +43,10 @@
   display: none;
 }
 
+.hide {
+  display: none !important;
+}
+
 .custom-footer {
   background-color: var(--md-footer-bg-color);
   padding: 1.25rem 1rem;

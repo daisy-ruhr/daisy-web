@@ -3,22 +3,22 @@ hide:
   - toc
 ---
 
-<div class="daisy-hero" markdown="1">
+<!--<div class="daisy-hero" markdown="1">
 
 <div class="daisy-hero-layout" markdown="1">
 
-<div class="daisy-hero-content" markdown="1">
+<div class="daisy-hero-content" markdown="1">-->
 
 # DAISY
 
 **Data Protection and Employee Interests in AI-as-a-Service Systems**
 
-Companies mostly buy AI rather than develop it themselves.  
-DAISY aims to research services that are
+AI has become an important tool in many companies.  
+DAISY aims to research service solutions that are
 practical while minimizing privacy risks: technically, psychologically and
 organizationally, tested in everyday business operations.
 
-<div class="daisy-hero-actions" markdown="1">
+<!--<div class="daisy-hero-actions" markdown="1">
 
 [Publications](publications.md){ .md-button .md-button--primary }
 [Contact](team.md){ .md-button }
@@ -29,7 +29,25 @@ organizationally, tested in everyday business operations.
 
 </div>
 
-</div>
+</div>-->
+
+## Project summary
+
+Many companies use artificial intelligence as a service: employees query an internally
+configured chatbot whose language model is operated in the cloud by a third-party provider.
+This is cheap, fast,and requires hardly any in-house AI expertise. In other enterprises, an AI strategy might not even have been laid out yet and employees are using various unpoliced personal tools.
+
+What remains open is what happens to employees' data, who bears responsibility and where
+the limits of the system lie - especially when automating workflows with agentic tools. These risks are rarely intuitive for users and
+decision-makers, as they differ significantly from the commercial chatbots people know
+from their private lives.
+
+DAISY starts exactly there. As a consortium of computer science, psychology and practice,
+we develop IT security solutions, strengthen the competence of decision-makers and
+employees, and shape the introduction of AI services in companies together in a participatory and
+transparent way. The legal framework is taken into account from the very beginning.
+
+<div class="daisy-summary-art-container hide"><div class="daisy-summary-art" aria-hidden="true"></div></div>
 
 ## Latest news
 
@@ -37,27 +55,9 @@ organizationally, tested in everyday business operations.
 
 [All news](news/index.md){ .md-button }
 
-## Project summary
+<!-- ## What sets DAISY apart -->
 
-Many companies use artificial intelligence as a service: employees query an internally
-configured chatbot whose language model is operated in the cloud by a third-party provider.
-This is cheap, fast,and requires hardly any in-house AI expertise.
-
-What remains open is what happens to employees' data, who bears responsibility and where
-the limits of the system lie. These risks are rarely intuitive for users and
-decision-makers, as they differ significantly from the commercial chatbots people know
-from their private lives.
-
-DAISY starts exactly there. As a consortium of computer science, psychology and practice,
-we develop IT security solutions, strengthen the competence of decision-makers and
-employees, and shape the introduction of AI services in companies in a participatory and
-transparent way. The legal framework is taken into account from the very beginning.
-
-<div class="daisy-summary-art-container"><div class="daisy-summary-art" aria-hidden="true"></div></div>
-
-## What sets DAISY apart
-
-<div class="grid cards" markdown="1">
+<div class="grid cards hide" markdown="1">
 
 - :material-shield-lock:{ .lg .middle } __Secure technology__
 

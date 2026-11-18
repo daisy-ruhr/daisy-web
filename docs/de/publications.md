@@ -1,6 +1,6 @@
 # Publikationen & Ergebnisse
 
-Hier sammeln wir wissenschaftliche Veröffentlichungen aus dem Projekt DAISY, sobald sie
+Hier sammeln wir wissenschaftliche Veröffentlichungen und Ergebnisse aus dem Projekt DAISY, sobald sie
 verfügbar sind. Die Publikationen erscheinen in ihrer jeweiligen Originalsprache.
 
 Die Kategorien kennzeichnen den Schwerpunkt: **Technical** (Technik),
