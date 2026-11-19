@@ -11,7 +11,7 @@ hide:
 
 # DAISY
 
-**Data Protection and Employee Interests in AI-as-a-Service Systems**
+**D**ata Protection and Employee Interests in **AI**-as-a-Service **Sy**stems
 
 AI has become an important tool in many companies.  
 DAISY aims to research service solutions that are
@@ -44,7 +44,7 @@ from their private lives.
 
 DAISY starts exactly there. As a consortium of computer science, psychology and practice,
 we develop IT security solutions, strengthen the competence of decision-makers and
-employees, and shape the introduction of AI services in companies together in a participatory and
+employees, and shape the introduction of AI services in Ruhr area companies together in a participatory and
 transparent way. The legal framework is taken into account from the very beginning.
 
 <div class="daisy-summary-art-container hide"><div class="daisy-summary-art" aria-hidden="true"></div></div>
@@ -90,19 +90,8 @@ transparent way. The legal framework is taken into account from the very beginni
 
 ## Project information
 
+**Project partners**
 --8<-- "docs/shared/partner-logos.html"
-
-**Consortium coordination**
-: Ruhr University Bochum (RUB)
-
-**Scientific partners**
-: Witten/Herdecke University (UW/H), University of Duisburg-Essen (UDE)
-
-**Practice partner**
-: WirtschaftsEntwicklungsGesellschaft Bochum mbH (BoWE)
-
-**Region**
-: Bochum and the Ruhr area, with nationwide impact
 
 **Funding**
 <div class="daisy-funding" markdown="1">

@@ -11,7 +11,7 @@ hide:
 
 # DAISY
 
-**Datenschutz und Arbeitnehmendeninteressen in AI-as-a-Service-Systemen**
+**D**atenschutz und **A**rbeitnehmenden**i**nteressen in **AI**-as-a-Service-**Sy**stemen
 
 KI ist aus vielen Unternehmen nicht mehr wegzudenken. DAISY hat das Ziel, praktikale und zugleich
 Datenschutzrisiken minimierende Lösungen zu erforschen: technisch, psychologisch und organisatorisch,
@@ -46,7 +46,7 @@ der Nutzung kommerzieller Chatbots im Privatleben.
 
 DAISY setzt genau hier an. Im Verbund aus Informatik, Psychologie und Praxis entwickeln
 wir IT-Sicherheitslösungen, stärken die Kompetenz von Entscheidenden und Mitarbeitenden
-und gestalten gemeinsam die Einführung von KI-Diensten im Unternehmen partizipativ und
+und gestalten gemeinsam die Einführung von KI-Diensten im Unternehmen im Ruhrgebiet partizipativ und
 nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 
 <div class="daisy-summary-art-container hide"><div class="daisy-summary-art" aria-hidden="true"></div></div>
@@ -94,19 +94,8 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 
 ## Eckdaten zum Projekt
 
+**Projektpartner**
 --8<-- "docs/shared/partner-logos.html"
-
-**Verbundkoordination**
-: Ruhr-Universität Bochum (RUB)
-
-**Wissenschaftliche Partner**
-: Universität Witten/Herdecke (UW/H), Universität Duisburg-Essen (UDE)
-
-**Praxispartner**
-: WirtschaftsEntwicklungsGesellschaft Bochum mbH (BoWE)
-
-**Region**
-: Bochum und Ruhrgebiet, mit überregionaler Ausstrahlung
 
 **Förderung**
 <div class="daisy-funding" markdown="1">
