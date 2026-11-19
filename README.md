@@ -81,6 +81,7 @@ tabs (`=== "Tab"`), grid cards (`<div class="grid cards" markdown="1">`),
 definition lists (`def_list`), `attr_list`, `md_in_html`, and snippets (`--8<--`).
 
 Currenty disabled pages are listed in `draft_docs` in each .toml file. These are excluded from the build and have also been disabled in the nav manually.
+Files named `*.draft.md` match that pattern; the tests and the legacy redirect script skip them as well.
 
 ### Publications/Results
 
@@ -143,6 +144,18 @@ The site targets WCAG 2.1 AA (BITV 2.0 / EN 301 549). When editing content:
   pages; in `docs/shared/publications.md` wrap each entry in `<div lang="..." markdown="1">`.
 - Use descriptive link texts.
 - Check colour contrast (4.5:1 for text, 3:1 for icons/borders) in both light and dark mode.
+
+### Accessibility statement
+
+The *Erklärung zur Barrierefreiheit* is drafted in `docs/de/Barrierefreiheit.draft.md` and
+`docs/en/Barrierefreiheit.draft.md` (status: partially compliant). To publish it:
+
+1. Replace every `[TODO: …]` placeholder in both files (responsible body, contact, dates,
+   enforcement body, legal basis, results of the manual review) and remove the draft comment.
+2. Rename both files to `Barrierefreiheit.md` (same name in both languages, like `Impressum.md`).
+3. Add a footer link next to Impressum/Datenschutz in `overrides/main.html`, e.g.
+   `<a href="/{{ config.theme.language }}/Barrierefreiheit/">{{ 'Accessibility' if en else 'Barrierefreiheit' }}</a>`.
+4. Review the statement at least once a year and after major changes, and update its date.
 
 ## To clarify before publishing
 

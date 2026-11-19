@@ -23,7 +23,7 @@ sitemap.write(sitemap_path, encoding="utf-8", xml_declaration=True)
 shutil.copyfile("overrides/language-landing.html", "site/index.html")
 for source in Path("docs/de").rglob("*.md"):
     relative = source.relative_to("docs/de")
-    if relative.parts[0] == "news":
+    if relative.parts[0] == "news" or relative.name.endswith(".draft.md"):
         continue
     page = relative.parent if relative.name == "index.md" else relative.with_suffix("")
     if page == Path("."):

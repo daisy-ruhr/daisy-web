@@ -29,6 +29,8 @@ def post_metadata(source, language):
 
 
 def published_source(source, language):
+    if source.name.endswith(".draft.md"):  # excluded by draft_docs
+        return False
     metadata = post_metadata(source, language)
     return not metadata or not metadata.get("draft", False)
 
