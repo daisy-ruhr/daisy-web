@@ -3,6 +3,8 @@
 <!--
 Examples only: replace all details and remove the surrounding comment before publishing.
 Add entries in reverse chronological order. Use the original publication title and authors.
+Wrap each entry in <div lang=".." markdown="1"> with the language of the publication
+("en" or "de"), because this file is shown on both language versions.
 
 ### Examplejournal article title
 
@@ -28,6 +30,8 @@ the Example Conference*, 1–10.
 
 ## 2026
 
+<div lang="en" markdown="1">
+
 !!! info
     The following is a pertinent publication which predates the start of the project term
 
@@ -40,5 +44,7 @@ Hannig, L. and Bush, A. and Aksoy, M. and Trappen, T. and Becker, S. and Ontrup,
 In *Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems*, Article No.: 965, Pages 1 - 23.
 
 [DOI: https://doi.org/10.1145/3772318.3790622](https://doi.org/10.1145/3772318.3790622){ .md-button target="_blank" }
+
+</div>
 
 </div>

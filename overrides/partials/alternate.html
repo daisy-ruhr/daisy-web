@@ -10,7 +10,7 @@
           {% set root = base_url ~ "/../" ~ (alt.link | trim('/')) %}
           <li class="md-select__item">
             {# Use the page-specific URL directly instead of Zensical's sitemap-based click handler. #}
-            <a href="{{ root }}/{{ page.url }}" hreflang="{{ alt.lang }}" target="_self" class="md-select__link">{{ alt.name }}</a>
+            <a href="{{ root }}/{{ page.url }}" hreflang="{{ alt.lang }}" lang="{{ alt.lang }}" target="_self" class="md-select__link">{{ alt.name }}</a>
           </li>
         {% endfor %}
       </ul>

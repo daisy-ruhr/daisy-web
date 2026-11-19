@@ -4,6 +4,7 @@ import json
 import re
 import shutil
 import subprocess
+import sys
 import tempfile
 import threading
 import tomllib
@@ -299,7 +300,7 @@ class SiteTests(unittest.TestCase):
                     f"# Test {day}\n\nIntroduction.\n\n<!-- more -->\n\nDetails.\n",
                     encoding="utf-8",
                 )
-            subprocess.run([str(ROOT / ".venv/bin/zensical"), "build", "--strict"],
+            subprocess.run([sys.executable, "-m", "zensical", "build", "--strict"],
                            cwd=project, check=True, capture_output=True, text=True)
             overview = (project / "site/de/news/index.html").read_text(encoding="utf-8")
             dates = re.findall(r'<time datetime="(2026-09-\d\d)', overview)

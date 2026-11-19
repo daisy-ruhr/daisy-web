@@ -13,7 +13,7 @@ hide:
 
 **D**atenschutz und **A**rbeitnehmenden**i**nteressen in **AI**-as-a-Service-**Sy**stemen
 
-KI ist aus vielen Unternehmen nicht mehr wegzudenken. DAISY hat das Ziel, praktikale und zugleich
+KI ist aus vielen Unternehmen nicht mehr wegzudenken. DAISY hat das Ziel, praktikable und zugleich
 Datenschutzrisiken minimierende Lösungen zu erforschen: technisch, psychologisch und organisatorisch,
 erprobt im Unternehmensalltag.
 
@@ -53,7 +53,7 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 
 ## Aktuelles
 
-<div class="daisy-latest-news" data-news-url="news/" data-news-error="Die aktuellen Meldungen konnten nicht geladen werden." data-news-empty="Es gibt noch keine Meldungen." aria-live="polite"></div>
+<div class="daisy-latest-news" data-news-url="news/" data-news-error="Die aktuellen Meldungen konnten nicht geladen werden." data-news-empty="Es gibt noch keine Meldungen." aria-busy="true"></div>
 
 [Alle Meldungen](news/index.md){ .md-button }
 
@@ -94,10 +94,12 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 
 ## Eckdaten zum Projekt
 
-**Projektpartner**
+### Projektpartner
+
 --8<-- "docs/shared/partner-logos.html"
 
-**Förderung**
+### Förderung
+
 <div class="daisy-funding" markdown="1">
 
 **Gefördert durch:** Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR)

@@ -74,7 +74,7 @@ Sie erforscht, wie sich datengestützte Entscheidungen auf Beschäftigte auswirk
 
 <p class="daisy-person-role">Individuelle Psychologie</p>
 
-Ich leite die Junior Research Group zu Human Factors in KI-Systemen und untersuche, was
+Ich leite die <span lang="en">Junior Research Group</span> zu <span lang="en">Human Factors</span> in KI-Systemen und untersuche, was
 es bedeutet, „KI zu vertrauen“. Im DAISY-Projekt erforsche ich, wie Beschäftigte
 intelligente Systeme einordnen und verstehen und wie sich dies in ihrer Interaktion mit
 diesen Systemen widerspiegelt.

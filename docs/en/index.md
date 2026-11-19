@@ -35,7 +35,7 @@ organizationally, tested in everyday business operations.
 
 Many companies use artificial intelligence as a service: employees query an internally
 configured chatbot whose language model is operated in the cloud by a third-party provider.
-This is cheap, fast,and requires hardly any in-house AI expertise. In other enterprises, an AI strategy might not even have been laid out yet and employees are using various unpoliced personal tools.
+This is cheap, fast, and requires hardly any in-house AI expertise. In other enterprises, an AI strategy might not even have been laid out yet and employees are using various unpoliced personal tools.
 
 What remains open is what happens to employees' data, who bears responsibility and where
 the limits of the system lie - especially when automating workflows with agentic tools. These risks are rarely intuitive for users and
@@ -51,7 +51,7 @@ transparent way. The legal framework is taken into account from the very beginni
 
 ## Latest news
 
-<div class="daisy-latest-news" data-news-url="news/" data-news-error="The latest news could not be loaded." data-news-empty="There are no news posts yet." aria-live="polite"></div>
+<div class="daisy-latest-news" data-news-url="news/" data-news-error="The latest news could not be loaded." data-news-empty="There are no news posts yet." aria-busy="true"></div>
 
 [All news](news/index.md){ .md-button }
 
@@ -90,16 +90,18 @@ transparent way. The legal framework is taken into account from the very beginni
 
 ## Project information
 
-**Project partners**
+### Project partners
+
 --8<-- "docs/shared/partner-logos.html"
 
-**Funding**
+### Funding
+
 <div class="daisy-funding" markdown="1">
 
 **Funded by:** Federal Ministry of Research, Technology and Space (BMFTR)
 
-**Funding guideline:** "Plattform Privatheit – IT-Sicherheit schützt Privatheit und stützt
-Demokratie" ("Digital.Sicher.Souverän")
+**Funding guideline:** "<span lang="de">Plattform Privatheit – IT-Sicherheit schützt Privatheit und stützt
+Demokratie</span>" ("<span lang="de">Digital.Sicher.Souverän</span>")
 
 **Funding window:** September 2026 to August 2029 (3 years) 
 

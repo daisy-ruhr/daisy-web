@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!container) return;
 
   const overviewUrl = new URL(container.dataset.newsUrl, document.baseURI);
+  const done = () => container.setAttribute("aria-busy", "false");
   fetch(overviewUrl)
     .then((response) => {
       if (!response.ok) throw new Error(`News request failed: ${response.status}`);
@@ -36,5 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch((error) => {
       console.error("Could not load latest news:", error);
       container.textContent = container.dataset.newsError;
-    });
+    })
+    .finally(done);
 });

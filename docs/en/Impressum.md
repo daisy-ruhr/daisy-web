@@ -5,7 +5,7 @@ hide:
 
 # Legal Notice
 
-Information pursuant to German § 5 TMG.
+Information pursuant to German § 5 DDG.
 
 !!! note "Courtesy translation"
     This is a courtesy translation. The German version of this page is legally binding.
@@ -31,8 +31,8 @@ Dr. Steffen Becker (project coordinator)
 
 ## Project sponsor
 
-Funded under the funding guideline "Plattform Privatheit – IT-Sicherheit schützt Privatheit
-und stützt Demokratie" ("Digital.Sicher.Souverän"). For details see
+Funded under the funding guideline "<span lang="de">Plattform Privatheit – IT-Sicherheit schützt Privatheit
+und stützt Demokratie</span>" ("<span lang="de">Digital.Sicher.Souverän</span>"). For details see
 [Contact](team.md).
 
 ## Liability for content

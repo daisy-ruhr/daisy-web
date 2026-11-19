@@ -132,12 +132,24 @@ I am responsible for making DAISY a full success! Replace me with your actual bi
 </div>
 ```
 
+## Accessibility
+
+The site targets WCAG 2.1 AA (BITV 2.0 / EN 301 549). When editing content:
+
+- Use real headings (`##`, `###`) instead of bold lines, without skipping levels.
+- Give every informative image an `alt` text; use `alt=""` only for decorative images
+  (e.g. team photos next to the person's name).
+- Mark passages in the other language, e.g. `<span lang="en">Human Factors</span>` on German
+  pages; in `docs/shared/publications.md` wrap each entry in `<div lang="..." markdown="1">`.
+- Use descriptive link texts.
+- Check colour contrast (4.5:1 for text, 3:1 for icons/borders) in both light and dark mode.
+
 ## To clarify before publishing
 
 The site contains placeholders that must be replaced before going live:
 
 - Contact e-mail in `docs/*/contact.md` (currently `steffen.becker@rub.de`)
-- Legal notice (Impressum): responsible body and a valid postal address (§ 5 TMG)
+- Legal notice (Impressum): responsible body and a valid postal address (§ 5 DDG)
 - Logo and image rights, and approval of the persons named
 
 ## Deployment

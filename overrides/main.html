@@ -40,14 +40,15 @@
 {% endblock %}
 
 {% block footer %}
+  {% set en = config.theme.language == 'en' %}
   <div class="custom-footer">
     <div class="custom-footer__content">
-      <a href="{{ base_url }}">
-        <img src="{{ ('assets/img/bmftr_en.png' if config.theme.language == 'en' else 'assets/img/bmftr_de.png') | url }}" alt="{{ 'Funded by BMFTR' if config.theme.language == 'en' else 'Gefördert durch BMFTR' }}">
-      </a>
-      <nav class="custom-footer__links" aria-label="{{ 'Legal information' if config.theme.language == 'en' else 'Rechtliche Informationen' }}">
-        <a href="/{{ config.theme.language }}/Impressum/">{{ 'Legal Notice' if config.theme.language == 'en' else 'Impressum' }}</a>
-        <a href="/{{ config.theme.language }}/Datenschutz/">{{ 'Privacy Policy' if config.theme.language == 'en' else 'Datenschutz' }}</a>
+      <div class="custom-footer__logo">
+        <img src="{{ ('assets/img/bmftr_en.png' if en else 'assets/img/bmftr_de.png') | url }}" alt="{{ 'Funded by the Federal Ministry of Research, Technology and Space (BMFTR)' if en else 'Gefördert durch das Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR)' }}">
+      </div>
+      <nav class="custom-footer__links" aria-label="{{ 'Legal information' if en else 'Rechtliche Informationen' }}">
+        <a href="/{{ config.theme.language }}/Impressum/">{{ 'Legal Notice' if en else 'Impressum' }}</a>
+        <a href="/{{ config.theme.language }}/Datenschutz/">{{ 'Privacy Policy' if en else 'Datenschutz' }}</a>
       </nav>
     </div>
   </div>
