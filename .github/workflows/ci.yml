@@ -31,3 +31,16 @@ jobs:
 
       - name: Check site configuration, assets and language switcher
         run: python -m unittest discover -s tests
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: tests/a11y/package-lock.json
+
+      - name: Install accessibility check
+        run: npm ci --prefix tests/a11y
+
+      - name: Check accessibility (axe-core, WCAG 2.2 A/AA)
+        # Uses the Chrome preinstalled on GitHub's Ubuntu runners.
+        run: node tests/a11y/axe.mjs

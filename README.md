@@ -145,6 +145,21 @@ The site targets WCAG 2.1 AA (BITV 2.0 / EN 301 549). When editing content:
 - Use descriptive link texts.
 - Check colour contrast (4.5:1 for text, 3:1 for icons/borders) in both light and dark mode.
 
+### Automated check
+
+CI runs [axe-core](https://github.com/dequelabs/axe-core) on every page of the built site in
+light and dark mode at 1280px and 320px width. WCAG 2.0/2.1/2.2 A and AA violations fail the
+build; axe best-practice findings are only reported as warnings. To run it locally after the
+build (requires Node.js and Chrome or Chromium; set `CHROME_PATH` if it is not found):
+
+```bash
+npm ci --prefix tests/a11y
+node tests/a11y/axe.mjs
+```
+
+Automated checks find only part of the barriers. Keyboard, screen reader and zoom tests
+still have to be done manually.
+
 ### Accessibility statement
 
 The *Erklärung zur Barrierefreiheit* is drafted in `docs/de/Barrierefreiheit.draft.md` and
