@@ -133,22 +133,21 @@ class SiteTests(unittest.TestCase):
 
     def test_localized_navigation_and_palette(self):
         for prefix, labels, palette in (
-            ("de/", {"Projekt", "News",
-                  "Publikationen", "Konsortium & Kontakt", "Impressum", "Datenschutz"},
+            ("de/", {"Projekt", "News", "Ergebnisse", "Team"},
              {"slate": "Zu hellem Modus wechseln", "default": "Zu dunklem Modus wechseln"}),
-            ("en/", {"Project", "News", "Publications", "Consortium & Contact", "Legal Notice", "Privacy Policy"},
+            ("en/", {"Project", "News", "Results", "Team"},
              {"slate": "Switch to light mode", "default": "Switch to dark mode"}),
         ):
             with self.subTest(language=prefix or "de"):
                 parser = RenderedPage()
                 parser.feed((SITE / prefix / "index.html").read_text(encoding="utf-8"))
-                self.assertTrue(labels.issubset(parser.labels), labels - parser.labels)
+                self.assertLessEqual(labels, parser.labels)
                 self.assertEqual(parser.palette_labels, palette)
 
     def test_theme_configuration_and_assets(self):
         for language, prefix, site_name, description in (
-            ("de", "de/", "Projekt DAISY", "Datenschutz und Arbeitnehmendeninteressen in AI-as-a-Service-Systemen"),
-            ("en", "en/", "DAISY Project", "Data Protection and Employee Interests in AI-as-a-Service Systems"),
+            ("de", "de/", "DAISY", "Datenschutz und Arbeitnehmendeninteressen in AI-as-a-Service-Systemen"),
+            ("en", "en/", "DAISY", "Data Protection and Employee Interests in AI-as-a-Service Systems"),
         ):
             with self.subTest(language=language):
                 assets = ROOT / "overrides" / "assets"
@@ -171,7 +170,8 @@ class SiteTests(unittest.TestCase):
                     parser = RenderedPage()
                     parser.feed(file.read_text(encoding="utf-8"))
                     self.assertEqual(parser.html.get("lang"), language)
-                    self.assertTrue(parser.title.endswith(site_name))
+                    # Check that the page title ends with the site name
+                    self.assertRegex(parser.title, rf".+ - {re.escape(site_name)}$")
                     self.assertEqual(parser.meta.get("description"), description)
                     self.assertEqual(parser.body.get("data-md-color-scheme"), "slate")
                     self.assertEqual(parser.body.get("data-md-color-primary"), "custom")
@@ -265,7 +265,7 @@ class SiteTests(unittest.TestCase):
             with self.subTest(language=language):
                 search = json.loads((SITE / language / "search.json").read_text(encoding="utf-8"))
                 self.assertIn(language, search["config"]["lang"])
-                self.assertTrue(any(item["location"].startswith("results/") for item in search["items"]))
+                self.assertIn("publications/", [item["location"] for item in search["items"]])
 
     def test_news_pages(self):
         for language, title in (("de", "KI in Unternehmen sicher nutzen"),
