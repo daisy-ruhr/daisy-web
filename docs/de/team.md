@@ -47,6 +47,41 @@ Ich leite das technische Teilprojekt von DAISY an der Ruhr-Universität Bochum. 
 
 <div class="daisy-partner" markdown="1">
 
+### UW/H – Universität Witten/Herdecke
+
+Verbindet Mensch und Technik im Unternehmen: Wie fallen Entscheidungen über
+AIaaS, und wie führt man sie so ein, dass Erwartungen und Risiken zusammenpassen?
+
+<div class="daisy-people" markdown="1">
+
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
+
+#### Dr. Alina Tausch
+
+<p class="daisy-person-role">Organisationspsychologie</p>
+
+Ich übernehme im Projekt die Leitung des organisationspsychologischen Parts, aktuell noch von der Universität Witten/Herdecke aus. Basierend auf meiner Forschung an der Schnittstelle von Arbeitsgestaltung und Organisationspsychologie betrachte ich als Wirtschaftspsychologin, wie Entscheider:innen in Organisationen Entscheidungen über KI treffen und welche Rolle organisationale Rahmenbedingungen wie Organisationskultur spielen.
+
+</div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Alina_Tausch.JPG" alt="" loading="lazy"></div>
+</div>
+
+<div class="daisy-person" markdown="1">
+<div class="daisy-person-text" markdown="1">
+
+#### Lukas Bring
+
+<p class="daisy-person-role">Promotionsstelle - Organisationspsychologie</p>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="daisy-partner" markdown="1">
+
 ### UDE – Universität Duisburg-Essen
 
 Blickt auf die Nutzenden: Welche Vorstellungen haben Menschen von AIaaS, und wie
@@ -85,7 +120,7 @@ diesen Systemen widerspiegelt.
 <div class="daisy-person" markdown="1">
 <div class="daisy-person-text" markdown="1">
 
-#### Deniz Barut
+#### Muazzez Deniz Barut
 
 <p class="daisy-person-role">Promotionsstelle - Individuelle Psychologie</p>
 
@@ -93,41 +128,6 @@ Ich bin Doktorandin an der Universität Duisburg-Essen und beschäftige mich mit
 
 </div>
 <div class="daisy-person-photo"><img src="assets/img/staff/Deniz_Barut.JPG" alt="" loading="lazy"></div>
-</div>
-
-</div>
-</div>
-
-<div class="daisy-partner" markdown="1">
-
-### UW/H – Universität Witten/Herdecke
-
-Verbindet Mensch und Technik im Unternehmen: Wie fallen Entscheidungen über
-AIaaS, und wie führt man sie so ein, dass Erwartungen und Risiken zusammenpassen?
-
-<div class="daisy-people" markdown="1">
-
-<div class="daisy-person" markdown="1">
-<div class="daisy-person-text" markdown="1">
-
-#### Dr. Alina Tausch
-
-<p class="daisy-person-role">Organisationspsychologie</p>
-
-Ich übernehme im Projekt die Leitung des organisationspsychologischen Parts, aktuell noch von der Universität Witten/Herdecke aus. Basierend auf meiner Forschung an der Schnittstelle von Arbeitsgestaltung und Organisationspsychologie betrachte ich als Wirtschaftspsychologin, wie Entscheider:innen in Organisationen Entscheidungen über KI treffen und welche Rolle organisationale Rahmenbedingungen wie Organisationskultur spielen.
-
-</div>
-<div class="daisy-person-photo"><img src="assets/img/staff/Alina_Tausch.JPG" alt="" loading="lazy"></div>
-</div>
-
-<div class="daisy-person" markdown="1">
-<div class="daisy-person-text" markdown="1">
-
-#### Lukas Bring
-
-<p class="daisy-person-role">Promotionsstelle - Organisationspsychologie</p>
-
-</div>
 </div>
 
 </div>
@@ -155,60 +155,8 @@ Ich leite das Projekt DAISY bei der Bochum Wirtschaftsentwicklung und konzentrie
 <div class="daisy-person-photo"><img src="assets/img/staff/Gregor_Maehler.jpg" alt="" loading="lazy"></div>
 </div>
 
-<div class="daisy-person" markdown="1">
-<div class="daisy-person-text" markdown="1">
-
-#### Philippe Skender
-
-<p class="daisy-person-role">Praxis</p>
-
-Als Cybersecurity-Experte verantwortet er die Durchführung beim Praxispartner. Die BoWE
-bringt ihre Doppelrolle als Anwendungspartner und Multiplikator der Ergebnisse ein.
-
-</div>
-</div>
 
 </div>
 
 </div>
 
-## Assoziierte Partner
-
-Sie bringen die Perspektive der Zielgruppen ein und helfen, die Ergebnisse in
-verschiedenen Branchen nutzbar zu machen.
-
-<div class="grid cards" markdown="1">
-
-- __IG Metall__
-
-    ---
-
-    Gewerkschaft. Vermittelt den Kontakt zu Verantwortlichen in Unternehmen, u. a. über
-    die KI-Konferenz für Betriebsräte, auf der Befragungen und Workshops stattfinden können.
-    Gibt Ergebnisse an Beschäftigte und Betriebsräte weiter und übernimmt
-    Qualifizierungsmaßnahmen in eigene Fortbildungen.
-
-- __HUMAINE Network e.V.__
-
-    ---
-
-    Gemeinnütziger Verein und Unternehmensnetzwerk. Bringt Wissen über AIaaS-Strategien
-    zu Unternehmen der Metropolregion Ruhr, die KI entwickeln oder einführen, und trägt die
-    Erkenntnisse in den überregionalen Austausch über menschzentrierte AIaaS-Lösungen.
-
-- __Edgeless Systems GmbH__
-
-    ---
-
-    Technologiepartner aus der Entwicklung. Prüft, ob sich die im Projekt entwickelten
-    Schutzmaßnahmen in eigene Produkte implementieren lassen, und zeigt damit, wie gut sie
-    im Markt funktionieren.
-
-- __SBG Serious Business Gaming GmbH__
-
-    ---
-
-    Vermittelt Datenschutz und Cybersicherheit in Form von Serious Games. Unterstützt die
-    spielerischen Formate des Projekts zur Sensibilisierung und Wissenschaftskommunikation.
-
-</div>

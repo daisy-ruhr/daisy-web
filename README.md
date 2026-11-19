@@ -90,8 +90,8 @@ introductions are in `docs/de/publications.md` and `docs/en/publications.md`. Th
 file contains commented-out examples; replace the placeholder details and DOI with the
 real publication details, then remove the comment markers around each entry to publish
 it. Keep titles and authors in their original language, list entries newest first, and
-use one or more of the `Technical`, `Psychology/HCI`, and `Interdisciplinary` labels.
-Add the corresponding `tech`, `psy`, or `inter` CSS class alongside
+use one or more of the `Computer Security`, `Psychology`, and `Human-Computer Interaction` labels.
+Add the corresponding `cs`, `psy`, or `hci` CSS class alongside
 `daisy-publication-tag` to color each label, as shown in the examples.
 DOI buttons should link to the corresponding `https://doi.org/` URL. The examples are
 not real publications. Changes to the shared file are watched by the preview servers.

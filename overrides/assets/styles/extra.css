@@ -384,7 +384,7 @@
   font-weight: 700;
 }
 
-.md-typeset .daisy-publication-tag.inter {
+.md-typeset .daisy-publication-tag.hci {
   color: #7C3AED;
   border-color: #7C3AED;
 }
@@ -394,12 +394,12 @@
   border-color: #bb0707;
 }
 
-.md-typeset .daisy-publication-tag.tech {
+.md-typeset .daisy-publication-tag.cs {
   color: #0a66c2;
   border-color: #0a66c2;
 }
 
-[data-md-color-scheme=slate] .md-typeset .daisy-publication-tag.inter {
+[data-md-color-scheme=slate] .md-typeset .daisy-publication-tag.hci {
   color: #c4a4ff;
   border-color: #c4a4ff;
 }
@@ -409,7 +409,7 @@
   border-color: #ff6565;
 }
 
-[data-md-color-scheme=slate] .md-typeset .daisy-publication-tag.tech {
+[data-md-color-scheme=slate] .md-typeset .daisy-publication-tag.cs {
   color: #83bfff;
   border-color: #83bfff;
 }

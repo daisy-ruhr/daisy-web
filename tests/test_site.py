@@ -361,7 +361,7 @@ class SiteTests(unittest.TestCase):
                     self.assertIn("Example journal article", parser.text)
                     self.assertIn("Example conference paper", parser.text)
                     self.assertEqual(len(parser.tags), 3)
-                    for category in ("tech", "psy", "inter"):
+                    for category in ("cs", "psy", "hci"):
                         self.assertTrue(any(category in tag["class"].split() for tag in parser.tags))
                     for doi in ("10.XXXX/example-journal", "10.XXXX/example-conference"):
                         self.assertTrue(any(
@@ -372,7 +372,7 @@ class SiteTests(unittest.TestCase):
 
     def test_publication_category_colors(self):
         css = (ROOT / "overrides/assets/styles/extra.css").read_text(encoding="utf-8")
-        for category in ("tech", "psy", "inter"):
+        for category in ("cs", "psy", "hci"):
             for prefix in ("", "[data-md-color-scheme=slate] "):
                 selector = f"{prefix}.md-typeset .daisy-publication-tag.{category}"
                 with self.subTest(selector=selector):

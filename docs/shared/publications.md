@@ -8,8 +8,8 @@ Wrap each entry in <div lang=".." markdown="1"> with the language of the publica
 
 ### Examplejournal article title
 
-<span class="daisy-publication-tag psy">Psychology/HCI</span>
-<span class="daisy-publication-tag inter">Interdisciplinary</span>
+<span class="daisy-publication-tag psy">Psychology</span>
+<span class="daisy-publication-tag hci">Human-Computer Interaction</span>
 
 Author, A., and Author, B. (2027). **Example journal article.** *Example Journal*,
 1(2), 1–10.
@@ -19,7 +19,7 @@ Author, A., and Author, B. (2027). **Example journal article.** *Example Journal
 
 ### Example conference paper title
 
-<span class="daisy-publication-tag tech">Technical</span>
+<span class="daisy-publication-tag cs">Cyber Security</span>
 
 Author, C., and Author, D. (2026). **Example conference paper.** In *Proceedings of
 the Example Conference*, 1–10.
@@ -37,8 +37,8 @@ the Example Conference*, 1–10.
 
 ### Campus AI vs. Commercial AI: Comparing How Students and Employees Perceive their University’s LLM Chatbot vs. ChatGPT
 
-<span class="daisy-publication-tag psy">Psychology/HCI</span>
-<span class="daisy-publication-tag inter">Interdisciplinary</span>
+<span class="daisy-publication-tag psy">Psychology</span>
+<span class="daisy-publication-tag hci">Human-Computer Interaction</span>
 
 Hannig, L. and Bush, A. and Aksoy, M. and Trappen, T. and Becker, S. and Ontrup, G. (2026).  
 In *Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems*, Article No.: 965, Pages 1 - 23.
