@@ -73,7 +73,7 @@ both builds by Zensical's theme override directory. In Markdown, use paths such 
 | German navigation, metadata, and shared theme options | `zensical.toml` |
 | English navigation and metadata | `zensical.en.toml` |
 | Content | `docs/de/*.md` (German), `docs/en/*.md` (English) – same file names in both folders |
-| Colors, hero banner, special blocks | `overrides/assets/styles/extra.css` |
+| Colors, home page intro, special blocks | `overrides/assets/styles/extra.css` |
 | Images and favicon | `overrides/assets/img/` |
 
 Markdown extensions in use: admonitions (`!!!`), collapsible blocks (`???`),

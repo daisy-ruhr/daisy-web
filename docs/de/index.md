@@ -3,32 +3,22 @@ hide:
   - toc
 ---
 
-<!--<div class="daisy-hero" markdown="1">
-
-<div class="daisy-hero-layout" markdown="1">
-
-<div class="daisy-hero-content" markdown="1">-->
-
 # DAISY
 
 **D**atenschutz und **A**rbeitnehmenden**i**nteressen in **AI**-as-a-Service-**Sy**stemen
+
+<div class="daisy-intro" markdown="1">
+<div class="daisy-intro-layout" markdown="1">
+<div markdown="1">
 
 KI ist aus vielen Unternehmen nicht mehr wegzudenken. DAISY hat das Ziel, praktikable und zugleich
 Datenschutzrisiken minimierende Lösungen zu erforschen: technisch, psychologisch und organisatorisch,
 erprobt im Unternehmensalltag.
 
-<!--<div class="daisy-hero-actions" markdown="1">
-
-[Publikationen](publications.md){ .md-button .md-button--primary }
-[Kontakt](team.md){ .md-button }
-
 </div>
-
+<div class="daisy-summary-art" aria-hidden="true"></div>
 </div>
-
 </div>
-
-</div>-->
 
 ## Das Projekt auf einen Blick
 
@@ -48,8 +38,6 @@ DAISY setzt genau hier an. Im Verbund aus Informatik, Psychologie und Praxis ent
 wir IT-Sicherheitslösungen, stärken die Kompetenz von Entscheidenden und Mitarbeitenden
 und gestalten gemeinsam die Einführung von KI-Diensten im Unternehmen im Ruhrgebiet partizipativ und
 nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
-
-<div class="daisy-summary-art-container hide"><div class="daisy-summary-art" aria-hidden="true"></div></div>
 
 ## Aktuelles
 
@@ -116,4 +104,3 @@ Demokratie" („Digital.Sicher.Souverän")
 ![Gefördert durch das Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR)](assets/img/bmftr_de.png){ loading=lazy, width="250"  }
 
 </div>
-

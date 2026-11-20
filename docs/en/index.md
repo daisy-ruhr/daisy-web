@@ -3,14 +3,11 @@ hide:
   - toc
 ---
 
-<!--<div class="daisy-hero" markdown="1">
-
-<div class="daisy-hero-layout" markdown="1">
-
-<div class="daisy-hero-content" markdown="1">-->
-
 # DAISY
 
+<div class="daisy-intro" markdown="1">
+<div class="daisy-intro-layout" markdown="1">
+<div markdown="1">
 **D**ata Protection and Employee Interests in **AI**-as-a-Service **Sy**stems
 
 AI has become an important tool in many companies.  
@@ -18,18 +15,10 @@ DAISY aims to research service solutions that are
 practical while minimizing privacy risks: technically, psychologically and
 organizationally, tested in everyday business operations.
 
-<!--<div class="daisy-hero-actions" markdown="1">
-
-[Publications](publications.md){ .md-button .md-button--primary }
-[Contact](team.md){ .md-button }
-
 </div>
-
+<div class="daisy-summary-art" aria-hidden="true"></div>
 </div>
-
 </div>
-
-</div>-->
 
 ## Project summary
 
@@ -46,8 +35,6 @@ DAISY starts exactly there. As a consortium of computer science, psychology and 
 we develop IT security solutions, strengthen the competence of decision-makers and
 employees, and shape the introduction of AI services in Ruhr area companies together in a participatory and
 transparent way. The legal framework is taken into account from the very beginning.
-
-<div class="daisy-summary-art-container hide"><div class="daisy-summary-art" aria-hidden="true"></div></div>
 
 ## Latest news
 

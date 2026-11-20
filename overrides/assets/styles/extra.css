@@ -112,81 +112,23 @@
   }
 }
 
-/* Hero banner on the home page */
-.daisy-hero {
-  background: linear-gradient(200deg, var(--daisy-primary-600), var(--daisy-primary-800) 48%, var(--daisy-primary-900));
-  color: #fff;
-  border-radius: 0.4rem;
+/* Home page intro */
+.daisy-intro {
   container-type: inline-size;
-  margin-bottom: 2rem;
-  overflow: hidden;
 }
-.daisy-hero-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) min(35%, 15rem);
-}
-.daisy-hero-content {
-  padding: 2.5rem 0 2.5rem 2rem;
-}
-.daisy-hero-layout::after,
 .daisy-summary-art {
-  background: url("../img/daisy_hero_art_m2.png") no-repeat center / auto 100%;
+  background: url("../img/daisy_hero_art_m2.png") no-repeat center / contain;
+  height: 14rem;
   image-rendering: pixelated;
 }
-.daisy-hero-layout::after {
-  content: "";
-  background-position: right center;
-}
-.daisy-summary-art-container {
-  container-type: inline-size;
-}
-.daisy-summary-art {
-  display: none;
-}
-@container (max-width: 41rem) {
-  .daisy-hero-layout {
-    grid-template-columns: minmax(0, 1fr);
-  }
-  .daisy-hero-content {
-    padding: 2rem 1.5rem;
-  }
-  .daisy-hero-layout::after {
-    display: none;
-  }
-  .daisy-summary-art {
-    display: block;
-    height: 10rem;
+@container (min-width: 41rem) {
+  .daisy-intro-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) min(35%, 15rem);
+    /* align-items: center; */
+    gap: 1.5rem;
   }
 }
-.daisy-hero h1 {
-  color: #fff;
-  font-size: 2.2rem;
-  line-height: 1.2;
-  margin: 0 0 0.5rem;
-}
-.daisy-hero p {
-  color: #e8f1f2;
-  font-size: 1.1rem;
-  max-width: 46rem;
-  margin: 0;
-}
-.daisy-hero .daisy-hero-actions {
-  margin-top: 1.5rem;
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-.daisy-hero .md-button {
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.6);
-  border-radius: 100rem;
-}
-.daisy-hero .md-button--primary {
-  background-color: var(--daisy-accent);
-  border-color: var(--daisy-accent);
-  color: var(--md-primary-fg-color--dark);
-}
-
 .daisy-latest-news ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
