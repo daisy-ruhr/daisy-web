@@ -14,7 +14,7 @@ The Python environment lives in `.venv/` (not checked in). Python 3.11 or newer 
 ```bash
 python3 -m venv .venv            # once, if the environment is missing
 .venv/bin/pip install -r requirements.txt
-# Generate the results lists (needed once before the first preview, see Publications/Results)
+# Generate the results lists (otherwise the results page shows a warning, see Publications/Results)
 .venv/bin/python scripts/build_results.py
 # German preview
 .venv/bin/zensical serve
@@ -120,7 +120,12 @@ only its own version. A single-language entry appears on both pages in its own l
 
 `scripts/build_results.py` turns the entries into `docs/shared/generated/results.de.md`
 and `results.en.md`, which the localized introductions in `docs/de/publications.md` and
-`docs/en/publications.md` include. The generated folder is not checked in. `scripts/build.py`
+`docs/en/publications.md` include (`--8<-- "results.de.md"`). The generated folder is not
+checked in. If it is missing, the snippet lookup (`pymdownx.snippets.base_path` in both
+`.toml` files) falls back to `docs/shared/placeholders/`, so the page shows a warning with
+the command to run instead of breaking the preview. After generating the lists for the
+first time, restart `zensical serve`: it only tracks the files that exist when it starts.
+`scripts/build.py`
 runs the generator automatically; for the live preview run
 `.venv/bin/python scripts/build_results.py --watch` in another terminal, which regenerates
 the lists whenever an entry changes (the preview servers then reload). The generator stops

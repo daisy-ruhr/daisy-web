@@ -8,4 +8,4 @@ The label above each title shows the **type of result**. The categories below th
 focus: **Computer Security**, **Psychology**, and **Human-Computer Interaction**. An entry may have
 more than one category.
 
---8<-- "docs/shared/generated/results.en.md"
+--8<-- "results.en.md"

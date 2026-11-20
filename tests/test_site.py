@@ -404,11 +404,12 @@ class SiteTests(unittest.TestCase):
         for language in ("de", "en"):
             with self.subTest(language=language):
                 page = (ROOT / "docs" / language / "publications.md").read_text(encoding="utf-8")
-                self.assertIn(f'--8<-- "docs/shared/generated/results.{language}.md"', page)
+                self.assertIn(f'--8<-- "results.{language}.md"', page)
                 built = (SITE / language / "publications/index.html").read_text(encoding="utf-8")
                 parser = ResultsParser()
                 parser.feed(built)
                 self.assertIn("assets/javascripts/results.js", built)
+                self.assertNotIn("build_results.py", parser.text)  # not the placeholder
                 self.assertEqual(len(parser.results), len(entries))
                 self.assertEqual(len(parser.type_labels), len(entries))
                 for entry, result, label in zip(entries, parser.results, parser.type_labels):
@@ -420,6 +421,24 @@ class SiteTests(unittest.TestCase):
                 self.assertNotIn("Example journal article", parser.text)
                 self.assertNotIn("example-journal", json.dumps(json.loads(
                     (SITE / language / "search.json").read_text(encoding="utf-8"))))
+
+    def test_results_placeholder_without_generated_lists(self):
+        with (ROOT / "zensical.toml").open("rb") as file:
+            base_path = tomllib.load(file)["project"]["markdown_extensions"]["pymdownx"]["snippets"]["base_path"]
+        # Generated lists win over the placeholders, which are only a fallback.
+        self.assertLess(base_path.index("docs/shared/generated"), base_path.index("docs/shared/placeholders"))
+        with tempfile.TemporaryDirectory() as directory:
+            fallback = [str(ROOT), directory, str(ROOT / "docs/shared/placeholders")]  # empty "generated"
+            for language in ("de", "en"):
+                with self.subTest(language=language):
+                    page = (ROOT / "docs" / language / "publications.md").read_text(encoding="utf-8")
+                    rendered = markdown.markdown(
+                        page,
+                        extensions=["pymdownx.snippets", "admonition"],
+                        extension_configs={"pymdownx.snippets": {"base_path": fallback, "check_paths": True}},
+                    )
+                    self.assertIn('class="admonition failure"', rendered)
+                    self.assertIn("scripts/build_results.py", rendered)
 
     def test_results_templates_render(self):
         entries = build_results.load_entries(ROOT / "docs/shared/results/_templates")

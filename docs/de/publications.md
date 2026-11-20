@@ -8,4 +8,4 @@ Die Kennzeichnung über dem Titel gibt die **Art des Ergebnisses** an. Die Kateg
 kennzeichnen den Schwerpunkt: **Computer Security** (IT-Sicherheit), **Psychology** (Psychologie) und
 **Human-Computer Interaction** (Mensch-Computer-Interaktion). Ein Eintrag kann mehrere Kategorien haben.
 
---8<-- "docs/shared/generated/results.de.md"
+--8<-- "results.de.md"
