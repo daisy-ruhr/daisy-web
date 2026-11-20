@@ -136,8 +136,9 @@ I am responsible for making DAISY a full success! Replace me with your actual bi
 Also update `docs/shared/team-icons.html`, which supplies the icon bar below the partner
 logos on both home pages. Keep the icons in the same order as the team pages. Give each
 link the matching `daisy-org-*` class from `docs/shared/partner-logos.html`, the person's
-name as its `aria-label` (also used for the tooltip), and a `team/#...` link to the heading's generated
-ID on both team pages. Use a photo from `assets/img/staff/` with an empty `alt`, or a
+name as its `aria-label`, and a `team/#...` link to the heading's generated ID on both
+team pages. Add a `daisy-team-tooltip` span with `aria-hidden="true"` and the same name,
+wrapping each word in a separate `span` so names only wrap at spaces. Use a photo from `assets/img/staff/` with an empty `alt`, or a
 `<span aria-hidden="true">` containing initials until a photo is available. Replace the
 placeholder when the photo is added. The icon bar's minimum size can be changed with
 `--team-icon-min-size` in `overrides/assets/styles/extra.css`; icons wrap into more rows

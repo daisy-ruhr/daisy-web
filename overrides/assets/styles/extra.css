@@ -242,7 +242,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--team-icon-min-size), 1fr));
   gap: 0.8rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
+  padding-inline: 1.2rem;
 }
 .md-typeset .daisy-team-icon {
   align-items: center;
@@ -266,28 +268,42 @@
   object-fit: cover;
   width: 100%;
 }
-.daisy-team-icon::after {
-  background: var(--daisy-primary-900);
-  border-radius: 0.25rem;
-  bottom: 100%;
-  color: #fff;
-  content: attr(aria-label);
-  font-size: 0.7rem;
-  font-weight: 400;
+.daisy-team-icon::before,
+.daisy-team-tooltip {
   left: 50%;
   opacity: 0;
-  padding: 0.25rem 0.5rem;
   pointer-events: none;
   position: absolute;
-  text-align: center;
   transform: translateX(-50%);
-  width: max-content;
+}
+.daisy-team-icon::before {
+  border-bottom: 6px solid var(--daisy-primary-900);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  content: "";
+  top: 100%;
+}
+.daisy-team-tooltip {
+  background: var(--daisy-primary-900);
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 400;
   max-width: 100%;
+  min-width: min-content;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  top: calc(100% + 6px);
+  width: max-content;
+}
+.daisy-team-tooltip > span {
+  white-space: nowrap;
 }
 .daisy-team-icon:is(:hover, :focus-visible) {
   z-index: 1;
 }
-.daisy-team-icon:is(:hover, :focus-visible)::after {
+.daisy-team-icon:is(:hover, :focus-visible)::before,
+.daisy-team-icon:is(:hover, :focus-visible) .daisy-team-tooltip {
   opacity: 1;
   pointer-events: auto;
 }

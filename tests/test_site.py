@@ -123,16 +123,31 @@ class TeamIcons(HTMLParser):
         self.icons = []
         self.headings = []
         self.partner_classes = set()
+        self.tooltips = []
+        self.tooltip_depth = 0
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         classes = set(attrs.get("class", "").split())
+        if self.tooltip_depth and tag == "span":
+            self.tooltip_depth += 1
+        elif tag == "span" and "daisy-team-tooltip" in classes:
+            self.tooltip_depth = 1
+            self.tooltips.append("")
         if tag == "a" and "daisy-team-icon" in classes:
             self.icons.append(attrs)
         elif tag == "a":
             self.partner_classes.update(cls for cls in classes if cls.startswith("daisy-org-"))
         elif tag == "h4" and "id" in attrs:
             self.headings.append(attrs["id"])
+
+    def handle_data(self, data):
+        if self.tooltip_depth:
+            self.tooltips[-1] += data
+
+    def handle_endtag(self, tag):
+        if tag == "span" and self.tooltip_depth:
+            self.tooltip_depth -= 1
 
 
 class SiteTests(unittest.TestCase):
@@ -144,6 +159,7 @@ class SiteTests(unittest.TestCase):
                 team = TeamIcons()
                 team.feed((SITE / language / "team/index.html").read_text(encoding="utf-8"))
                 self.assertTrue(home.icons)
+                self.assertEqual(home.tooltips, [icon["aria-label"] for icon in home.icons])
                 self.assertEqual(
                     [icon["href"] for icon in home.icons],
                     [f"team/#{heading}" for heading in team.headings],
