@@ -183,14 +183,6 @@ The *Erklärung zur Barrierefreiheit* is drafted in `docs/de/Barrierefreiheit.dr
    `<a href="/{{ config.theme.language }}/Barrierefreiheit/">{{ 'Accessibility' if en else 'Barrierefreiheit' }}</a>`.
 4. Review the statement at least once a year and after major changes, and update its date.
 
-## To clarify before publishing
-
-The site contains placeholders that must be replaced before going live:
-
-- Contact e-mail in `docs/*/contact.md` (currently `steffen.becker@rub.de`)
-- Legal notice (Impressum): responsible body and a valid postal address (§ 5 DDG)
-- Logo and image rights, and approval of the persons named
-
 ## Deployment
 
 Zensical generates static files but does not deploy them. Publish the contents of `site/`

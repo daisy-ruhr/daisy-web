@@ -36,8 +36,6 @@ architectures of AIaaS systems, empirical system analysis, demonstrators.
 
 I lead DAISY’s technical subproject at Ruhr University Bochum. My research combines IT security and human-computer interaction. In DAISY, we examine the actual privacy risks of AI-as-a-Service systems and develop safeguards that are technically robust and practical in everyday work.
 
-**E-mail:** [steffen.becker@rub.de](mailto:steffen.becker@rub.de)
-
 </div>
 <div class="daisy-person-photo"><img src="assets/img/staff/Steffen_Becker.jpg" alt="" loading="lazy"></div>
 </div>

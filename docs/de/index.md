@@ -5,11 +5,10 @@ hide:
 
 # DAISY
 
-**D**atenschutz und **A**rbeitnehmenden**i**nteressen in **AI**-as-a-Service-**Sy**stemen
-
 <div class="daisy-intro" markdown="1">
 <div class="daisy-intro-layout" markdown="1">
 <div markdown="1">
+**D**atenschutz und **A**rbeitnehmenden**i**nteressen in **AI**-as-a-Service-**Sy**stemen
 
 KI ist aus vielen Unternehmen nicht mehr wegzudenken. DAISY hat das Ziel, praktikable und zugleich
 Datenschutzrisiken minimierende Lösungen zu erforschen: technisch, psychologisch und organisatorisch,

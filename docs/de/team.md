@@ -36,8 +36,6 @@ Datenschutzarchitekturen von AIaaS-Diensten, empirische Systemanalysen, Demonstr
 
 Ich leite das technische Teilprojekt von DAISY an der Ruhr-Universität Bochum. Meine Forschung verbindet IT-Sicherheit und Mensch-Computer-Interaktion. In DAISY untersuchen wir die tatsächlichen Datenschutzrisiken von AI-as-a-Service-Systemen und entwickeln Schutzmaßnahmen, die technisch belastbar und im Arbeitsalltag praktikabel sind.
 
-**E-Mail:** [steffen.becker@rub.de](mailto:steffen.becker@rub.de)
-
 </div>
 <div class="daisy-person-photo"><img src="assets/img/staff/Steffen_Becker.jpg" alt="" loading="lazy"></div>
 </div>
