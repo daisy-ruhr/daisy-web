@@ -86,10 +86,23 @@ Files named `*.draft.md` match that pattern; the tests and the legacy redirect s
 ### Publications/Results
 
 Edit `docs/shared/publications.md` once to update both language versions. The localized
-introductions are in `docs/de/publications.md` and `docs/en/publications.md`. The shared
-file contains commented-out examples; replace the placeholder details and DOI with the
-real publication details, then remove the comment markers around each entry to publish
-it. Keep titles and authors in their original language, list entries newest first, and
+introductions are in `docs/de/publications.md` and `docs/en/publications.md`. The page
+lists all results (publications, talks, workshops, PoCs/code) chronologically under year
+headings. The shared file contains commented-out examples for every type; copy the
+matching one, replace the placeholder details and links with the real ones, and place it
+under its year heading outside the comment. Each entry is a
+`<div class="daisy-result" data-type="…" lang="…" markdown="1">` where `data-type` is
+`publication`, `talk`, `workshop`, or `code`, followed by the matching filled type label
+(`daisy-result-type`, which contains both a German and an English text; only the one
+matching the page language is shown).
+
+`overrides/assets/javascripts/results.js` adds filter buttons by type above the list once
+it contains at least two types. It hides year headings and table-of-contents entries that
+no longer have visible entries, hides the type labels while a single type is selected, and keeps the selection in the URL (e.g.
+`publications/?type=talk`), so filtered views can be linked. Without JavaScript all
+entries are shown. To add a type, extend `TYPES` and both label sets in that script.
+
+Keep titles and authors in their original language, list entries newest first, and
 use one or more of the `Computer Security`, `Psychology`, and `Human-Computer Interaction` labels.
 Add the corresponding `cs`, `psy`, or `hci` CSS class alongside
 `daisy-publication-tag` to color each label, as shown in the examples.

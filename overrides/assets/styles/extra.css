@@ -443,6 +443,128 @@
   border-color: #83bfff;
 }
 
+/* Result entries. The type label (publication, talk, …) is a filled, square,
+   uppercase label above the title, so it reads differently from the outlined
+   topic pills below the title. Only the label matching the page language shows. */
+.md-typeset .daisy-result {
+  margin-top: 1.5rem;
+}
+
+.md-typeset .daisy-result-type {
+  display: inline-block;
+  margin: 0 0 0.35rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 0.15rem;
+  background: var(--daisy-primary-800);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-result-type {
+  background: var(--daisy-primary-300);
+  color: var(--daisy-primary-950);
+}
+
+.md-typeset .daisy-result-type > [lang] {
+  display: none;
+}
+
+html[lang=de] .md-typeset .daisy-result-type > [lang=de],
+html[lang=en] .md-typeset .daisy-result-type > [lang=en] {
+  display: inline;
+}
+
+.md-typeset .daisy-result-type + h3 {
+  margin-top: 0;
+}
+
+/* Filtered to a single type (results.js): the type label is redundant */
+.md-typeset .daisy-publications--filtered .daisy-result-type {
+  display: none;
+}
+
+.md-typeset .daisy-publications--filtered .daisy-result {
+  margin-top: 2rem;
+}
+
+/* Type filter, added by results.js */
+.daisy-publications [hidden],
+.md-nav--secondary [hidden] {
+  display: none !important;
+}
+
+.md-typeset .daisy-filter {
+  margin: 1.5rem 0 0.5rem;
+}
+
+.md-typeset .daisy-filter__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.md-typeset .daisy-filter__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: 100rem;
+  background: transparent;
+  color: var(--md-primary-fg-color);
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.md-typeset .daisy-filter__chip:hover {
+  background: var(--daisy-primary-50);
+}
+
+.md-typeset .daisy-filter__chip[aria-pressed=true] {
+  background: var(--md-primary-fg-color);
+  color: #fff;
+}
+
+.md-typeset .daisy-filter__chip:focus-visible {
+  outline: 0.1rem solid var(--md-accent-fg-color);
+  outline-offset: 0.1rem;
+}
+
+.md-typeset .daisy-filter__count {
+  min-width: 1.2em;
+  padding: 0 0.3em;
+  border-radius: 100rem;
+  background: var(--md-default-fg-color--lightest);
+  font-size: 0.65rem;
+  text-align: center;
+}
+
+.md-typeset .daisy-filter__status {
+  margin: 0.5rem 0 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-filter__chip {
+  border-color: var(--daisy-primary-300);
+  color: var(--daisy-primary-300);
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-filter__chip:hover {
+  background: var(--daisy-primary-950);
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-filter__chip[aria-pressed=true] {
+  background: var(--daisy-primary-300);
+  color: var(--daisy-primary-950);
+}
+
 /* Tables scroll on narrow screens instead of overflowing */
 .md-typeset__scrollwrap {
   overflow-x: auto;

@@ -20,6 +20,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
+RESULT_TYPES = ("publication", "talk", "workshop", "code")
 
 
 def post_metadata(source, language):
@@ -368,14 +369,21 @@ class SiteTests(unittest.TestCase):
                 super().__init__()
                 self.links = []
                 self.tags = []
+                self.results = []
+                self.type_labels = []
                 self.text = ""
 
             def handle_starttag(self, tag, attrs):
                 attrs = dict(attrs)
                 if tag == "a":
                     self.links.append(attrs)
-                if "daisy-publication-tag" in attrs.get("class", "").split():
+                classes = attrs.get("class", "").split()
+                if "daisy-publication-tag" in classes:
                     self.tags.append(attrs)
+                if "daisy-result" in classes:
+                    self.results.append(attrs)
+                if "daisy-result-type" in classes:
+                    self.type_labels.append(attrs)
 
             def handle_data(self, data):
                 self.text += data
@@ -387,6 +395,13 @@ class SiteTests(unittest.TestCase):
                 parser = PublicationsParser()
                 parser.feed(built)
                 self.assertIn('class="daisy-publications"', built)
+                # Every published entry has a known type, a language and a type label.
+                self.assertTrue(parser.results)
+                self.assertEqual(len(parser.type_labels), len(parser.results))
+                for result in parser.results:
+                    self.assertIn(result.get("data-type"), RESULT_TYPES)
+                    self.assertIn(result.get("lang"), ("de", "en"))
+                self.assertIn("assets/javascripts/results.js", built)
                 self.assertNotIn("Example journal article", parser.text)
                 self.assertNotIn("example-journal", json.dumps(json.loads(
                     (SITE / language / "search.json").read_text(encoding="utf-8"))))
@@ -412,7 +427,9 @@ class SiteTests(unittest.TestCase):
                     parser.feed(rendered)
                     self.assertIn("Example journal article", parser.text)
                     self.assertIn("Example conference paper", parser.text)
-                    self.assertEqual(len(parser.tags), 3)
+                    self.assertEqual(len(parser.tags), 5)
+                    self.assertEqual({result["data-type"] for result in parser.results}, set(RESULT_TYPES))
+                    self.assertEqual(len(parser.type_labels), len(parser.results))
                     for category in ("cs", "psy", "hci"):
                         self.assertTrue(any(category in tag["class"].split() for tag in parser.tags))
                     for doi in ("10.XXXX/example-journal", "10.XXXX/example-conference"):
