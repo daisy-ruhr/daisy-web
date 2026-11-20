@@ -24,10 +24,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build both languages
-        run: |
-          zensical build --strict
-          zensical build --config-file zensical.en.toml --strict
-          python scripts/merge_sitemaps.py
+        run: python scripts/build.py
 
       - name: Check site configuration, assets and language switcher
         run: python -m unittest discover -s tests

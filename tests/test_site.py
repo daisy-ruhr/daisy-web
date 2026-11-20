@@ -20,7 +20,42 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
-RESULT_TYPES = ("publication", "talk", "workshop", "code")
+
+sys.path.insert(0, str(ROOT / "scripts"))
+import build_results  # noqa: E402
+
+
+class ResultsParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.links = []
+        self.tags = []
+        self.results = []
+        self.type_labels = []
+        self.text = ""
+        self.in_label = False
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "a":
+            self.links.append(attrs)
+        classes = attrs.get("class", "").split()
+        if "daisy-publication-tag" in classes:
+            self.tags.append(attrs)
+        if "daisy-result" in classes:
+            self.results.append(attrs)
+        if "daisy-result-type" in classes:
+            self.type_labels.append("")
+            self.in_label = True
+
+    def handle_endtag(self, tag):
+        if tag == "p":
+            self.in_label = False
+
+    def handle_data(self, data):
+        self.text += data
+        if self.in_label:
+            self.type_labels[-1] += data
 
 
 def post_metadata(source, language):
@@ -363,81 +398,83 @@ class SiteTests(unittest.TestCase):
             self.assertNotIn("Test 6", overview)
             self.assertFalse((project / "site/de/news/test-6/index.html").exists())
 
-    def test_shared_publications(self):
-        class PublicationsParser(HTMLParser):
-            def __init__(self):
-                super().__init__()
-                self.links = []
-                self.tags = []
-                self.results = []
-                self.type_labels = []
-                self.text = ""
-
-            def handle_starttag(self, tag, attrs):
-                attrs = dict(attrs)
-                if tag == "a":
-                    self.links.append(attrs)
-                classes = attrs.get("class", "").split()
-                if "daisy-publication-tag" in classes:
-                    self.tags.append(attrs)
-                if "daisy-result" in classes:
-                    self.results.append(attrs)
-                if "daisy-result-type" in classes:
-                    self.type_labels.append(attrs)
-
-            def handle_data(self, data):
-                self.text += data
-
-        shared = (ROOT / "docs/shared/publications.md").read_text(encoding="utf-8")
+    def test_results_pages(self):
+        entries = build_results.load_entries()
+        self.assertTrue(entries)
         for language in ("de", "en"):
             with self.subTest(language=language):
+                page = (ROOT / "docs" / language / "publications.md").read_text(encoding="utf-8")
+                self.assertIn(f'--8<-- "docs/shared/generated/results.{language}.md"', page)
                 built = (SITE / language / "publications/index.html").read_text(encoding="utf-8")
-                parser = PublicationsParser()
+                parser = ResultsParser()
                 parser.feed(built)
-                self.assertIn('class="daisy-publications"', built)
-                # Every published entry has a known type, a language and a type label.
-                self.assertTrue(parser.results)
-                self.assertEqual(len(parser.type_labels), len(parser.results))
-                for result in parser.results:
-                    self.assertIn(result.get("data-type"), RESULT_TYPES)
-                    self.assertIn(result.get("lang"), ("de", "en"))
                 self.assertIn("assets/javascripts/results.js", built)
+                self.assertEqual(len(parser.results), len(entries))
+                self.assertEqual(len(parser.type_labels), len(entries))
+                for entry, result, label in zip(entries, parser.results, parser.type_labels):
+                    self.assertEqual(result["data-type"], entry.type)
+                    self.assertEqual(label.strip(), build_results.TYPES[entry.type][language])
+                    title = entry.titles.get(language) or entry.titles[entry.languages[0]]
+                    self.assertIn(title, parser.text)
+                # Templates are not published.
                 self.assertNotIn("Example journal article", parser.text)
                 self.assertNotIn("example-journal", json.dumps(json.loads(
                     (SITE / language / "search.json").read_text(encoding="utf-8"))))
 
-        # Render the same uncommented examples through the configured snippet mechanism.
+    def test_results_templates_render(self):
+        entries = build_results.load_entries(ROOT / "docs/shared/results/_templates")
+        self.assertEqual({entry.type for entry in entries}, set(build_results.TYPES))
+        for language in ("de", "en"):
+            with self.subTest(language=language):
+                rendered = markdown.markdown(
+                    build_results.render(entries, language),
+                    extensions=["md_in_html", "attr_list", "admonition"],
+                )
+                parser = ResultsParser()
+                parser.feed(rendered)
+                self.assertEqual(len(parser.results), len(entries))
+                self.assertEqual(sorted(label.strip() for label in parser.type_labels),
+                                 sorted(build_results.TYPES[entry.type][language] for entry in entries))
+                self.assertEqual(len(parser.tags), sum(len(entry.topics) for entry in entries))
+                for topic in build_results.TOPICS:
+                    self.assertTrue(any(topic in tag["class"].split() for tag in parser.tags))
+                self.assertTrue(any(
+                    link.get("href") == "https://doi.org/10.XXXX/example-journal"
+                    and "md-button" in link.get("class", "").split()
+                    for link in parser.links
+                ))
+                # The bilingual template shows only the page language.
+                workshop = next(result for result in parser.results if result["data-type"] == "workshop")
+                self.assertEqual(workshop["lang"], language)
+                shown, hidden = ("Halbtägiger", "Half-day") if language == "de" else ("Half-day", "Halbtägiger")
+                self.assertIn(shown, parser.text)
+                self.assertNotIn(hidden, parser.text)
+
+    def test_results_entry_validation(self):
+        valid = "---\ntype: talk\ndate: 2027-01-01\nlang: de\ntitle: Titel\n---\n\nText.\n"
+        bilingual = ("---\ntype: talk\ndate: 2027-01-01\nlang: [de, en]\ntitle: Titel\n---\n\n"
+                     "<!-- de -->\nText.\n\n<!-- en -->\nText.\n")
+        invalid = {
+            "unknown type": valid.replace("type: talk", "type: poster"),
+            "unknown field": valid.replace("lang: de", "lang: de\nvenue: Bochum"),
+            "date format": valid.replace("2027-01-01", "January 2027"),
+            "unknown topic": valid.replace("lang: de", "lang: de\ntopics: [law]"),
+            "missing title": valid.replace("title: Titel\n", ""),
+            "marker in monolingual entry": valid.replace("Text.", "<!-- de -->\nText."),
+            "missing marker": bilingual.replace("<!-- en -->\n", ""),
+            "text before marker": bilingual.replace("<!-- de -->", "Intro.\n\n<!-- de -->"),
+            "title per language": bilingual.replace("title: Titel", "title: {de: Titel}"),
+        }
         with tempfile.TemporaryDirectory() as directory:
-            snippet = Path(directory) / "publications.md"
-            example = shared.split("<!--\n", 1)[1].split("\n-->", 1)[0]
-            snippet.write_text(f'<div class="daisy-publications" markdown="1">\n\n{example}\n\n</div>',
-                               encoding="utf-8")
-            for language in ("de", "en"):
-                with self.subTest(language=language, examples="enabled"):
-                    page = (ROOT / "docs" / language / "publications.md").read_text(encoding="utf-8")
-                    page = page.replace("docs/shared/publications.md", snippet.name)
-                    rendered = markdown.markdown(
-                        page,
-                        extensions=["pymdownx.snippets", "md_in_html", "attr_list"],
-                        extension_configs={"pymdownx.snippets": {
-                            "base_path": [directory], "check_paths": True,
-                        }},
-                    )
-                    parser = PublicationsParser()
-                    parser.feed(rendered)
-                    self.assertIn("Example journal article", parser.text)
-                    self.assertIn("Example conference paper", parser.text)
-                    self.assertEqual(len(parser.tags), 5)
-                    self.assertEqual({result["data-type"] for result in parser.results}, set(RESULT_TYPES))
-                    self.assertEqual(len(parser.type_labels), len(parser.results))
-                    for category in ("cs", "psy", "hci"):
-                        self.assertTrue(any(category in tag["class"].split() for tag in parser.tags))
-                    for doi in ("10.XXXX/example-journal", "10.XXXX/example-conference"):
-                        self.assertTrue(any(
-                            link.get("href") == f"https://doi.org/{doi}"
-                            and "md-button" in link.get("class", "").split()
-                            for link in parser.links
-                        ))
+            path = Path(directory) / "entry.md"
+            for content in (valid, bilingual):
+                path.write_text(content, encoding="utf-8")
+                build_results.parse_entry(path)
+            for name, content in invalid.items():
+                with self.subTest(name):
+                    path.write_text(content, encoding="utf-8")
+                    with self.assertRaises(build_results.EntryError):
+                        build_results.parse_entry(path)
 
     def test_publication_category_colors(self):
         css = (ROOT / "overrides/assets/styles/extra.css").read_text(encoding="utf-8")

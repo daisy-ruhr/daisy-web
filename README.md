@@ -14,6 +14,8 @@ The Python environment lives in `.venv/` (not checked in). Python 3.11 or newer 
 ```bash
 python3 -m venv .venv            # once, if the environment is missing
 .venv/bin/pip install -r requirements.txt
+# Generate the results lists (needed once before the first preview, see Publications/Results)
+.venv/bin/python scripts/build_results.py
 # German preview
 .venv/bin/zensical serve
 
@@ -31,11 +33,13 @@ preview does not reload automatically.
 ## Build
 
 ```bash
-.venv/bin/zensical build --strict
-.venv/bin/zensical build --config-file zensical.en.toml --strict
-.venv/bin/python scripts/merge_sitemaps.py
+.venv/bin/python scripts/build.py
 ```
 
+`scripts/build.py` runs all build steps in order and stops at the first failure: it
+generates the results lists (`scripts/build_results.py`), builds the German and English
+sites with `zensical build --strict`, and merges the sitemaps and writes the root language
+selector and legacy redirects (`scripts/merge_sitemaps.py`). CI uses the same script.
 The German and English static output ends up in `site/de/` and `site/en/`, respectively
 (see `.gitignore`).
 
@@ -73,6 +77,7 @@ both builds by Zensical's theme override directory. In Markdown, use paths such 
 | German navigation, metadata, and shared theme options | `zensical.toml` |
 | English navigation and metadata | `zensical.en.toml` |
 | Content | `docs/de/*.md` (German), `docs/en/*.md` (English) – same file names in both folders |
+| Results (publications, talks, workshops, code) | `docs/shared/results/*.md` (both languages) |
 | Colors, home page intro, special blocks | `overrides/assets/styles/extra.css` |
 | Images and favicon | `overrides/assets/img/` |
 
@@ -85,29 +90,50 @@ Files named `*.draft.md` match that pattern; the tests and the legacy redirect s
 
 ### Publications/Results
 
-Edit `docs/shared/publications.md` once to update both language versions. The localized
-introductions are in `docs/de/publications.md` and `docs/en/publications.md`. The page
-lists all results (publications, talks, workshops, PoCs/code) chronologically under year
-headings. The shared file contains commented-out examples for every type; copy the
-matching one, replace the placeholder details and links with the real ones, and place it
-under its year heading outside the comment. Each entry is a
-`<div class="daisy-result" data-type="…" lang="…" markdown="1">` where `data-type` is
-`publication`, `talk`, `workshop`, or `code`, followed by the matching filled type label
-(`daisy-result-type`, which contains both a German and an English text; only the one
-matching the page language is shown).
+The results page lists all results (publications, talks, workshops, PoCs/code)
+chronologically under year headings, newest first. Each result is one Markdown file in
+`docs/shared/results/`, used by both language versions. Name it `YYYY-MM-DD-short-name.md`
+and start from one of the templates in `docs/shared/results/_templates/` (folders and files
+starting with `_` are not published):
+
+```markdown
+---
+type: talk               # publication, talk, workshop or code
+date: 2027-03-12         # YYYY-MM-DD; sorting and year heading
+lang: de                 # language of the entry: de or en
+topics: [hci]            # optional: cs, psy, hci
+title: Beispielvortrag
+---
+
+Free Markdown body: citation, venue, notes, admonitions, links, buttons …
+```
+
+The title and topic labels (`Computer Security`, `Psychology`, `Human-Computer
+Interaction`) and the type label above the title are added automatically. Keep titles and
+authors in their original language. DOI buttons should link to the corresponding
+`https://doi.org/` URL.
+
+An entry can optionally be bilingual: set `lang: [de, en]`, give the title as
+`{de: …, en: …}` (or one title for both), and split the body with a `<!-- de -->` and an
+`<!-- en -->` line (see `_templates/workshop-bilingual.md`). Each language page then shows
+only its own version. A single-language entry appears on both pages in its own language.
+
+`scripts/build_results.py` turns the entries into `docs/shared/generated/results.de.md`
+and `results.en.md`, which the localized introductions in `docs/de/publications.md` and
+`docs/en/publications.md` include. The generated folder is not checked in. `scripts/build.py`
+runs the generator automatically; for the live preview run
+`.venv/bin/python scripts/build_results.py --watch` in another terminal, which regenerates
+the lists whenever an entry changes (the preview servers then reload). The generator stops
+with a message naming the file for unknown types, topics or fields, a date not written as
+`YYYY-MM-DD`, or a bilingual entry without both language markers. Type labels, topic
+names and allowed values are defined at the top of the script.
 
 `overrides/assets/javascripts/results.js` adds filter buttons by type above the list once
 it contains at least two types. It hides year headings and table-of-contents entries that
-no longer have visible entries, hides the type labels while a single type is selected, and keeps the selection in the URL (e.g.
-`publications/?type=talk`), so filtered views can be linked. Without JavaScript all
-entries are shown. To add a type, extend `TYPES` and both label sets in that script.
-
-Keep titles and authors in their original language, list entries newest first, and
-use one or more of the `Computer Security`, `Psychology`, and `Human-Computer Interaction` labels.
-Add the corresponding `cs`, `psy`, or `hci` CSS class alongside
-`daisy-publication-tag` to color each label, as shown in the examples.
-DOI buttons should link to the corresponding `https://doi.org/` URL. The examples are
-not real publications. Changes to the shared file are watched by the preview servers.
+no longer have visible entries, hides the type labels while a single type is selected, and
+keeps the selection in the URL (e.g. `publications/?type=talk`), so filtered views can be
+linked. Without JavaScript all entries are shown. To add a type, extend `TYPES` in both
+`scripts/build_results.py` and `results.js` (including its button labels).
 
 ### News
 
