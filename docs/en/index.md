@@ -79,7 +79,13 @@ transparent way. The legal framework is taken into account from the very beginni
 
 ### Project partners
 
+<div class="daisy-partner-team" markdown="1">
+
 --8<-- "docs/shared/partner-logos.html"
+
+--8<-- "docs/shared/team-icons.html"
+
+</div>
 
 ### Funding
 

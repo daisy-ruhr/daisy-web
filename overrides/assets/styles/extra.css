@@ -234,6 +234,77 @@
   }
 }
 
+.daisy-partner-team .daisy-partner-logos-container {
+  margin-bottom: 1rem;
+}
+.daisy-team-icons {
+  --team-icon-min-size: 64px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--team-icon-min-size), 1fr));
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+.md-typeset .daisy-team-icon {
+  align-items: center;
+  aspect-ratio: 1;
+  background: var(--daisy-primary-700);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  filter: saturate(80%);
+  font-weight: 700;
+  justify-content: center;
+  justify-self: center;
+  max-width: max(100px, var(--team-icon-min-size));
+  position: relative;
+  transition: filter 0.2s, transform 0.2s;
+  width: 100%;
+}
+.md-typeset .daisy-team-icon img {
+  border-radius: inherit;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.daisy-team-icon::after {
+  background: var(--daisy-primary-900);
+  border-radius: 0.25rem;
+  bottom: 100%;
+  color: #fff;
+  content: attr(aria-label);
+  font-size: 0.7rem;
+  font-weight: 400;
+  left: 50%;
+  opacity: 0;
+  padding: 0.25rem 0.5rem;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 100%;
+}
+.daisy-team-icon:is(:hover, :focus-visible) {
+  z-index: 1;
+}
+.daisy-team-icon:is(:hover, :focus-visible)::after {
+  opacity: 1;
+  pointer-events: auto;
+}
+.daisy-partner-team:has(.daisy-partner-logos .daisy-org-rub:is(:hover, :focus)) .daisy-team-icon.daisy-org-rub,
+.daisy-partner-team:has(.daisy-partner-logos .daisy-org-uwh:is(:hover, :focus)) .daisy-team-icon.daisy-org-uwh,
+.daisy-partner-team:has(.daisy-partner-logos .daisy-org-ude:is(:hover, :focus)) .daisy-team-icon.daisy-org-ude,
+.daisy-partner-team:has(.daisy-partner-logos .daisy-org-bowe:is(:hover, :focus)) .daisy-team-icon.daisy-org-bowe,
+.md-typeset .daisy-team-icon:is(:hover, :focus-visible) {
+  filter: saturate(100%);
+  transform: scale(1.1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .daisy-team-icon {
+    transition: none;
+  }
+}
+
 /* Team page */
 .daisy-partner + .daisy-partner {
   border-top: 1px solid var(--md-default-fg-color--lightest);

@@ -84,7 +84,13 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 
 ### Projektpartner
 
+<div class="daisy-partner-team" markdown="1">
+
 --8<-- "docs/shared/partner-logos.html"
+
+--8<-- "docs/shared/team-icons.html"
+
+</div>
 
 ### Förderung
 

@@ -117,7 +117,43 @@ class RenderedPage(HTMLParser):
                 self.labels.add(self.ellipsis_text.strip())
 
 
+class TeamIcons(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.icons = []
+        self.headings = []
+        self.partner_classes = set()
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        classes = set(attrs.get("class", "").split())
+        if tag == "a" and "daisy-team-icon" in classes:
+            self.icons.append(attrs)
+        elif tag == "a":
+            self.partner_classes.update(cls for cls in classes if cls.startswith("daisy-org-"))
+        elif tag == "h4" and "id" in attrs:
+            self.headings.append(attrs["id"])
+
+
 class SiteTests(unittest.TestCase):
+    def test_home_team_icons_match_team_pages(self):
+        for language in ("de", "en"):
+            with self.subTest(language=language):
+                home = TeamIcons()
+                home.feed((SITE / language / "index.html").read_text(encoding="utf-8"))
+                team = TeamIcons()
+                team.feed((SITE / language / "team/index.html").read_text(encoding="utf-8"))
+                self.assertTrue(home.icons)
+                self.assertEqual(
+                    [icon["href"] for icon in home.icons],
+                    [f"team/#{heading}" for heading in team.headings],
+                )
+                for icon in home.icons:
+                    self.assertTrue(icon.get("aria-label"))
+                    organizations = {cls for cls in icon["class"].split() if cls.startswith("daisy-org-")}
+                    self.assertEqual(len(organizations), 1)
+                    self.assertLessEqual(organizations, home.partner_classes)
+
     def test_language_configs_share_theme_settings(self):
         with (ROOT / "zensical.toml").open("rb") as file:
             german = tomllib.load(file)["project"]
