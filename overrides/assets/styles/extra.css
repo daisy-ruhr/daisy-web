@@ -235,10 +235,10 @@
   --clear-x: 0.5; /* horizontal spacing factor (Schutzraum, relative to logo height) */
   --clear-y: 0.5; /* vertical spacing factor */
   --rub-ratio: 2.793; /* logo aspect ratio: width / height */
-  --uniwh-ratio: 2.5;
+  --uniwh-ratio: 2.095;
   --ude-ratio: 2.539;
   --bowe-ratio: 3.84;
-  --all-ratios: calc(var(--rub-ratio) + var(--uniwh-ratio) + var(--ude-ratio) + var(--bowe-ratio)); /* 11.672 */
+  --all-ratios: calc(var(--rub-ratio) + var(--uniwh-ratio) + var(--ude-ratio) + var(--bowe-ratio)); /* 11.267 */
   --layout-leeway: 1px; /* prevents overflow due to rounding errors in logo height calculation */
   --logo-height: max(var(--logo-min-height), calc((100cqw - var(--layout-leeway)) / (var(--all-ratios) + 5 * var(--clear-x))));
   --space-x: calc(var(--logo-height) * var(--clear-x));
@@ -265,7 +265,7 @@
 /* Container queries cannot use custom properties. Round these thresholds up to pixels:
   four logos: logo-min-height * (all-ratios + 5 * clear-x) + layout-leeway;
   two logos: logo-min-height * (max(rub-ratio + uniwh-ratio, ude-ratio + bowe-ratio) + 3 * clear-x) + layout-leeway. */
-@container (max-width: 512px) {
+@container (max-width: 500px) {
   /* Two logos per row */
   .daisy-partner-logos {
    --logo-height: max(var(--logo-min-height), calc((100cqw - var(--layout-leeway)) / (max(var(--rub-ratio) + var(--uniwh-ratio), var(--ude-ratio) + var(--bowe-ratio)) + 3 * var(--clear-x))));
@@ -280,8 +280,8 @@
     padding: 0 var(--space-x);
   }
 }
-@container (max-width: 285px) {
-  /* One logo per row */
+@container (max-width: 236px) {
+  /* One logo per row, in practice screens are normally not this narrow */
   .daisy-partner-logos {
     --logo-height: max(var(--logo-min-height), calc((100cqw - var(--layout-leeway)) / (max(var(--rub-ratio), var(--uniwh-ratio), var(--ude-ratio), var(--bowe-ratio)) + 2 * var(--clear-x))));
   }

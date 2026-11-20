@@ -22,7 +22,7 @@ Dr. Magdalena Wischnewski (UDE).
 
 ### RUB – Ruhr-Universität Bochum
 
-Leitet das Konsortium und untersucht die Technik: Sicherheits- und
+Untersucht die Technik: Sicherheits- und
 Datenschutzarchitekturen von AIaaS-Diensten, empirische Systemanalysen, Demonstratoren.
 
 <div class="daisy-people" markdown="1">
@@ -74,6 +74,8 @@ Ich übernehme im Projekt die Leitung des organisationspsychologischen Parts, ak
 
 <p class="daisy-person-role">Promotionsstelle - Organisationspsychologie</p>
 
+Als Psychologe und wissenschaftlicher Mitarbeiter an der Universität Witten/Herdecke beschäftige ich mich im DAISY-Projekt mit den organisationspsychologischen Entscheidungsprozessen bei der Einführung von AI-as-a-Service-Systemen. Dabei untersuche ich, welche Kriterien Entscheidungsträger:innen bei der Auswahl und Einführung solcher Systeme berücksichtigen, wie sie Chancen und Risiken abwägen und welche Rolle Datenschutz und die Interessen der Beschäftigten dabei spielen. Ziel ist es, besser zu verstehen, wie Organisationen KI-Systeme verantwortungsvoll, datenschutzsensibel und menschengerecht einführen können.
+
 </div>
 </div>
 
@@ -94,12 +96,12 @@ lässt sich ihre Kompetenz im Umgang damit stärken?
 
 #### Dr. Greta Ontrup
 
-<p class="daisy-person-role">Individuelle Psychologie</p>
+<p class="daisy-person-role">Arbeitspsychologie</p>
 
-Sie erforscht, wie sich datengestützte Entscheidungen auf Beschäftigte auswirken. Seit
-2020 leitet sie das „AI at Work"-Netzwerk zum Transfer zwischen Wissenschaft und Praxis.
+Ich übernehme im Projekt gemeinsam mit Dr. Magdalena Wischnewski die Leitung des arbeitspsychologischen Teilbereichs. Dabei bringe ich meine Expertise im Bereich Mensch-KI-Teaming sowie zu den Auswirkungen datengestützter Unternehmensprozesse auf Mitarbeitende ein. Im DAISY Projekt erforschen ich, wie Beschäftigte as-a-Service implementierte Systeme wahrnehmen, wobei der Fokus auf den Risiken liegt, die sich aus den subjektiven Vorstellungen und Interpretationen der Beschäftigten im Hinblick auf Datenschutz und Privatsphäre ergeben.
 
 </div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Greta_Ontrup.JPG" alt="" loading="lazy"></div>
 </div>
 
 <div class="daisy-person" markdown="1">
@@ -107,7 +109,7 @@ Sie erforscht, wie sich datengestützte Entscheidungen auf Beschäftigte auswirk
 
 #### Dr. Magdalena Wischnewski
 
-<p class="daisy-person-role">Individuelle Psychologie</p>
+<p class="daisy-person-role">Arbeitspsychologie</p>
 
 Ich leite die <span lang="en">Junior Research Group</span> zu <span lang="en">Human Factors</span> in KI-Systemen und untersuche, was
 es bedeutet, „KI zu vertrauen“. Im DAISY-Projekt erforsche ich, wie Beschäftigte
@@ -122,7 +124,7 @@ diesen Systemen widerspiegelt.
 
 #### Muazzez Deniz Barut
 
-<p class="daisy-person-role">Promotionsstelle - Individuelle Psychologie</p>
+<p class="daisy-person-role">Promotionsstelle - Psychologie</p>
 
 Ich bin Doktorandin an der Universität Duisburg-Essen und beschäftige mich mit den psychologischen Aspekten der Mensch-KI-Interaktion. Im DAISY-Projekt untersuche ich, wie Beschäftigte AI-as-a-Service-Systeme verstehen und welche mentalen Modelle sie von deren Funktionsweise sowie von den damit verbundenen Datenschutz- und Sicherheitsrisiken entwickeln. Ziel ist es, mögliche Fehlvorstellungen zu erkennen und einen informierten und datenschutzbewussten Umgang mit KI am Arbeitsplatz zu fördern.
 

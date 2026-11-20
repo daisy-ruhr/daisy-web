@@ -22,7 +22,7 @@ Dr. Magdalena Wischnewski (UDE).
 
 ### RUB – Ruhr University Bochum
 
-Consortium lead and focus on the technical subsystem: security and data protection
+Focus on the technical subsystem: security and data protection
 architectures of AIaaS systems, empirical system analysis, demonstrators.
 
 <div class="daisy-people" markdown="1">
@@ -76,6 +76,8 @@ I am leading the organizational psychology component of the project, currently f
 
 <p class="daisy-person-role">PhD - Organizational psychology</p>
 
+As a psychologist and research associate at Witten/Herdecke University within the DAISY project, I focus on the organizational psychology of decision-making when companies adopt AI-as-a-Service systems. I investigate the criteria decision-makers use when they select and introduce these systems, how they weigh opportunities against risks, and what role data protection and employees’ interests play in those decisions. The goal is to better understand how organizations can introduce AI systems responsibly, with care for data privacy and for the people who work with them.
+
 </div>
 </div>
 
@@ -94,13 +96,12 @@ formats for competence development.
 
 #### Dr. Greta Ontrup
 
-<p class="daisy-person-role">Individual psychology</p>
+<p class="daisy-person-role">Psychology</p>
 
-She researches the psychological effects of data-driven strategies in work and
-organizational contexts. Since 2020 she has led the "AI at Work" network for transfer
-between science and practice.
+Together with Dr. Magdalena Wischnewski, I lead the project’s work and organizational psychology part. I bring expertise in human-AI teaming and in how data-driven business processes affect employees. In DAISY, I study how employees perceive systems delivered as a service. I focus especially on the risks that come from employees’ own beliefs and interpretations about data protection and privacy.
 
 </div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Greta_Ontrup.JPG" alt="" loading="lazy"></div>
 </div>
 
 <div class="daisy-person" markdown="1">
@@ -108,7 +109,7 @@ between science and practice.
 
 #### Dr. Magdalena Wischnewski
 
-<p class="daisy-person-role">Individual psychology</p>
+<p class="daisy-person-role">Psychology</p>
 
 I lead the junior research group on human factors in AI systems. In my research, I examine what it means to "trust AI". In the DAISY project, I contribute to the individual psychology perspective by investigating how employees make sense of intelligent systems and how this is reflected in their interaction with them.
 
@@ -120,7 +121,7 @@ I lead the junior research group on human factors in AI systems. In my research,
 
 #### Muazzez Deniz Barut
 
-<p class="daisy-person-role">PhD - Individual psychology</p>
+<p class="daisy-person-role">PhD - Psychology</p>
 
 I am a PhD researcher at the University of Duisburg-Essen, focusing on the psychological aspects of human-AI interaction. In DAISY, I investigate how employees understand AI-as-a-Service systems and the mental models they develop about how these systems work, as well as the associated privacy and security risks. The goal is to identify potential misconceptions and promote informed and privacy-conscious AI use in the workplace.
 
