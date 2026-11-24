@@ -1,0 +1,580 @@
+/* DAISY colour scheme: deep teal-blue primary + golden-orange accent. */
+
+/* DAISY palette */
+:root {
+  /* Primary ramp: cerulean hue 197 (HSV/HSL), oklch hue ≈ 230 */
+  --daisy-primary-50:  #F1F8FC;  /* oklch(0.975 0.009 230) */
+  --daisy-primary-100: #E2F1F8;  /* oklch(0.948 0.018 230) */
+  --daisy-primary-200: #C3E3F3;  /* oklch(0.897 0.040 230) */
+  --daisy-primary-300: #90CFED;  /* oklch(0.822 0.077 230) */
+  --daisy-primary-400: #55B7E2;  /* oklch(0.738 0.111 230) */
+  --daisy-primary-500: #35A3D0;  /* oklch(0.675 0.117 230) */
+  --daisy-primary-600: #1584AC;  /* oklch(0.575 0.109 230), main project logo lock color */
+  --daisy-primary-700: #0C6889;  /* oklch(0.485 0.093 230) */
+  --daisy-primary-800: #145670;  /* oklch(0.426 0.076 230), header color */
+  --daisy-primary-900: #16475C;  /* oklch(0.375 0.062 230) */
+  --daisy-primary-950: #0E2D3A;  /* oklch(0.280 0.044 230) */
+
+  /* Accent */
+  --daisy-accent:             #F2A541;
+  --daisy-accent-transparent: #F2A5411A;  /* 10% alpha */
+  --daisy-on-accent:          #3A2405;    /* text on accent fills */
+}
+
+/* mkdocs-material mapping (light and dark mode) */
+:root > * {
+  --md-primary-fg-color:        var(--daisy-primary-800);
+  --md-primary-fg-color--light: var(--daisy-primary-600);
+  --md-primary-fg-color--dark:  var(--daisy-primary-950);
+
+  /* Light mode: the brand orange only reaches 2:1 on white, so link hover/focus text and
+     focus outlines use a darker amber (5.7:1 on white; white text on it is 5.7:1, too). */
+  --md-accent-fg-color:              #9A5600;
+  --md-accent-fg-color--transparent: var(--daisy-accent-transparent);
+  --md-accent-bg-color:              #fff;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] {
+  --md-hue: 197;                                  /* tint the dark greys toward the primary hue */
+  --md-typeset-a-color: var(--daisy-primary-300); /* lighter links on the dark background */
+  --md-accent-fg-color: var(--daisy-accent);      /* 7.5:1 on the dark background */
+  --md-accent-bg-color: var(--daisy-on-accent);   /* text on accent fills, 7.1:1 */
+}
+
+/* Links in running text must not be distinguishable by colour alone (WCAG 1.4.1). */
+.md-typeset :is(p, li, dd, td, th, figcaption, .admonition) a:not(.md-button, .headerlink) {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* Outlined buttons use the dark primary colour, which is unreadable on the dark background. */
+[data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary, :focus, :hover) {
+  border-color: var(--md-typeset-a-color);
+  color: var(--md-typeset-a-color);
+}
+
+/* Don't reserve header space for a repository link when none is configured. */
+.md-header__source:not(:has(.md-source)) {
+  display: none;
+}
+
+.hide {
+  display: none !important;
+}
+
+.custom-footer {
+  background-color: var(--md-footer-bg-color);
+  color: var(--md-footer-fg-color);
+  padding: 1.25rem 1rem;
+}
+.custom-footer__links a {
+  color: var(--md-footer-fg-color--light);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.custom-footer__links a:is(:focus, :hover) {
+  color: var(--md-footer-fg-color);
+}
+.custom-footer__content {
+  align-items: end;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 1rem 1.5rem;
+  margin: 0 auto;
+  max-width: 61rem;
+}
+.custom-footer__logo {
+  grid-column: 2;
+  justify-self: center;
+}
+.custom-footer__content img {
+  display: block;
+  max-height: 9.375rem;
+  max-width: 100%;
+}
+.custom-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+  gap: 0.5rem 1rem;
+  grid-column: 3;
+  justify-self: end;
+}
+@media (max-width: 50rem) {
+  .custom-footer__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .custom-footer__logo,
+  .custom-footer__links {
+    align-self: center;
+  }
+}
+
+/* Home page intro */
+.daisy-intro {
+  container-type: inline-size;
+}
+.daisy-summary-art {
+  background: url("../img/daisy_hero_art_m2.png") no-repeat center / contain;
+  height: 14rem;
+  image-rendering: pixelated;
+}
+@container (min-width: 41rem) {
+  .daisy-intro-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) min(35%, 15rem);
+    /* align-items: center; */
+    gap: 1.5rem;
+  }
+}
+.daisy-latest-news ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+.daisy-latest-news li {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  margin: 0;
+  padding: 0.8rem 1rem;
+}
+.daisy-latest-news time {
+  color: var(--md-default-fg-color--light);
+  display: block;
+  font-size: 0.7rem;
+}
+
+/* Card grids: some breathing room and a calmer border */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 0.4rem;
+}
+/* The .lg/.middle size classes come from Material Insiders and are unstyled in the
+   free version – defined here so the card icons take effect. */
+.md-typeset .twemoji.lg {
+  --md-icon-size: 1.6rem;
+}
+.md-typeset .twemoji.middle {
+  vertical-align: middle;
+}
+.md-typeset .grid.cards > ul > li > p > .twemoji {
+  color: var(--md-primary-fg-color--light);
+}
+.md-typeset .grid.cards > ul > li > p {
+  margin-bottom: 0;
+}
+
+.daisy-partner-logos-container {
+  container-type: inline-size;
+  margin: 2rem 0;
+}
+.daisy-partner-logos {
+  --logo-min-height: 36px;
+  --clear-x: 0.5; /* horizontal spacing factor (Schutzraum, relative to logo height) */
+  --clear-y: 0.5; /* vertical spacing factor */
+  --rub-ratio: 2.793; /* logo aspect ratio: width / height */
+  --uniwh-ratio: 2.095;
+  --ude-ratio: 2.539;
+  --bowe-ratio: 3.84;
+  --all-ratios: calc(var(--rub-ratio) + var(--uniwh-ratio) + var(--ude-ratio) + var(--bowe-ratio)); /* 11.267 */
+  --layout-leeway: 1px; /* prevents overflow due to rounding errors in logo height calculation */
+  --logo-height: max(var(--logo-min-height), calc((100cqw - var(--layout-leeway)) / (var(--all-ratios) + 5 * var(--clear-x))));
+  --space-x: calc(var(--logo-height) * var(--clear-x));
+  --space-y: calc(var(--logo-height) * var(--clear-y));
+  /* Regular layout, 4 logos in single row */
+  background: #fff;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-y) var(--space-x);
+  justify-content: space-evenly;
+  padding: var(--space-y) var(--space-x);
+}
+.daisy-partner-logos-row {
+  display: contents;
+}
+.md-typeset .daisy-partner-logos img {
+  display: block;
+  flex: none;
+  height: var(--logo-height);
+  max-width: none;
+  width: auto;
+}
+/* Container queries cannot use custom properties. Round these thresholds up to pixels:
+  four logos: logo-min-height * (all-ratios + 5 * clear-x) + layout-leeway;
+  two logos: logo-min-height * (max(rub-ratio + uniwh-ratio, ude-ratio + bowe-ratio) + 3 * clear-x) + layout-leeway. */
+@container (max-width: 500px) {
+  /* Two logos per row */
+  .daisy-partner-logos {
+   --logo-height: max(var(--logo-min-height), calc((100cqw - var(--layout-leeway)) / (max(var(--rub-ratio) + var(--uniwh-ratio), var(--ude-ratio) + var(--bowe-ratio)) + 3 * var(--clear-x))));
+    display: grid;
+    gap: var(--space-y);
+    padding: var(--space-y) 0;
+  }
+  .daisy-partner-logos-row {
+    display: flex;
+    gap: var(--space-x);
+    justify-content: space-evenly;
+    padding: 0 var(--space-x);
+  }
+}
+@container (max-width: 236px) {
+  /* One logo per row, in practice screens are normally not this narrow */
+  .daisy-partner-logos {
+    --logo-height: max(var(--logo-min-height), calc((100cqw - var(--layout-leeway)) / (max(var(--rub-ratio), var(--uniwh-ratio), var(--ude-ratio), var(--bowe-ratio)) + 2 * var(--clear-x))));
+  }
+  .daisy-partner-logos-row {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-y);
+  }
+}
+
+.daisy-partner-team .daisy-partner-logos-container {
+  margin-bottom: 1rem;
+}
+.daisy-team-icons {
+  --team-icon-min-size: 64px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--team-icon-min-size), 1fr));
+  gap: 0.8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-inline: 1.2rem;
+}
+.md-typeset .daisy-team-icon {
+  align-items: center;
+  aspect-ratio: 1;
+  background: var(--daisy-primary-700);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  filter: saturate(80%);
+  font-weight: 700;
+  justify-content: center;
+  justify-self: center;
+  max-width: max(100px, var(--team-icon-min-size));
+  position: relative;
+  transition: filter 0.2s, transform 0.2s;
+  width: 100%;
+}
+.md-typeset .daisy-team-icon img {
+  border-radius: inherit;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.daisy-team-icon::before,
+.daisy-team-tooltip {
+  left: 50%;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.daisy-team-icon::before {
+  border-bottom: 6px solid var(--daisy-primary-900);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  content: "";
+  top: 100%;
+}
+.daisy-team-tooltip {
+  background: var(--daisy-primary-900);
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 400;
+  max-width: 100%;
+  min-width: min-content;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  top: calc(100% + 6px);
+  width: max-content;
+}
+.daisy-team-tooltip > span {
+  white-space: nowrap;
+}
+.daisy-team-icon:is(:hover, :focus-visible) {
+  z-index: 1;
+}
+.daisy-team-icon:is(:hover, :focus-visible)::before,
+.daisy-team-icon:is(:hover, :focus-visible) .daisy-team-tooltip {
+  opacity: 1;
+  pointer-events: auto;
+}
+.daisy-partner-team:has(.daisy-partner-logos .daisy-org-rub:is(:hover, :focus)) .daisy-team-icon.daisy-org-rub,
+.daisy-partner-team:has(.daisy-partner-logos .daisy-org-uwh:is(:hover, :focus)) .daisy-team-icon.daisy-org-uwh,
+.daisy-partner-team:has(.daisy-partner-logos .daisy-org-ude:is(:hover, :focus)) .daisy-team-icon.daisy-org-ude,
+.daisy-partner-team:has(.daisy-partner-logos .daisy-org-bowe:is(:hover, :focus)) .daisy-team-icon.daisy-org-bowe,
+.md-typeset .daisy-team-icon:is(:hover, :focus-visible) {
+  filter: saturate(100%);
+  transform: scale(1.1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .daisy-team-icon {
+    transition: none;
+  }
+}
+
+/* Team page */
+.daisy-partner + .daisy-partner {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  margin-top: 1.5rem;
+}
+.daisy-people {
+  display: grid;
+  gap: 1.4rem;
+  padding-inline-start: 1rem;
+}
+.daisy-person {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.daisy-person-text {
+  flex: 1;
+  min-width: 0;
+}
+.md-typeset .daisy-person h4 {
+  margin: 0 0 0.1rem;
+}
+.md-typeset .daisy-person p {
+  margin: 0 0 0.4rem;
+}
+.md-typeset .daisy-person p:last-child {
+  margin-bottom: 0;
+}
+.md-typeset .daisy-person-role {
+  color: var(--daisy-primary-700); /* 6.3:1 on white */
+  font-weight: 600;
+}
+[data-md-color-scheme="slate"] .md-typeset .daisy-person-role {
+  color: var(--daisy-primary-300); /* 9:1 on the dark background */
+}
+.daisy-person-photo {
+  flex: none;
+  width: 128px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.md-typeset .daisy-person-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 480px) {
+  .daisy-people {
+    padding-inline-start: 0.5rem;
+  }
+  .daisy-person {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 0.6rem;
+  }
+}
+
+/* Partner abbreviations as accent */
+.daisy-kicker {
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+
+/* Funding box */
+.daisy-funding {
+  border-left: 0.25rem solid var(--md-primary-fg-color);
+  background: var(--md-code-bg-color);
+  padding: 1rem 1.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+}
+
+/* Publication category labels */
+.md-typeset .daisy-publication-tag {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  margin: 0 0.25rem 0.25rem 0;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 100rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.md-typeset .daisy-publication-tag.hci {
+  color: #7C3AED;
+  border-color: #7C3AED;
+}
+
+.md-typeset .daisy-publication-tag.psy {
+  color: #bb0707;
+  border-color: #bb0707;
+}
+
+.md-typeset .daisy-publication-tag.cs {
+  color: #0a66c2;
+  border-color: #0a66c2;
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-publication-tag.hci {
+  color: #c4a4ff;
+  border-color: #c4a4ff;
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-publication-tag.psy {
+  color: #ff6565;
+  border-color: #ff6565;
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-publication-tag.cs {
+  color: #83bfff;
+  border-color: #83bfff;
+}
+
+/* Result entries. The type label (publication, talk, …) is a filled, square,
+   uppercase label above the title, so it reads differently from the outlined
+   topic pills below the title. */
+.md-typeset .daisy-result {
+  margin-top: 1.5rem;
+}
+
+.md-typeset .daisy-result-type {
+  display: inline-block;
+  margin: 0 0 0.35rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 0.15rem;
+  background: var(--daisy-primary-800);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-result-type {
+  background: var(--daisy-primary-300);
+  color: var(--daisy-primary-950);
+}
+
+.md-typeset .daisy-result-type + h3 {
+  margin-top: 0;
+}
+
+/* Filtered to a single type (results.js): the type label is redundant */
+.md-typeset .daisy-publications--filtered .daisy-result-type {
+  display: none;
+}
+
+.md-typeset .daisy-publications--filtered .daisy-result {
+  margin-top: 2rem;
+}
+
+/* Type filter, added by results.js */
+.daisy-publications [hidden],
+.md-nav--secondary [hidden] {
+  display: none !important;
+}
+
+.md-typeset .daisy-filter {
+  margin: 1.5rem 0 0.5rem;
+}
+
+.md-typeset .daisy-filter__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.md-typeset .daisy-filter__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: 100rem;
+  background: transparent;
+  color: var(--md-primary-fg-color);
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.md-typeset .daisy-filter__chip:hover {
+  background: var(--daisy-primary-50);
+}
+
+.md-typeset .daisy-filter__chip[aria-pressed=true] {
+  background: var(--md-primary-fg-color);
+  color: #fff;
+}
+
+.md-typeset .daisy-filter__chip:focus-visible {
+  outline: 0.1rem solid var(--md-accent-fg-color);
+  outline-offset: 0.1rem;
+}
+
+.md-typeset .daisy-filter__count {
+  min-width: 1.2em;
+  padding: 0 0.3em;
+  border-radius: 100rem;
+  background: var(--md-default-fg-color--lightest);
+  font-size: 0.65rem;
+  text-align: center;
+}
+
+.md-typeset .daisy-filter__status {
+  margin: 0.5rem 0 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-filter__chip {
+  border-color: var(--daisy-primary-300);
+  color: var(--daisy-primary-300);
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-filter__chip:hover {
+  background: var(--daisy-primary-950);
+}
+
+[data-md-color-scheme=slate] .md-typeset .daisy-filter__chip[aria-pressed=true] {
+  background: var(--daisy-primary-300);
+  color: var(--daisy-primary-950);
+}
+
+/* Tables scroll on narrow screens instead of overflowing */
+.md-typeset__scrollwrap {
+  overflow-x: auto;
+}
+
+/* Heading permalink: subtle chain icon instead of the ¶ glyph */
+.md-typeset .headerlink {
+  font-size: 0;
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+  background-color: var(--md-default-fg-color--light); /* ≥ 3:1 non-text contrast */
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 0 0 0-4.24 2.982 2.982 0 0 0-4.24 0l-3.53 3.53a2.982 2.982 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 0 0 0 4.24 2.982 2.982 0 0 0 4.24 0l3.53-3.53a2.982 2.982 0 0 0 0-4.24.973.973 0 0 1 0-1.42Z"/></svg>') center / contain no-repeat;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 0 0 0-4.24 2.982 2.982 0 0 0-4.24 0l-3.53 3.53a2.982 2.982 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 0 0 0 4.24 2.982 2.982 0 0 0 4.24 0l3.53-3.53a2.982 2.982 0 0 0 0-4.24.973.973 0 0 1 0-1.42Z"/></svg>') center / contain no-repeat;
+}
+
+.md-typeset :is(h1, h2, h3, h4, h5, h6):hover > .headerlink,
+.md-typeset .headerlink:focus {
+  background-color: color-mix(in srgb, var(--md-default-fg-color) 80%, transparent);
+}
