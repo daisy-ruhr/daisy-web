@@ -64,7 +64,7 @@ negotiation processes, process models for calibrated AIaaS introductions.
 I am leading the organizational psychology component of the project, currently from the University of Witten/Herdecke. Drawing on my research at the intersection of work design and organizational psychology, I examine - as a business psychologist - how decision-makers in organizations decide about AI and what role organizational factors, such as organizational culture, play.
 
 </div>
-<div class="daisy-person-photo"><img src="assets/img/staff/Alina_Tausch.JPG" alt="" loading="lazy"></div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Alina_Tausch.jpg" alt="" loading="lazy"></div>
 </div>
 
 <div class="daisy-person" markdown="1">
@@ -99,7 +99,7 @@ formats for competence development.
 Together with Dr. Magdalena Wischnewski, I lead the project’s work and organizational psychology part. I bring expertise in human-AI teaming and in how data-driven business processes affect employees. In DAISY, I study how employees perceive systems delivered as a service. I focus especially on the risks that come from employees’ own beliefs and interpretations about data protection and privacy.
 
 </div>
-<div class="daisy-person-photo"><img src="assets/img/staff/Greta_Ontrup.JPG" alt="" loading="lazy"></div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Greta_Ontrup.jpg" alt="" loading="lazy"></div>
 </div>
 
 <div class="daisy-person" markdown="1">
@@ -112,6 +112,7 @@ Together with Dr. Magdalena Wischnewski, I lead the project’s work and organiz
 I lead the junior research group on human factors in AI systems. In my research, I examine what it means to "trust AI". In the DAISY project, I contribute to the individual psychology perspective by investigating how employees make sense of intelligent systems and how this is reflected in their interaction with them.
 
 </div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Magdalena_Wischnewski.jpg" alt="" loading="lazy"></div>
 </div>
 
 <div class="daisy-person" markdown="1">
@@ -124,7 +125,7 @@ I lead the junior research group on human factors in AI systems. In my research,
 I am a PhD researcher at the University of Duisburg-Essen, focusing on the psychological aspects of human-AI interaction. In DAISY, I investigate how employees understand AI-as-a-Service systems and the mental models they develop about how these systems work, as well as the associated privacy and security risks. The goal is to identify potential misconceptions and promote informed and privacy-conscious AI use in the workplace.
 
 </div>
-<div class="daisy-person-photo"><img src="assets/img/staff/Deniz_Barut.JPG" alt="" loading="lazy"></div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Deniz_Barut.jpg" alt="" loading="lazy"></div>
 </div>
 
 </div>

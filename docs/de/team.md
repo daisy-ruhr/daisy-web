@@ -62,7 +62,7 @@ AIaaS, und wie führt man sie so ein, dass Erwartungen und Risiken zusammenpasse
 Ich übernehme im Projekt die Leitung des organisationspsychologischen Parts, aktuell noch von der Universität Witten/Herdecke aus. Basierend auf meiner Forschung an der Schnittstelle von Arbeitsgestaltung und Organisationspsychologie betrachte ich als Wirtschaftspsychologin, wie Entscheider:innen in Organisationen Entscheidungen über KI treffen und welche Rolle organisationale Rahmenbedingungen wie Organisationskultur spielen.
 
 </div>
-<div class="daisy-person-photo"><img src="assets/img/staff/Alina_Tausch.JPG" alt="" loading="lazy"></div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Alina_Tausch.jpg" alt="" loading="lazy"></div>
 </div>
 
 <div class="daisy-person" markdown="1">
@@ -96,10 +96,10 @@ lässt sich ihre Kompetenz im Umgang damit stärken?
 
 <p class="daisy-person-role">Arbeitspsychologie</p>
 
-Ich übernehme im Projekt gemeinsam mit Dr. Magdalena Wischnewski die Leitung des arbeitspsychologischen Teilbereichs. Dabei bringe ich meine Expertise im Bereich Mensch-KI-Teaming sowie zu den Auswirkungen datengestützter Unternehmensprozesse auf Mitarbeitende ein. Im DAISY Projekt erforschen ich, wie Beschäftigte as-a-Service implementierte Systeme wahrnehmen, wobei der Fokus auf den Risiken liegt, die sich aus den subjektiven Vorstellungen und Interpretationen der Beschäftigten im Hinblick auf Datenschutz und Privatsphäre ergeben.
+Ich übernehme im Projekt gemeinsam mit Dr. Magdalena Wischnewski die Leitung des arbeitspsychologischen Teilbereichs. Dabei bringe ich meine Expertise im Bereich Mensch-KI-Teaming sowie zu den Auswirkungen datengestützter Unternehmensprozesse auf Mitarbeitende ein. Im DAISY Projekt erforsche ich, wie Beschäftigte as-a-Service implementierte Systeme wahrnehmen, wobei der Fokus auf den Risiken liegt, die sich aus den subjektiven Vorstellungen und Interpretationen der Beschäftigten im Hinblick auf Datenschutz und Privatsphäre ergeben.
 
 </div>
-<div class="daisy-person-photo"><img src="assets/img/staff/Greta_Ontrup.JPG" alt="" loading="lazy"></div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Greta_Ontrup.jpg" alt="" loading="lazy"></div>
 </div>
 
 <div class="daisy-person" markdown="1">
@@ -115,6 +115,7 @@ intelligente Systeme einordnen und verstehen und wie sich dies in ihrer Interakt
 diesen Systemen widerspiegelt.
 
 </div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Magdalena_Wischnewski.jpg" alt="" loading="lazy"></div>
 </div>
 
 <div class="daisy-person" markdown="1">
@@ -127,7 +128,7 @@ diesen Systemen widerspiegelt.
 Ich bin Doktorandin an der Universität Duisburg-Essen und beschäftige mich mit den psychologischen Aspekten der Mensch-KI-Interaktion. Im DAISY-Projekt untersuche ich, wie Beschäftigte AI-as-a-Service-Systeme verstehen und welche mentalen Modelle sie von deren Funktionsweise sowie von den damit verbundenen Datenschutz- und Sicherheitsrisiken entwickeln. Ziel ist es, mögliche Fehlvorstellungen zu erkennen und einen informierten und datenschutzbewussten Umgang mit KI am Arbeitsplatz zu fördern.
 
 </div>
-<div class="daisy-person-photo"><img src="assets/img/staff/Deniz_Barut.JPG" alt="" loading="lazy"></div>
+<div class="daisy-person-photo"><img src="assets/img/staff/Deniz_Barut.jpg" alt="" loading="lazy"></div>
 </div>
 
 </div>

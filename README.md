@@ -172,8 +172,8 @@ Ensure that both the German and English pages are updated in sync.
 I am responsible for making DAISY a full success! Replace me with your actual bio.
 
 </div>
-<!-- following line is optional, only needed if photo is present. Filename pattern GivenName_Surname.JPG -->
-<div class="daisy-person-photo"><img src="assets/img/staff/Maria_Mustermann.JPG" alt="" loading="lazy"></div>
+<!-- following line is optional, only needed if photo is present. Filename pattern GivenName_Surname.jpg -->
+<div class="daisy-person-photo"><img src="assets/img/staff/Maria_Mustermann.jpg" alt="" loading="lazy"></div>
 </div>
 ```
 

@@ -30,7 +30,7 @@ eine KI-Strategie gemacht und die Beschäftigten nutzen einen Wildwuchs privater
 Offen bleibt besonders im Hinblick auf agentisch automatisierte Workflows,
 was dabei mit den Daten der Beschäftigten passiert, wer Verantwortung trägt
 und wo die Grenzen des Systems liegen. Diese Risiken sind für Nutzende und
-Entscheidungsträger:innen selten intuitiv erkennbar: sie unterscheiden sich deutlich von
+Entscheidungsträger:innen selten intuitiv erkennbar; sie unterscheiden sich deutlich von
 der Nutzung kommerzieller Chatbots im Privatleben.
 
 DAISY setzt genau hier an. Im Verbund aus Informatik, Psychologie und Praxis entwickeln
