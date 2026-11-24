@@ -8,7 +8,7 @@ hide:
 !!! note "Courtesy translation"
     This is a courtesy translation. The German version of this page is legally binding.
 
-## This website does not process personal data
+## We do not collect any personal data ourselves
 
 DAISY is a static website. It is built from [Markdown sources](https://github.com/daisy-ruhr/daisy-web/) and delivered as plain HTML,
 CSS and image files. There is:
@@ -25,17 +25,29 @@ loaded.
 
 ## Hosting
 
-The website is delivered via GitHub Pages. For technical reasons, the host (GitHub Inc.,
-USA) processes access data in server log files (IP address, time, requested file, browser
-type). The legal basis is Art. 6(1)(f) GDPR – legitimate interest in secure operation.
-Details are governed by GitHub's privacy policy.
+The website is hosted by statichost.eu (Variable Object Assignment, c/o Knackeriet,
+Sankt Paulsgatan 25, 118 48 Stockholm, Sweden). For delivery, statichost.eu uses servers of
+Hetzner Online GmbH (Germany) and the content delivery network of BunnyWay d.o.o.
+(Slovenia).
+
+When you visit the website, your IP address is processed for technical reasons in order to
+deliver the requested files to your device. According to the host, no personal data is
+stored in log files; only technical details such as time, requested address and data volume
+are logged and kept for at most 7 days. The legal basis is Art. 6(1)(f) GDPR – legitimate
+interest in providing the website securely and reliably. The host processes this data on
+our behalf (Art. 28 GDPR); no transfer to countries outside the EU/EEA takes place. Details
+are governed by the [statichost.eu privacy policy](https://www.statichost.eu/privacy/).
+
+The source code of the website is stored on GitHub (GitHub Inc., USA). Visiting the website
+does not transfer any data to GitHub; GitHub's privacy policy only applies if you follow the
+link to the source code.
 
 ## Your rights
 
 You have the right of access, rectification, erasure, restriction of processing, data
 portability and objection, as well as the right to lodge a complaint with a supervisory
-authority. Since this website does not process personal data, a corresponding request should
-be addressed to the host named above.
+authority. Please address requests to the responsible body named in the
+[Legal Notice](Impressum.md).
 
 ## Contact
 

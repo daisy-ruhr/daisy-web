@@ -41,3 +41,53 @@ jobs:
       - name: Check accessibility (axe-core, WCAG 2.2 A/AA)
         # Uses the Chrome preinstalled on GitHub's Ubuntu runners.
         run: node tests/a11y/axe.mjs
+
+      - name: Add statichost.eu config (publish as-is, no build container)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          printf 'public: .\n' > site/statichost.yml
+
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        with:
+          name: site
+          path: site/
+          include-hidden-files: true
+          retention-days: 7
+
+  # Publishes the built site to the `site` branch and asks statichost.eu to fetch it.
+  # Needs repo variable STATICHOST_SITE (site name) and secret STATICHOST_TOKEN (API key).
+  deploy:
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: deploy
+      cancel-in-progress: false
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: site/
+
+      - name: Push build output to the site branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: site
+          publish_dir: site/
+          enable_jekyll: true  # no .nojekyll file; the site is not served by GitHub Pages
+          full_commit_message: "Deploy ${{ github.sha }}"
+
+      - name: Trigger statichost.eu deployment
+        env:
+          STATICHOST_SITE: ${{ vars.STATICHOST_SITE }}
+          STATICHOST_TOKEN: ${{ secrets.STATICHOST_TOKEN }}
+        run: |
+          test -n "$STATICHOST_SITE" || { echo "::error::Repo variable STATICHOST_SITE is not set"; exit 1; }
+          test -n "$STATICHOST_TOKEN" || { echo "::error::Secret STATICHOST_TOKEN is not set"; exit 1; }
+          curl -fsS --retry 3 -X POST \
+            -H "Authorization: Bearer $STATICHOST_TOKEN" \
+            "https://builder.statichost.eu/$STATICHOST_SITE"
