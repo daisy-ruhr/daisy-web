@@ -8,6 +8,8 @@ hide:
 <div class="daisy-intro" markdown="1">
 <div class="daisy-intro-layout" markdown="1">
 <div markdown="1">
+**KI in Unternehmen sicher einsetzen**
+
 **D**atenschutz und **A**rbeitnehmenden**i**nteressen in **AI**-as-a-Service-**Sy**stemen
 
 KI ist aus vielen Unternehmen nicht mehr wegzudenken. DAISY hat das Ziel, praktikable und zugleich
@@ -94,7 +96,6 @@ nachvollziehbar. Der rechtliche Rahmen wird von Beginn an einbezogen.
 ### Förderung
 
 <div class="daisy-funding" markdown="1">
-
 **Gefördert durch:** Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR)
 
 **Förderrichtlinie:** „Plattform Privatheit – IT-Sicherheit schützt Privatheit und stützt
@@ -105,7 +106,4 @@ Demokratie" („Digital.Sicher.Souverän")
 **Förderkennzeichen:** 16KIS2669K
 
 **Projektvolumen:** 1,55 Mio. € (davon BMFTR-Förderung: 1,29 Mio.)
-
-![Gefördert durch das Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR)](assets/img/bmftr_de.png){ loading=lazy, width="250"  }
-
 </div>

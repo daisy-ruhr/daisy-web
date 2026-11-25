@@ -19,7 +19,7 @@ HTML-, CSS- und Bilddateien ausgeliefert. Es gibt:
   E-Mail-Adresse, die Sie selbst in Ihrem Mailprogramm verwenden.
 
 Sie können das selbst prüfen: Beim Laden dieser Seite werden ausschließlich Dateien von
-ihrer Domain geladen.
+daisy.ruhr geladen.
 
 ## Hosting
 

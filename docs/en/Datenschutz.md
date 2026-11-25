@@ -20,7 +20,7 @@ CSS and image files. There is:
 * **no forms collecting personal data** – contact is made via an e-mail address that you
   use yourself in your mail program.
 
-You can verify this yourself: when loading this page, only files from its domain are
+You can verify this yourself: when loading this page, only files from its own domain daisy.ruhr are
 loaded.
 
 ## Hosting

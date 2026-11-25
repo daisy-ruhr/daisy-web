@@ -8,6 +8,7 @@ hide:
 <div class="daisy-intro" markdown="1">
 <div class="daisy-intro-layout" markdown="1">
 <div markdown="1">
+**Safe use of AI in companies**
 **D**ata Protection and Employee Interests in **AI**-as-a-Service **Sy**stems
 
 AI has become an important tool in many companies.  
@@ -90,7 +91,6 @@ transparent way. The legal framework is taken into account from the very beginni
 ### Funding
 
 <div class="daisy-funding" markdown="1">
-
 **Funded by:** Federal Ministry of Research, Technology and Space (BMFTR)
 
 **Funding guideline:** "<span lang="de">Plattform Privatheit – IT-Sicherheit schützt Privatheit und stützt
@@ -101,7 +101,4 @@ Demokratie</span>" ("<span lang="de">Digital.Sicher.Souverän</span>")
 **Funding reference number:** 16KIS2669K
 
 **Project funding sum:** 1.55 mio. € (of which 1.29 mio. is funded by BMFTR)
-
-![Funded by the Federal Ministry of Research, Technology and Space (BMFTR)](assets/img/bmftr_en.png){ loading=lazy, width="250"  }
-
 </div>

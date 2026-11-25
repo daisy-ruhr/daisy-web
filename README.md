@@ -217,15 +217,10 @@ still have to be done manually.
 
 ### Accessibility statement
 
-The *Erklärung zur Barrierefreiheit* is drafted in `docs/de/Barrierefreiheit.draft.md` and
-`docs/en/Barrierefreiheit.draft.md` (status: partially compliant). To publish it:
-
-1. Replace every `[TODO: …]` placeholder in both files (responsible body, contact, dates,
-   enforcement body, legal basis, results of the manual review) and remove the draft comment.
-2. Rename both files to `Barrierefreiheit.md` (same name in both languages, like `Impressum.md`).
-3. Add a footer link next to Impressum/Datenschutz in `overrides/main.html`, e.g.
-   `<a href="/{{ config.theme.language }}/Barrierefreiheit/">{{ 'Accessibility' if en else 'Barrierefreiheit' }}</a>`.
-4. Review the statement at least once a year and after major changes, and update its date.
+The *Erklärung zur Barrierefreiheit* is in `docs/de/Barrierefreiheit.md` (legally binding)
+with an English courtesy translation in `docs/en/Barrierefreiheit.md`, linked in the footer
+from `overrides/main.html`. Review it at least once a year and after major changes: update the
+list of barriers and the review date in both languages.
 
 ## Deployment
 
