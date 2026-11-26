@@ -9,6 +9,7 @@ hide:
 <div class="daisy-intro-layout" markdown="1">
 <div markdown="1">
 **Safe use of AI in companies**
+
 **D**ata Protection and Employee Interests in **AI**-as-a-Service **Sy**stems
 
 AI has become an important tool in many companies.  
