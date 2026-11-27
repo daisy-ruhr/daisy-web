@@ -226,3 +226,11 @@ list of barriers and the review date in both languages.
 
 Zensical generates static files but does not deploy them. Publish the contents of `site/`
 with the hosting provider of your choice.
+
+### Daisy Hosting
+
+DAISY currently is hosted on [statichost.eu](https://statichost.eu) for free. This is hosted exclusively in Europe and comes with a 10GB/month traffic cap and 100 build minutes (about 100 page updates) per month.
+
+The GitHub CI action is setup to automatically trigger a build to the `site` branch, where the current HTML sits. It also sends a webhook request to statichost to clone the repo and publish the latest committed and pushed version. This webhook is authenticated via the STATICHOST_TOKEN repository secret.
+This is an API key that can be generated in the [statichost.eu builder web interface](https://builder.statichost.eu/account/api-keys) and is valid until `2027-11-26`, at which point a new key needs to be created and the secret variable in GitHub updated accordingly (daisy-web repository / Settings / Secrets and variables: Repository secrets, click the pen icon and input the new key), as the key is valid for a maximum period of 1 year. steffen.becker (a) rub.de is currently the affiliated account for the daisy.ruhr page.
+Note that an expired API key will not stop the website from working, it will merely mean updates to GitHub will no longer update the live page automatically until fixed.
