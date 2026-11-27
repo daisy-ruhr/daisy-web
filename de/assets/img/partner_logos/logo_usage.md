@@ -24,9 +24,7 @@ Protected area is complex (about the book/arrow height vertically and its width 
 Min. logo h.: 8mm, better 14mm
 Protected area: 1/4 of logo height, better 1/2
 
-Official logo download is not publically accessible, used high-quality vector website logo
-
-Check whether logo with claim must be used
+Official PNG logo with claim is used
 
 ## UDE
 
